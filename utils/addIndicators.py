@@ -355,7 +355,7 @@ def observeTrend(df, observeCol, initialUptrend=None, trendlines=False, colName=
     lineColName = (
         colName + ' Trendline') if lineColName is None else lineColName
 
-    df[colName] = np.nan
+    df[colName] = False
     df = shortOverLong(df, 12, 26, colName='SoL_OBS')
     if trendlines:
         df[lineColName] = np.nan
@@ -396,7 +396,7 @@ def observeTrend(df, observeCol, initialUptrend=None, trendlines=False, colName=
                 plotted_peaks.append(first_peak)
 
         if trendIdentified:
-            df[colName][i] = uptrend
+            df[colName][i] = bool(uptrend)
             if trendlines and len(plotted_peaks) > 0:
                 indices = [i for i in range(len(plotted_peaks))]
                 reg.fit(np.array(indices).reshape(-1, 1),
