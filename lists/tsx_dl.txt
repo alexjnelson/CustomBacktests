@@ -1,0 +1,2351 @@
+Symbol	Description
+AAB	Aberdeen International Inc
+AAV	Advantage Oil & Gas Ltd
+ABST	Absolute Software Corporation
+ABT	Absolute Software Corp
+ABX	Barrick Gold Corp
+AC	Air Canada
+ACB	Aurora Cannabis Inc
+ACB.WT	Aurora Cannabis Inc WT
+ACD	Accord Financial
+ACD.DB	Accord Financial Corp 7.00 Pct Debs
+ACO.X	Atco Ltd Cl.I NV
+ACO.Y	Atco Ltd Cl II
+ACQ	Autocanada Inc
+ACZ	Middlefield American Core Dividend ETF
+AD.DB	Alaris Royalty Corp 5.50 Pct Debs
+AD.UN	Alaris Equity Partners Income Trust
+ADN	Acadian Timber Corp
+ADW.A	Andrew Peller Limited Cl.A
+ADW.B	Andrew Peller Limited Cl.B
+AEG	Aegis Brands Inc
+AEM	Agnico Eagle Mines Limited
+AEZS	Aeterna Zentaris Inc
+AFN	Ag Growth International Inc
+AFN.DB.D	Ag Growth Intl Inc 4.85 Pct Debs
+AFN.DB.E	Ag Growth Intl Inc 4.50 Pct Debs
+AFN.DB.F	Ag Growth Intl Inc 5.4 Pct Debs
+AFN.DB.G	Ag Growth Intl Inc 5.25 Pct Debs
+AFN.DB.H	Ag Growth Intl Inc 5.25 Pct Debs
+AGF.B	AGF Management Ltd Cl.B NV
+AGI	Alamos Gold Inc Cls A
+AH	Aleafia Health Inc
+AH.DB	Aleafia Health Inc 8.50 Pct Debs
+AH.WT	Aleafia Health Inc Wts
+AH.WT.A	Aleafia Health Inc Wts A
+AHC	Apollo Healthcare Corp.
+AHC.WT	Apollo Healthcare Corp Wts
+AI	Atrium Mortgage Investment Corp
+AI.DB.B	Atrium Mortgage Inv Corp 5.50 Pct Debs
+AI.DB.C	Atrium Mortgage Inv Corp 5.30 Pct Debs
+AI.DB.D	Atrium Mortgage Inv Corp 5.50 Pct Debs
+AI.DB.E	Atrium Mortgage Inv Corp 5.60 Pct Debs
+AIF	Altus Group Limited
+AII	Almonty Industries Inc
+AIM	Aimia Inc
+AIM.PR.A	Aimia Inc Pref Ser 1
+AIM.PR.C	Aimia Inc Pref Ser 3
+AJX	Agjunction Inc
+AKT.A	Akita Drilling Ltd Cl.A NV
+AKT.B	Akita Cl B
+AKU	Akumin Inc
+ALA	Altagas Ltd
+ALA.PR.A	Altagas Ltd Pref A
+ALA.PR.B	Altagas Ltd Pref Ser B
+ALA.PR.E	Altagas Ltd Pref Ser E
+ALA.PR.G	Altagas Ltd Pref G
+ALA.PR.H	Altagas Ltd Pref H
+ALA.PR.I	Altagas Ltd Pref Ser I
+ALA.PR.K	Altagas Ltd Pref Ser K
+ALA.PR.U	Altagas Ltd Pref Ser C
+ALB	Allbanc Split Banc Corp II
+ALB.PR.C	Allbanc Split Corp II Pref Ser 2
+ALC	Algoma Central
+ALC.DB.A	Algoma Central Corp 5.25 Pct Debs
+ALFA	Accelerate Private Equity Alpha Fund ETF
+ALS	Altius Minerals Corp
+ALYA	Alithya Group
+AMM	Almaden Minerals Ltd
+AND	Andlauer Healthcare Group Inc
+ANX	Anaconda Mining Inc
+AOI	Africa Oil Corp
+AOT	Ascot Resources Ltd
+AP.UN	Allied Properties Real Estate Inv Trust
+APHA	Aphria Inc
+APLI	Appili Therapeutics Inc
+APR.UN	Automotive Properties REIT
+APS	Aptose Biosciences Inc
+APY	Anglo Pacific Group Plc
+AQA	Aquila Resources Inc
+AQN	Algonquin Power and Utilities Corp
+AQN.PR.A	Algonquin Power and Utilities Pref A
+AQN.PR.D	Algonquin Power and Utilities Pref D
+AR	Argonaut Gold Inc
+AR.DB.U	Argonaut Gold Inc. 4.625%
+ARB	Accelerate Arbitrage Fund ETF
+ARE	Aecon Group Inc
+ARE.DB.C	Aecon Group Inc 5.0 Pct Debs
+ARG	Amerigo Resources Ltd
+ARX	Arc Resources Ltd
+ASM	Avino Silver and Gold Mines Ltd
+ASND	Ascendant Resources Inc
+ASND.WT	Ascendant Resources Inc Wts
+ASP	Acerus Pharmaceuticals Corp
+ASP.RT	Acerus Pharmaceuticals Corp RTS
+AT	Acuityads Holdings Inc
+ATA	Ats Automation
+ATD.A	Alimentation Couche-Tard Inc Cl A Mv
+ATD.B	Alimentation Couche-Tard Inc Cl B Sv
+ATE	Antibe Therapeutics Inc
+ATH	Athabasca Oil Corp
+ATP	Atlantic Power Corp
+ATP.DB.E	Atlantic Power Corporation 6.00 Pct Debs
+ATSX	Accelerate Enhanced CDN Bm Alt Fund ETF
+ATZ	Aritzia Inc
+AUGB.F	First Trst CBOE Vest US Eqty Buffer ETF
+AUMN	Golden Minerals Company
+AUP	Aurinia Pharmaceuticals Inc
+AVCN	Avicanna Inc
+AVL	Avalon Advanced Materials Inc
+AVP	Avcorp Industries Inc
+AW.UN	A&W Revenue Royalties Income Fund
+AX.PR.A	Artis REIT Pref Ser A
+AX.PR.E	Artis REIT Pref Ser E
+AX.PR.I	Artis REIT Pref Series I
+AX.UN	Artis Real Estate Investment Trust Units
+AXU	Alexco Resource Corp
+AYA	Aya Gold and Silver Inc
+AYM	Atalaya Mining Plc
+AZP.PR.A	Atlantic Power Pref Equity Ser 1
+AZP.PR.B	Atlantic Power Pref Equity Ser 2
+AZP.PR.C	Atlantic Power Pref Equity Ser 3
+AZZ	Azarga Uranium Corp
+BAD	Badger Daylighting Ltd
+BAM.A	Brookfield Asset Management Inc Cl.A Lv
+BAM.PF.A	Brookfield Asset Mgmt Inc Pref Ser 32
+BAM.PF.B	Brookfield Asset Mgmt Inc Pref Ser 34
+BAM.PF.C	Brookfield Asset Mgmt Inc Pref Ser 36
+BAM.PF.D	Brookfield Asset Mgmt Inc Pr Ser 37
+BAM.PF.E	Brookfield Asset Mgmt Pref Ser 38
+BAM.PF.F	Brookfield Asset Mgmt Inc Pref Ser 40
+BAM.PF.G	Brookfield Asset Mgmt Inc Pref Ser 42
+BAM.PF.H	Brookfield Asset MGT Inc Pref Ser 44
+BAM.PF.I	Brookfield Asset Mgmt Inc Pref Ser 46
+BAM.PF.J	Brookfield Asset Mgmt Inc Pref Ser 48
+BAM.PR.B	Brookfield Asset Mgmt Inc Pr. Ser 2
+BAM.PR.C	Brookfield Asset Mgmt Inc Pr. Ser 4
+BAM.PR.E	Brookfield Asset Mgmt Inc Pr. Ser 8
+BAM.PR.G	Brookfield Asset Mgmt Inc Pr Ser 9
+BAM.PR.K	Brookfield Asset Mgmt Inc Pr. Ser 13
+BAM.PR.M	Brookfield Asset Mgmt Inc Prf A Ser 17
+BAM.PR.N	Brookfield Asset Mgmt Pref Shs Ser 18
+BAM.PR.R	Brookfield Asset Mgmt Pref Ser 24
+BAM.PR.S	Brookfield Asset Mgmt Inc Pref Ser 25
+BAM.PR.T	Brookfield Asset Mgmt Pref Ser 26
+BAM.PR.X	Brookfield Am Pref Ser 28
+BAM.PR.Z	Brookfield Asset Mgmt Inc Pr Ser 30
+BASE	Evolve Glob Matls Mining Enh Yld Idx ETF
+BASE.B	Evolve Glob Matls Mining Enh Yld Unhgd
+BB	Blackberry Limited
+BBD.A	Bombardier Inc Cl A Mv
+BBD.B	Bombardier Inc Cl B Sv
+BBD.PR.B	Bombardier 2 Pr
+BBD.PR.C	Bombardier Inc Pref Class C
+BBD.PR.D	Bombardier Inc Pref Ser 3
+BBL.A	Brampton Brick Ltd Cl.A Sv
+BBTV	Bbtv Holdings Inc.
+BBU.UN	Brookfield Business Partners LP
+BC.U	Bespoke Capital Acquisition Class A USD
+BC.WT.U	Bespoke Capital Acquisition Corp WT
+BCE	BCE Inc
+BCE.PR.A	BCE First Pr Shares Series Aa
+BCE.PR.B	BCE Inc First Pr Shares Series Ab
+BCE.PR.C	BCE Inc Pr Shares Series AC
+BCE.PR.D	BCE Inc Pref Shares Series Ad
+BCE.PR.E	BCE 1st Pref Shares Series Ae
+BCE.PR.F	BCE 1st Pref Shares Series Af
+BCE.PR.G	BCE 1st Pref Shares Series Ag
+BCE.PR.H	BCE 1st Pref Shares Series Ah
+BCE.PR.I	BCE 1st Pref Shares Series Ai
+BCE.PR.J	BCE Inc Pref Sh Series Aj
+BCE.PR.K	BCE Inc Pref Ser AK
+BCE.PR.L	BCE Inc Pref Ser AL
+BCE.PR.M	BCE Inc Pref Shares Series Am
+BCE.PR.N	BCE Inc Pref Shares Series An
+BCE.PR.O	BCE Inc Pref Shares Series Ao
+BCE.PR.Q	BCE Inc Pref Shares Series Aq
+BCE.PR.R	BCE Inc Ser R
+BCE.PR.S	BCE Inc Ser S
+BCE.PR.T	BCE Inc First Pref Series T
+BCE.PR.Y	BCE Inc Ser Y Pr
+BCE.PR.Z	BCE Inc Series Z
+BCI	New Look Vision Group Inc
+BDI	Black Diamond Group Ltd
+BDIV	Brompton Global Dividend Growth ETF
+BDT	Bird Construction Inc
+BEI.UN	Boardwalk Real Estate Investment Trust
+BEK.B	Becker Milk Company Ltd Cl.B NV
+BEP.PR.E	Brookfield Renewable LP Pref Ser 5
+BEP.PR.G	Brookfield Renewable LP Pref Ser 7
+BEP.PR.I	Brookfield Renewable Pref Ser 9
+BEP.PR.K	Brookfield Renewable LP Pref Ser 11
+BEP.PR.M	Brookfield Renewable LP Pref Ser 13
+BEP.PR.O	Brookfield Renewable Partners L.P.
+BEP.UN	Brookfield Renewable Partners LP
+BEPC	Brookfield Renewable Corporation
+BESG	Invesco ESG CDN Core Plus Bond ETF
+BFIN	Brompton Na Financials Dividend ETF
+BGC	Bristol Gate Concentrated CDN Eqty ETF
+BGI.UN	Brookfield Glbl Infras Sec Inc Fd
+BGU	Bristol Gate Concentrated US Eqty ETF
+BGU.U	Bristol Gate Conc US Eqty ETF USD
+BHC	Bausch Health Companies Inc
+BIK.PR.A	Bip Investment Corp Pref Ser 1
+BIP.PR.A	Brookfield Infra Partners LP Pref Ser 1
+BIP.PR.B	Brookfield Infra Partners LP Pref Ser 3
+BIP.PR.C	Brookfield Infra Partners LP Pref Ser 5
+BIP.PR.D	Brookfield Infra Partners LP Pref Ser 7
+BIP.PR.E	Brookfield Infra Partners LP Pref Ser 9
+BIP.PR.F	Brookfield Infra Partners LP Pref Ser 11
+BIP.UN	Brookfield Infra Partners LP Units
+BIPC	Brookfield Infrastructure Corporation
+BIR	Birchcliff Energy Ltd
+BIR.PR.A	Birchcliff Energy Ltd Pref Sh A
+BIR.PR.C	Birchcliff Energy Ltd Pref Ser C
+BK	Canadian Banc Corp
+BK.PR.A	Canadian Banc Corp Pref A
+BKI	Black Iron Inc
+BKL.C	Invesco Senior Loan Index ETF
+BKL.F	Invesco Senior Loan Index ETF
+BKX	Bnk Petroleum Inc
+BL.UN	Global Innovation Dividend Fund
+BLB.UN	Bloom Select Income Fund
+BLDP	Ballard Power Systems Inc
+BLOV	Brompton Na Low Volatility Dividend ETF
+BLU	Bellus Health Inc
+BLX	Boralex Inc
+BMO	Bank of Montreal
+BMO.PR.A	BMO Pref Shares Series 26
+BMO.PR.B	BMO Pref Shares Series 38
+BMO.PR.C	BMO Pref Shares Series 40
+BMO.PR.D	BMO Pref Shares Series 42
+BMO.PR.E	BMO Pref Shares Series 44
+BMO.PR.F	BMO Pref Shares Series 46
+BMO.PR.Q	Bank of Montreal B Pref Sh Ser 25
+BMO.PR.S	BMO Cl B Pref Shares Ser 27
+BMO.PR.T	BMO Non Cum Cl B Prf Share Series 29
+BMO.PR.W	BMO Cl B Pref Shares Ser 31
+BMO.PR.Y	Bank of Montreal Pref Ser 33
+BMO.PR.Z	Bank of Montreal Pref Ser 35
+BNAU	Battle North Gold Corp
+BNC	Purpose CDN Financial Income Fund ETF
+BND	Purpose Tactical Inv Grade Bond ETF
+BNE	Bonterra Energy Corp
+BNG	Bengal Energy Ltd
+BNK	Bankers Petroleum Ltd.
+BNK.PR.A	Big Banc Split Corp
+BNS	Bank of Nova Scotia
+BNS.PR.E	Bns Pref Shares Series 34
+BNS.PR.F	Bns Pref Shares Series 33
+BNS.PR.G	Bns Pref Shares Series 36
+BNS.PR.H	Bns Pref Shares Series 38
+BNS.PR.I	Bns Preferred Shares Series 40
+BNS.PR.Z	Bns Pref Ser 32
+BOS	Airboss America J
+BPF.UN	Boston Pizza Royalties Income Fund
+BPO.PR.A	Brookfield Office Properties Pref Ser Aa
+BPO.PR.C	Brookfield Office Properties Pref Ser CC
+BPO.PR.E	Brookfield Office Properties Pref Ser Ee
+BPO.PR.G	Brookfield Office Properties Pref Ser G
+BPO.PR.I	Brookfield Office Properties Pref Ser II
+BPO.PR.N	Brookfield Office Properties Pref Ser N
+BPO.PR.P	Brookfield Office Properties Pref Ser P
+BPO.PR.R	Brookfield Office Properties Pref Ser R
+BPO.PR.S	Brookfield Office Properties Pref Ser S
+BPO.PR.T	Brookfield Office Properties Pref Ser T
+BPO.PR.W	Brookfield Office Properties Pref Ser W
+BPO.PR.X	Brookfield Office Properties Pref Ser V
+BPO.PR.Y	Brookfield Office Properties Pref Ser Y
+BPRF	Bf and Crumrine Invest Grade Pref ETF
+BPRF.U	Bf and Crumrine Invgrade Pref ETF USD
+BPS.PR.A	Brookfield Property Split Pref Ser 2
+BPS.PR.B	Brookfield Property Split Pref Ser 3
+BPS.PR.C	Brookfield Property Split Pref Ser 4
+BPS.PR.U	Brookfield Property Split Pref Ser 1
+BPY.UN	Brookfield Property Partners LP
+BR	Big Rock Brewery Inc
+BRE	Brookfield Real Estate Services Inc
+BREA	Brompton Global Real Assets Dividend ETF
+BRF.PR.A	Brookfield Renewable Pref Cl A Ser 1
+BRF.PR.B	Brookfield Renewable Pref Cl A Ser 2
+BRF.PR.C	Brookfield Renewable Power Pref Eqty Inc
+BRF.PR.E	Brookfield Renewable Power Pref Eqt Sr 5
+BRF.PR.F	Brookfield Renewable Power Pref Eqt Sr 6
+BRY	Bri Chem Corp
+BSO.UN	Brookfield Select Opportunities Inc Fund
+BSX	Belo Sun Mining Corp
+BTB.DB.F	Btb REIT 7.15 Pct Debs
+BTB.DB.G	Btb REIT 6.0 Pct Debs
+BTB.DB.H	Btb REIT 7.00 Pct Debs
+BTB.UN	Btb REIT Units
+BTE	Baytex Energy Corp
+BTO	B2Gold Corp
+BU	Burcon Nutrascience Corp
+BUA.UN	Bloom US Income and Growth Fund
+BUI	Buhler Ind
+BXF	CI First Asset 1 To 5 Yr Lad Gov Stp Bd ETF
+BYD	Boyd Group Services Inc
+BYL	Baylin Technologies Inc
+BYL.DB	Baylin Technologies Inc 6.5 Pct Debs
+CACB	CIBC Active Invst Grade Corp Bond ETF
+CAE	Cae Inc
+CAGG	CI Yield Enh CDN Agrt Bond ETF
+CAGS	CI Yield Enh CDN ST Agt Bond ETF
+CALL	Evolve US Banks Enhanced Yield ETF
+CALL.B	Evolve US Banks Enhanced Yield Unheg
+CALL.U	Evolve US Banks Enhanced Yld Fd ETF USD
+CAR.UN	CDN Apartment Un
+CARS	Evolve Automobile Innovation Idx Hgd ETF
+CARS.B	Evolve Automobile Innovation Idx Uh ETF
+CARS.U	Evolve Automobile Innovation Idx Fd USD
+CAS	Cascades Inc
+CBH	Ishares 1-10 Yr Laddered Corp Bond ETF
+CBO	Ishares 1-5Yr Laddered Corp Bond ETF
+CCA	Cogeco Communications Inc
+CCL.A	Ccl Inc Cl A
+CCL.B	Ccl Industries Inc Cl B NV
+CCM	Canarc Res J
+CCO	Cameco Corp
+CCOR	CI Doubleline Cor Plus Fxd Inc US HD ETF
+CCRE	CIBC Core Fixed Income Pool ETF
+CCS.PR.C	Co-Operators Gen Ins Cl E Prf
+CDAY	Ceridian Hcm Holdings Inc
+CDD.UN	Core Canadian Dividend Trust
+CDLB	CI Doubleline Total Return Bnd US HD ETF
+CDLB.B	CI Doubleline Total Return Bnd US Uh ETF
+CDLB.U	CI Doubleline Total Retrn Bnd US ETF USD
+CDV	Cardinal Resources Limited
+CDZ	Ishares S&P TSX CDN Dividend ETF
+CEE	Centamin Plc
+CEF	Sprott Physical Gold Silver Trust
+CEF.U	Central Fund of Canada Ltd Cl.U NV
+CERV	Cervus Equipment Corp
+CET	Cathedral Energy Services Ltd
+CEU	Ces Energy Solutions Corp
+CEW	Ishares Equal Weight Banc Lifeco ETF
+CF	Canaccord Genuity Group Inc
+CF.DB.A	Canaccord Genuity Group 6.25 Pct Debs
+CF.PR.A	Canaccord Genuity Group Inc Pref A
+CF.PR.C	Canaccord Genuity Group Inc Pref C
+CFF	Conifex Timber Inc
+CFLX	CIBC Flexible Yield ETF Hedged
+CFP	Canfor Corp
+CFW	Calfrac Well Services Ltd
+CFX	Canfor Pulp Products Inc
+CG	Centerra Gold Inc
+CGAA	CI First Asset Glb Asset Allocation ETF
+CGG	China Gold Int Resources Corp
+CGI	CDN General Inv
+CGI.PR.D	Canadian General Inv Ltd Pref Ser 4
+CGL	Ishares Gold Bullion ETF Hdg
+CGL.C	Ishares Gold Bullion ETF Non Hdg
+CGLO	CIBC Global Growth ETF
+CGO	Cogeco Inc Sv
+CGR	Ishares Global Real Estate ETF
+CGRA	CI Global Real Asset Private Pool ETF
+CGRE	CI Global REIT Private Pool ETF
+CGX	Cineplex Inc
+CGX.DB.B	Cineplex Inc Debs
+CGXF	CI First Asset Gold Giants Cvr Call ETF
+CGY	Calian Group Ltd
+CHB	Ishares US HY Fixed Income Index ETF
+CHE.DB.B	Chemtrade Logistics If 5.25 Pct Debs
+CHE.DB.C	Chemtrade Logistics Income Fund 5.0 Debs
+CHE.DB.D	Chemtrade Logistics Inc Fd 4.75 Pct Debs
+CHE.DB.E	Chemtrade Logistics If 6.50 Pct Debs
+CHE.DB.F	Chemtrade Logistics If 8.50 Pct Debs
+CHE.UN	Chemtrade Logistics Income Fund
+CHNA.B	CI Icbccs SP China 500 Index ETF
+CHP.UN	Choice Properties REIT
+CHR	Chorus Aviation Inc
+CHR.DB.A	Chorus Aviation Inc 5.75 Pct Debs
+CHW	Chesswood Group Limited
+CIA	Champion Iron Limited
+CIC	CI First Asset Canbanc Income Class ETF
+CIF	Ishares Global Infrastructure Index ETF
+CIGI	Colliers International Group Inc
+CINC	CI Doubleline Income US Hdg ETF
+CINC.B	CI Doubleline Income US Unhedged ETF
+CINC.U	CI Doubleline Income US ETF USD
+CINF	CI Global Infrastructure Pvt Pool ETF
+CINT	CIBC International Equity ETF
+CIQ.UN	Canadian High Income Equity Fund
+CIU.PR.A	Cu Inc Pref Shares
+CIU.PR.C	Cu Inc Pref Ser 4
+CIX	CI Financial Corp
+CJ	Cardinal Energy Ltd
+CJ.DB	Cardinal Energy Ltd 5.50 Pct Debs
+CJ.DB.A	Cardinal Energy Ltd 8 Pct Debs
+CJR.B	Corus Entertainment Inc Cl.B NV
+CJT	Cargojet Inc
+CJT.DB.D	Cargojet Inc 5.75 Pct Debs
+CJT.DB.E	Cargojet Inc 5.75 Pct Debs
+CJT.DB.F	Cargojet Inc 5.25 Pct Debs
+CKI	Clarke Inc
+CKI.DB	Clarke Inc 6.25 Pct Debs
+CLF	Ishares 1-5 Yr Ladder Govt Bond ETF
+CLG	Ishares 1-10 Yr Ladder Govt Bond ETF
+CLIQ	Alcanna Inc
+CLIQ.DB	Alcanna Inc 4.70 Pct Debs
+CLQ	Clean Teq Holdings Limited
+CLR	Clearwater Seafoods Incorporated
+CLS	Celestica Inc Sv
+CM	Canadian Imperial Bank of Commerce
+CM.PR.O	CIBC Pref Ser 39
+CM.PR.P	CIBC Pref Ser 41
+CM.PR.Q	CIBC Pref Ser 43
+CM.PR.R	CIBC Pref Ser 45
+CM.PR.S	CIBC Pref Series 47
+CM.PR.T	CIBC Pref Series 49
+CM.PR.Y	CIBC Pref Series 51
+CMAG	CI Munro Alt Global Growth ETF
+CMAR	CI Marret Alt Absolute Return Bnd ETF
+CMAR.U	CI Marret Alt Absolute Rtrn Bnd ETF USD
+CMCE	CIBC Multifactor Canadian Equity ETF
+CMG	Computer Modelling Group Ltd
+CMMC	Copper Mountain Mining Corp
+CMR	Ishares Premium Money Market ETF
+CMUE	CIBC Multifactor US Equity ETF
+CNE	Canacol Energy Ltd
+CNQ	CDN Natural Res
+CNR	Canadian National Railway Co.
+CNT	Century Global Commodities Corp
+CNU	Cnooc Limited
+COG	Condor Gold Plc
+COMM	BMO Global Communications Index ETF
+CORP	Exemplar Investment Grade Fund
+COW	Ishares Global Agri Index ETF
+CP	Canadian Pacific Railway Limited
+CPD	Ishares S&P TSX CDN Pref ETF
+CPG	Crescent Point Energy Corp
+CPH	Cipher Pharmaceuticals Inc
+CPI	Condor Petroleum Inc
+CPLS	CIBC Core Plus Fixed Income Pool ETF
+CPX	Capital Power Corp
+CPX.PR.A	Capital Power Corporation Pref Ser 1
+CPX.PR.C	Capital Power Corp Pref Ser 3
+CPX.PR.E	Capital Power Corporation Pref Ser 5
+CPX.PR.G	Capital Power Corporation Pref Ser 7
+CPX.PR.I	Capital Power Corporation Pref Ser 9
+CPX.PR.K	Capital Power Corporation Pref Series 11
+CR	Crew Energy Inc
+CRDL	Cardiol Therapeutics Inc
+CRDL.WT	Cardiol Therapeutics Inc WT
+CRED	CI Lawrence Park Alt Invest Grd Crdt ETF
+CRED.U	CI Lawrence Park Alt Inv Grd Crt ETF USD
+CRH	CRH Medical Corp
+CRON	Cronos Group Inc
+CRP	Ceres Global Ag Corp
+CRR.UN	Crombie Real Estate Investment Trust
+CRRX	Carerx Corporation
+CRT.UN	CT Real Estate Investment Trust
+CRWN	Crown Capital Partners Inc
+CRWN.DB	Crown Capital Partners Inc 6.0 Pct Debs
+CS	Capstone Mining Corp
+CSAV	CI First Asset High Interest Savings ETF
+CSD	Ishares Short Dur HI Inc ETF CAD Hgd
+CSE.PR.A	Capstone Infrastructure Corp Pref A
+CSH.UN	Chartwell Retirement Residences
+CSM	Clearstream Energy Services Inc
+CSU	Constellation Software Inc
+CSU.DB	Constellation Software Inc Debs Ser 1
+CSW.A	Corby Spirit and Wine Ltd Class A
+CSW.B	Corby Spirit and Wine Ltd Class B
+CSY	CI First Asset Core Can Equity Inc Class ETF
+CTC	Canadian Tire Corporation Limited
+CTC.A	Canadian Tire Corporation Cl A NV
+CTF.UN	Citadel Income Fund
+CTX	Crescita Therapeutics Inc
+CU	Canadian Utilities Ltd Cl.A NV
+CU.PR.C	Canadian Utilities Limited Pref Ser C
+CU.PR.D	Canadian Utilities Ltd Pr Series Aa
+CU.PR.E	Canadian Utilities Ltd Pref Ser Bb
+CU.PR.F	Canadian Utilities Ltd Pref Ser CC
+CU.PR.G	Canadian Utilities Ltd Pref Ser Dd
+CU.PR.H	Canadian Utilities Ltd Pref Ser Ee
+CU.PR.I	Canadian Utilities Ltd Pref Ser Ff
+CU.X	CDN Util Cl B
+CUD	Ishares S&P US Div Growers ETF
+CUF.UN	Cominar R E Un
+CUP.RT.U	Caribbean Utilities Companyltd RTS USD
+CUP.U	Caribbean Util US
+CVD	Ishares Convertible Bond Index ETF
+CVE	Cenovus Energy Inc
+CVG	Clairvest Group
+CWB	CDN Western Bank
+CWB.PR.B	Canadian Western Bank Pref Ser 5
+CWB.PR.C	Canadian Western Bank Pref Ser 7
+CWB.PR.D	Canadian Western Bank Pref Series 9
+CWEB	Charlotte's Web Holdings Inc
+CWEB.WR	Charlottes Web Holdings Inc Wr
+CWEB.WT	Charlottes Web Holdings Inc
+CWL	Caldwell Partners International Inc
+CWW	Ishares S&P Global Water ETF
+CWX	Canwel Building Materials Group Ltd
+CWX.NT.A	Canwel Build Materials 6.375 Pct Notes
+CXB	Calibre Mining Corp
+CXF	CI First Asset CDN Convert Bond ETF
+CXI	Currency Exchange International Corp
+CYB	Cymbria Corporation Cl A
+CYBR	Evolve Cyber Security Index Hgd ETF
+CYBR.B	Evolve Cyber Security Index Uh ETF
+CYBR.U	Evolve Cyber Security Index Uh Fund USD
+CYH	Ishares Global Monthly Dividend ETF
+D.UN	Dream Office REIT
+DANC	Desjardins Lng Shrt Eqty Mkt Ntrl ETF
+DBO	Dbox Technologies Inc
+DC.A	Dundee Corp Cl.A Sv
+DC.PR.B	Dundee Corp First Pref Ser 2
+DC.PR.D	Dundee Corp Pref Ser 3
+DCBO	Docebo Inc
+DCC	Desjardins 1To5 Yr Lad CDN Corp Bd ETF
+DCG	Desjardins 1To5 Yr Lad CDN Govt Bd ETF
+DCM	Data Communications Mgmt Corp
+DCP	Desjardins CDN Pref Share ETF
+DCS	Desjardins CDN Short Term Bd ETF
+DCU	Desjardins CDN Universe Bond Index ETF
+DF	Dividend 15 Split Corp II
+DF.PR.A	Dividend 15 Split Corp II Prf
+DFC	Desjardins Cda Multifactor Ctrl Vol ETF
+DFD	Desjardins Dev Xus Xcda Mltifact Vol ETF
+DFE	Desjardins EM Multifactor-Controlled Vol ETF
+DFN	Dividend 15 Split Corp
+DFN.PR.A	Dividend 15 Split Corp
+DFU	Desjardins USA Multifactor Ctrl Vol ETF
+DGR	CI Wisdomtree US Quality Div Growth Index ETF
+DGR.B	CI Wisdomtree US Quality Div Growth Index ETF
+DGRC	CI Wisdomtree CDN Qlty Div Gwth Idx ETF
+DGS	Dividend Growth Split Corp Class A
+DGS.PR.A	Dividend Growth Split Corp Pref
+DIAM	Star Diamond Corp
+DII.A	Dorel Industries Inc Cl.A Mv
+DII.B	Dorel Industries Inc Cl.B Sv
+DIR.UN	Dream Industrial REIT
+DISC	BMO Glb Consumer Disc Hgd To CAD ETF
+DIV	Diversified Royalty Corp
+DIV.DB	Diversified Royalty Corp 5.25 Pct Debs
+DIVS	Evolve Active CDN Pref Share ETF
+DLR	Horizons US Dollar Currency ETF
+DLR.U	Horizons US Dollar Currency ETF USD
+DML	Denison Mines Corp
+DN	Delta 9 Cannabis Inc
+DN.DB	Delta 9 Cannabis Inc 8.5 Pct Debs
+DN.WT.A	Delta 9 Cannabis Inc WT A
+DND	Dye & Durham Ltd
+DNG	Dynacor Gold Mines Inc
+DNT	Candente Copper Corp
+DOL	Dollarama Inc
+DOO	Brp Inc
+DPM	Dundee Precious Metals Inc
+DQD	CI Wisdomtree Y.S. Qlty Divd Gwth Var Hgd ETF
+DQI	CI Wisdomtree Intl Qlty Div Gwth Var Hgd ETF
+DR	Medical Facilities Corp
+DRA.UN	Dream Hard Asset Alternatives Trust
+DRCU	Desjardins RI Active Canadian Bond-Low C
+DRFC	Desjardins RI Cda Multi Low Co2 ETF
+DRFD	Desjardins RI Dev Ex USA Ex Cda Co2 ETF
+DRFG	Desjardins Gbl Fossil Fuel Res Free ETF
+DRFU	Desjardins RI USA Multi Low Co2 ETF
+DRM	Dream Unlimited Corp
+DRMC	Desjardins RI Canada-Low Co2 Index ETF
+DRMD	Desjardins RI Dev Exusa Exca Low Co2 ETF
+DRMU	Desjardins RI USA Low Co2 Index ETF
+DRT	Dirtt Environmental Solutions Ltd
+DRX	Adf Group Inc Sv
+DS	Dividend Select 15 Corp
+DSG	Descartes Sys
+DXB	Dynamic Ishares Act Tactical Bond ETF
+DXC	Dyn Ishares Active CDN Div ETF
+DXF	Dynamic Ishares Act Global Fin Ser ETF
+DXG	Dyn Ishares Active Global Div ETF
+DXM	CI First Asset Morningstar Cda Div Tgt 30 ETF
+DXN	Dynamic Active Global Infrastructure ETF
+DXO	Dyn Ishares Act Crossover Bond ETF
+DXP	Dyn Ishares Active Pref Shares ETF
+DXU	Dyn Ishares Active US Div ETF
+DXV	Dyn Ishares Act Inv Grd Flot Rt ETF
+DXW	Dynamic Active Intl Dividend ETF
+DXZ	Dynamic Ishares Acitve US Mid Cap ETF
+DYA	Dynacert Inc
+DYA.WT	Dynacert Inc
+E	Enterprise Group Inc
+EARN	Evolve Active Global Fixed Income ETF
+ECN	Ecn Capital Corp
+ECN.DB	Ecn Capital Corp 6.0 Pct Debs
+ECN.PR.A	Ecn Capital Corp Pref Ser A
+ECN.PR.C	Ecn Capital Corp Pref Ser C
+ECO	Ecosynthetix Inc
+EDGE	Evolve Innovation Index ETF
+EDGF	Brompton European Div Growth ETF
+EDR	Endeavour Silver Corp
+EDT	Spectral Medical Inc
+EDV	Endeavour Mining Corp
+EFH	Echelon Financial Holdings Inc
+EFL	Electrovaya Inc
+EFN	Element Fleet Management Corp
+EFN.DB.B	Element Fleet Management 4.25 Pct Debs
+EFN.PR.A	Element Fleet Mgmt Corp Pref Ser A
+EFN.PR.C	Element Fleet Mgmt Corp Pref Ser C
+EFN.PR.E	Element Fleet Mgmt Corp Pref Ser E
+EFN.PR.I	Element Fleet Mgmt Corp Pref Ser I
+EFR	Energy Fuels Inc
+EFR.WT	Energy Fuels Inc WT
+EFX	Enerflex Ltd
+EGIF	Exemplar Growth and Income Fund ETF
+EGLX	Enthusiast Gaming Holdings Inc
+EHE	CI Wisdomtree Europe Hedged Equity Index ETF
+EHE.B	CI Wisdomtree Europe Hedged Equity Index ETF
+EIF	Exchange Income Corp
+EIF.DB.H	Exchange Income Corp 5.25 Pct Debs
+EIF.DB.I	Exchange Income Corp 5.25 Pct Debs
+EIF.DB.J	Exchange Income Corp 5.35 Pct Debs
+EIF.DB.K	Exchange Income Corp 5.75 Pct Debs
+EIT.PR.A	Canoe Eit Income Fund Pref Ser 1
+EIT.PR.B	Canoe Eit Income Fund Pref Ser 2
+EIT.UN	Canoe Eit Income Fund Units
+ELD	Eldorado Gold
+ELEF	Silver Elephant Mining Corporation
+ELF	E-L Financial
+ELF.PR.F	E-L Financial Corp Ltd Pr Ser. 1
+ELF.PR.G	E- L Financial Corp Limited
+ELF.PR.H	E - L Financial Corp Ltd Pref Ser 3
+ELR	Eastern Platinum Limited
+ELV	Powershares S&P Emg Mkts Low Vol ETF
+EMA	Emera Incorporated
+EMA.PR.A	Emera Inc Series A Pref
+EMA.PR.B	Emera Inc Pref Sh Series B
+EMA.PR.C	Emera Inc Pref Sh Series C
+EMA.PR.E	Emera Inc Pref Ser E
+EMA.PR.F	Emera Inc Series F Pref
+EMA.PR.H	Emera Inc Pref Series H
+EML.PR.A	The Empire Life Insurance CO Pref A
+EMP.A	Empire Company Limited
+EMV.B	CI Wisdomtree Emerging Mkt Divd Index ETF
+ENB	Enbridge Inc
+ENB.PF.A	Enbridge Inc Pref Ser 9
+ENB.PF.C	Enbridge Inc Pref Ser 11
+ENB.PF.E	Enbridge Inc Pref Ser 13
+ENB.PF.G	Enbridge Inc Pref Ser 15
+ENB.PF.I	Enbridge Inc Pref Ser 17
+ENB.PF.K	Enbridge Inc Pref Series 19
+ENB.PF.U	Enbridge Inc Pref Ser L
+ENB.PF.V	Enbridge Inc Pref Ser 5 USD
+ENB.PR.A	Enbridge Pr
+ENB.PR.B	Enbridge Inc Cum Redeem Pref Ser B
+ENB.PR.C	Enbridge Inc Pref Ser C
+ENB.PR.D	Enbridge Inc Pref Ser D
+ENB.PR.F	Enbridge Inc Pref Ser F
+ENB.PR.H	Enbridge Inc Pref Ser H
+ENB.PR.J	Enbridge Inc Pref Ser 7
+ENB.PR.N	Enbridge Inc Pref Ser N
+ENB.PR.P	Enbridge Inc Pref Ser P
+ENB.PR.T	Enbridge Inc Pref Ser R
+ENB.PR.U	Enbridge Inc Pref Sh Series J
+ENB.PR.V	Enbridge Inc Pref Ser 1
+ENB.PR.Y	Enbridge Inc Cum Red Pref Ser 3
+ENGH	Enghouse Systems Limited
+ENI.UN	Energy Income Fund
+ENS	E Split Corp
+ENS.PR.A	E Split Corp Pref Shares
+EOX	Euromax Resources Ltd
+EQB	Equitable Group Inc
+EQB.PR.C	Equitable Group Inc Pref Ser 3
+EQL	Invesco S&P 500 Eql Weight Idx ETF
+EQL.F	Invesco S&P 500 Eql Weight Idx ETF Hgd
+EQL.U	Invesco S&P 500 Eql Weight Idx ETF USD
+EQX	Equinox Gold Corp
+EQX.WT	Equinox Gold Corp WT
+ERD	Erdene Resource Development Corp
+ERE.UN	European Residential Real Estate Invs. Trust
+ERF	Enerplus Corp
+ERO	Ero Copper Corp
+ESG	Invesco S&P 500 ESG Index ETF
+ESG.F	Invesco S&P 500 ESG Index ETF Hedged
+ESGA	BMO MSCI Canada ESG Leaders Index ETF
+ESGB	BMO ESG Corporate Bond Index ETF
+ESGC	Invesco SP TSX Composite ESG Index ETF
+ESGE	BMO MSCI EAFE ESG Leaders Index ETF
+ESGF	BMO ESG US Corp Bnd Hdgd To CAD Idx ETF
+ESGG	BMO MSCI Global ESG Leaders Index ETF
+ESGY	BMO MSCI USA ESG Leaders Index ETF
+ESI	Ensign Energy Services Inc
+ESM	Euro Sun Mining Inc
+ESN	Essential Energy Services Ltd
+ET	Evertz Technologies Limited
+ETG	Entree Resources Ltd
+ETHI	Horizons Global Sustain Leaders Idx ETF
+ETP	First Trust Global Risk Managed Inc ETF
+ETX	Etrion Corp
+EUR	First Trust Alphadex Euro Div ETF
+EVT	Economic Investment
+EXE	Extendicare Inc
+EXE.DB.C	Extendicare Inc 5 Pct Debs
+EXF	Exfo Inc
+EXN	Excellon Resources Inc
+EXN.WT	Excellon Resources Inc WT
+FAF	Fire & Flower Holdings Corp.
+FAH.U	Fairfax Africa Holdings Corp
+FAI	CI First Asset Active Util&Infrastructure ETF
+FAO	CI First Asset Active Credit ETF
+FAP	Aberdeen Asia-Pacific Income Invest Ltd
+FAR	Foraco International Sa
+FBE	CI First Asset Canadian Buyback Index ETF
+FBU	CI First Asset US Buyback Index ETF
+FC	Firm Capital Mortgage Inv. Corp
+FC.DB.E	Firm Cap Mtg Invest Corp 5.30 Pct Debs
+FC.DB.F	Firm Capital Mortgage 5.50 Pct Debs
+FC.DB.G	Firm Capital Mortgage Inv 5.20 Pct Debs
+FC.DB.H	Firm Capital Mortgage 5.30 Pct Debs
+FC.DB.I	Firm Capital Mtg Inv Corp 5.40 Pct Debs
+FC.DB.J	Firm Capital Mtg Inv Corp 5.5 Pct Debs
+FCCB	Fidelity Systematic CDN Bond Index ETF
+FCCD	Fidelity CDN High Div Index ETF
+FCCL	Fidelity Canadian Low Vol Index ETF
+FCCM	Fidelity Canadian Momentum Index ETF
+FCCQ	Fidelity Canadian High Quality Index ETF
+FCCV	Fidelity Canadian Value Index ETF
+FCGB	Fidelity Global Core Plus Bond ETF
+FCGI	Fidelity Global Monthly High Income ETF
+FCHH	Fidelity Systematic US HI Yld Bd Cn ETF
+FCHY	Fidelity Systematic US High Yld Bond ETF
+FCID	Fidelity Intl High Dividend Index ETF
+FCIG	Fidelity Global Investment Grade Bnd ETF
+FCIL	Fidelity Intl Low Vol Index ETF
+FCIM	Fidelity International Momentum Idx ETF
+FCIQ	Fidelity Intl High Quality Index ETF
+FCIV	Fidelity International Value Index ETF
+FCLH	Fidelity US Low Vol Cur Ntrl Index ETF
+FCMH	Fidelity US Momentum Cur Neut Index ETF
+FCMI	Fidelity CDN Monthly High Income ETF
+FCMO	Fidelity US Momentum Index ETF
+FCQH	Fidelity US High Qlty Cur Ntrl Index ETF
+FCR.UN	First Capital REIT Units
+FCRH	Fidelity US Div Rising Rates Cur Neu Idx
+FCRR	Fidelity US Div For Rising Rates Idx ETF
+FCSB	Fidelity Canadian Short Term Corp Bd ETF
+FCU	Fission Uranium Corp
+FCUD	Fidelity US High Div Index ETF
+FCUH	Fidelity US High Div Cur Neu Idx ETF
+FCUL	Fidelity US Low Vol Index ETF
+FCUQ	Fidelity US High Quality Index ETF
+FCUV	Fidelity US Value Index ETF
+FCVH	Fidelity US Value Currency Neut Idx ETF
+FDE	First Trust Alphadex Emg Mkt Div ETF CAD
+FDV	CI First Asset Active CDN Divd ETF
+FEBB.F	First Trust CBOE Vest US Eqty ETF Feb
+FEC	Frontera Energy Corp
+FF	First Mining Gold Corp
+FFH	Fairfax Financial Holdings Ltd
+FFH.PR.C	Fairfax Fncl Holdings Ltd Pref Ser C
+FFH.PR.D	Fairfax Fncl Holdings Ltd Pref Ser D
+FFH.PR.E	Fairfax Financial Hldngs Pref Ser E
+FFH.PR.F	Fairfax Financial Holdings Pref Ser F
+FFH.PR.G	Fairfax Financial Hldngs Pref Ser G
+FFH.PR.H	Fairfax Fncl Holdings Ltd Pref Ser H
+FFH.PR.I	Fairfax Financial Holdings Series I Pref
+FFH.PR.J	Fairfax Fncl Holdings Ltd Pref Ser J
+FFH.PR.K	Fairfax Financial Holdings Pref Ser K
+FFH.PR.M	Fairfax Financial Holdings Pref Ser M
+FFH.U	Fairfax Financial Holdings Limited USD
+FFI.UN	Flaherty & Crumrine Fixed Income Fund
+FFN	North American Financial 15 Split Corp
+FFN.PR.A	North American Fin 15 Split Corp Pref
+FGB	CI First Asset Shrt Term Govt Bond Indx Cl ETF
+FGGE	Franklin Global Growth Active ETF
+FGO	CI First Asset Enhanced Govt Bond ETF
+FGO.U	CI First Asset Enhanced Govt Bond ETF USD
+FHB	CI First Asset European Bank ETF
+FHC	First Trust US Consmr Staples ETF
+FHC.F	FT U.S. Consumer Staples Sector Index ETF Hedged
+FHD	First Trust US Consmr Dscrtn ETF
+FHE	First Trust US Energy ETF
+FHF	First Trust US Financial ETF
+FHG	First Trust US Industrials ETF
+FHH	First Trust US Health Care ETF
+FHH.F	First Trust Ad US Health Care ETF
+FHI	CI First Asset Hlth Care Giants Cov Call ETF
+FHI.B	CI First Asset Hlth Care Giants Cov Call ETF
+FHM	First Trust US Materials ETF
+FHQ	First Trust US Technology ETF
+FHQ.F	First Trust Ad US Technology ETF
+FIE	Ishares CDN Fin Mthly Income ETF
+FIG	CI First Asset Investment Grade Bond ETF
+FIG.U	CI First Asset Investment Grade Bond ETF USD
+FIH.U	Fairfax India Holdings Corporation USD
+FINT	First Trust Intl Capital Strength ETF
+FIRE	The Supreme Cannabis Company Inc
+FIRE.DB	The Supreme Cannabis CO Inc 6.00 Pct Deb
+FLAM	Franklin FTSE US Index ETF
+FLB	CI First Asset Long Dur Fixed Inc ETF
+FLBA	Franklin Liberty Core Balanced ETF
+FLCD	Franklin FTSE Canada All Cap Index ETF
+FLCI	Franklin Liberty CDN Invest Grd Corp ETF
+FLCP	Franklin Liberty Core Plus Bond ETF
+FLDM	Franklin Libertyqt Intl Eqt Index ETF
+FLEM	Franklin Libertyqt Emerging Mkts Idx ETF
+FLGA	Franklin Liberty Global Agg Bond ETF
+FLGD	Franklin Libertyqt Glb Dividend Idx ETF
+FLI	CI First Asset US Cda Lifeco Income ETF
+FLJA	Franklin FTSE Japan Index ETF
+FLOT	Purpose Floating Rate Income Fund ETF
+FLOT.U	Purpose Floating Rate Income Fund USD
+FLRM	Franklin Liberty Risk Mngd CDN Eqt ETF
+FLSD	Franklin Liberty Short Duration Bond ETF
+FLUI	Franklin Liberty US Invest Grd Corp ETF
+FLUR	Franklin FTSE Europe Ex UK Index ETF
+FLUS	Franklin Libertyqt US Eqt Index ETF
+FM	First Quantum Minerals Ltd
+FN	First National Financial Corp
+FN.PR.A	First National Financial Corp Pref A
+FN.PR.B	First National Financial Corp Pref B
+FNV	Franco-Nevada Corp
+FOOD	Goodfood Market Corp
+FOOD.DB	Goodfood Market Corp 5.75 Pct Debs
+FOUR	Horizons Industry 4.0 Index ETF
+FPR	CI First Asset Pref Share ETF
+FQC	CI First Asset MSCI Can Quality Index Class ETF
+FR	First Majestic Silver Corp Common
+FRII	Freshii Inc
+FRL.UN	Senior Secured Floating Rate Loan Fund
+FRU	Freehold Royalties Ltd
+FRX	Fennec Pharmaceuticals Inc
+FSB	CI First Asset Enhanced Sh Dur Bond ETF
+FSB.U	CI First Asset Enhanced Sh Dur Bond ETF USD
+FSF	CI First Asset Global Financial Sector ETF
+FSL	First Trust Senior Loan ETF
+FSL.A	First Trust Senior Loan ETF Adv Cls
+FSR	First Trust DW US Sctr Rtn ETF
+FST	First Trust CDN Capital Strength ETF
+FST.A	First Trust CDN Capital Strength ETF AC
+FSV	Firstservice Corp
+FSY	Forsys Metals Corp
+FSZ	Fiera Capital Corp
+FSZ.DB	Fiera Capital Corp 5.0 Pct Debs
+FSZ.DB.A	Fiera Capital Corp 5.60 Pct Debs
+FT	Fortune Mnrl J
+FTB	First Trust Tactical Bond Index ETF
+FTG	Firan Technology Group Corp
+FTN	Financial 15 Split Corp
+FTN.PR.A	Financial 15 Split Corp
+FTS	Fortis Inc
+FTS.PR.F	Fortis Inc Pref Shares Series F
+FTS.PR.G	Fortis Inc First Pref Ser G
+FTS.PR.H	Fortis Inc Pref Ser H
+FTS.PR.I	Fortis Inc Pref Ser I
+FTS.PR.J	Fortis Inc Pref Ser J
+FTS.PR.K	Fortis Inc Pref Ser K
+FTS.PR.M	Fortis Inc Pref Ser M
+FTT	Finning Intl
+FTU	US Financial 15 Split Corp
+FTU.PR.B	US Finl 15 Split 2012 Pref Sh
+FUD	First Trust Alphadex US Div ETF CAD Hdg
+FUD.A	First Trust Value Line Div Idx ETF AC
+FURY	Fury Gold Mines Limited
+FVI	Fortuna Silver Mines Inc
+FVI.DB.U	Fortuna Silver Mines Inc 4.65 Pct Debs
+FVL	Freegold Ventures Limited
+FXC	Fax Capital Corp
+FXC.WT	Fax Capital Corp Wts
+FXM	CI First Asset Morningstar Cda Value ETF
+GATO	Gatos Silver Inc
+GAU	Galiano Gold Inc
+GBAL	Ishares ESG Balanced ETF
+GBT	Bmtc Group Inc
+GC	Great Canadian Gaming Corp
+GC.DB	Great Canadian Gaming Corp 5.25 Pct Debs
+GCG	Guardian Capital
+GCG.A	Guardian Capital Group Ltd Cl.A NV
+GCL	Colabor Group Inc
+GCL.DB.A	Colabor Group Inc 6.0 Pct Debs
+GCM	Gran Colombia Gold Corp
+GCM.NT.U	Gran Colombia Gold 5.0 Pct Sil Notes
+GCM.WT.B	Gran Colombia Gold Corp WT B
+GCNS	Ishares ESG Conservative Balanced ETF
+GCT.C	Gvic Communications Corp N.V. Class C
+GDC	Genesis Land J
+GDEP	Guardian Directed Equity Path ETF
+GDEP.B	Guardian Directed Equity Path ETF Unhdg
+GDG.UN	Global Dividend Growers Income Fund
+GDI	Gdi Integrated Facility Services Inc
+GDL	Goodfellow Inc
+GDPY	Guardian Directed Premium Yield ETF
+GDPY.B	Guardian Directed Premium Yield ETF Uh
+GDV	Global Dividend Growth Split Corp
+GDV.PR.A	Global Dividend Growth Split Corp Pref A
+GEC.UN	Global Real Estate & E-Commerce Dividend
+GEI	Gibson Energy Inc
+GEI.DB	Gibson Energy Inc 5.25 Pct Debs
+GENM	Generation Mining Limited
+GEO	Geodrill Limited
+GEQT	Ishares ESG Equity ETF
+GFL	Gfl Environmental Inc
+GGA	Goldgroup Mining Inc
+GGD	Gogold Resources Inc
+GGRO	Ishares ESG Growth ETF
+GH	Gamehost Inc
+GIB.A	CGI Group Inc Cl.A Sv
+GIGR	Guardian I3 Global REIT ETF (Hedged Unit
+GIGR.B	Guardian I3 Global REIT ETF (Unhedged Un
+GIL	Gildan Activewear Inc
+GIQG	Guardian I3 Global Quality Growth ETF
+GIQG.B	Guardian I3 Global Quality Growth ETF Uh
+GIQU	Guardian I3 US Quality Growth ETF ( Hedg
+GIQU.B	Guardian I3 US Quality Growth ETF (Unhed
+GLG	Glg Life Tech Corp
+GLO	Global Atomic Corp
+GLXY	Galaxy Digital Holdings Ltd
+GMO	General Moly Inc
+GMP	Gmp Capital Inc
+GMP.PR.B	Gmp Capital Inc Series B Pref
+GMP.PR.C	Gmp Capital Inc Series C Pref
+GMX	Globex Mining Enterprises Inc
+GOLD	Goldmining Inc
+GOOS	Canada Goose Holdings Inc
+GPR	Great Panther Silver Limited
+GRC	Gold Springs Resource Corp
+GRT.UN	Granite Real Estate Investment Trust
+GSC	Golden Star
+GSV	Gold Standard Ventures Corp
+GSY	Goeasy Ltd
+GTE	Gran Tierra Energy Inc
+GTMS	Greenbrook Tms Inc
+GUD	Knight Therapeutics Inc
+GURU	Guru Organic Energy Corp
+GVC	Glacier Media Inc
+GWO	Great-West Lifeco Inc
+GWO.PR.F	Great-West Lifeco Inc
+GWO.PR.G	Great-West Lifeco Inc Pr. G
+GWO.PR.H	Great-West Lifeco Inc 4.85 % Pr.Ser H
+GWO.PR.I	Great-West Lifeco Inc Prf Series I
+GWO.PR.L	Great-West Lifeco Inc Pref Ser L
+GWO.PR.M	Great West Lifeco Pref Ser M
+GWO.PR.N	Great West Lifeco Inc Pref Srs N
+GWO.PR.O	Great West Lifeco Pref Ser O
+GWO.PR.P	Great West Lifeco Inc 5.4 Pct Pref Sh
+GWO.PR.Q	Great West Lifeco Pref Ser Q
+GWO.PR.R	Great West Lifeco Inc Ser R
+GWO.PR.S	Great West Lifeco Pref Ser S
+GWO.PR.T	Great West Lifeco Pref Ser T
+GWR	Global Water Resources Inc
+GXE	Gear Energy Ltd
+H	Hydro One Limited
+HAB	Horizons Active Corporate Bond ETF
+HAC	Horizons Seasonal Rotation ETF
+HAD	Horizons Active CDN Bond ETF
+HAF	Horizons Active Global Fixed Income ETF
+HAJ	Horizons Active Emerging Mkts Div ETF
+HAL	Horizons Active CDN Dividend ETF
+HARC	Horizons Abs Return Global Currency ETF
+HAU	Horizons Active US Dividend ETF
+HAZ	Horizons Active Global Dividend ETF
+HBA	Hamilton Australian Banks Equal-Weight ETF
+HBAL	Horizons Balanced Tri ETF
+HBB	Horizons CDN Select Universe Bond ETF
+HBD	Betapro Gold Bullion 2X Daily Bear ETF
+HBF	Harvest Brand Leaders Plus Income ETF
+HBF.B	Harvest Brand Leaders Plus Inc ETF Unh
+HBF.U	Harvest Brand Leaders Plus Income ETF USD
+HBGD	Horizons Big Data Hardware Idx ETF
+HBGD.U	Horizons Big Data Hardware Idx ETF USD
+HBL.UN	Brand Leaders Income Fund
+HBLK	Blockchain Technologies ETF
+HBM	Hudbay Minerals Inc
+HBP	Helix Biopharm
+HBU	Betapro Gold Bullion 2X Daily Bull ETF
+HCA	Hamilton Canadian Bank Mean Reversion ETF
+HCAL	Hamilton Canadian Bank 1.25X Lvrg ETF
+HCG	Home Capital Group Inc
+HCN	Horizons China High Dividend Yield ETF
+HCON	Horizons Conservative Tri ETF
+HCRE	Horizons Eql Wght Can REIT Index ETF
+HDGE	Accelerate Absolute Return Hdg Fund ETF
+HDI	Hardwoods Distribution Inc
+HE	Hanwei Energy Services Corp
+HEA	Horizons Enhd Income US Equity ETF
+HEA.U	Horizons Enhd Income US Equity USD ETF
+HED	Betapro S&P TSX Cap Engy 2X Dly Bear ETF
+HEE	Horizons Enhanced Income Energy ETF
+HEF	Horizons Enhanced Income Fin ETF
+HEJ	Horizons Enhd Inc Intl Equity ETF
+HEMB	Horizons Active Emerging Mkts Bond ETF
+HEP	Horizons Enhanced Income Gold Prod ETF
+HERO	Evolve E Gaming Index ETF
+HEU	Betapro S&P TSX Cap Engy 2X Dly Bull ETF
+HEWB	Horizons Eql Wght Can Banks Index ETF
+HEX	Horizons Enhanced Income Equity ETF
+HEXO	Hexo Corp
+HFD	Betapro S&P TSX Cap Fncl 2X Dly Bear ETF
+HFG	Hamilton Global Financials ETF
+HFP	Horizons Active Flt Rate Pref ETF
+HFR	Horizons Active Floating Rate Bond ETF
+HFT	Hamilton Financials Innovation ETF
+HFU	Betapro S&P TSX Cap Fncl 2X Dly Bull ETF
+HGD	Betapro CDN Gold Miners 2X Dly Bear ETF
+HGGG	Harvest Global Gold Giants Index ETF
+HGI.UN	Global Telecom and Utilities IN Fd
+HGM	Horizons Managed Global Oppt ETF
+HGR	Harvest Global REIT Leaders Income ETF
+HGRO	Horizons Growth Tri ETF
+HGU	Betapro CDN Gold Miners 2X Dly Bull ETF
+HGY	Horizons Gold Yield ETF
+HHF	Horizons Morningstar Hdg Fd ETF
+HHL	Harvest Healthcare Leaders Income ETF
+HHL.B	Harvest Healthcare Leaders Inc ETF Unh
+HHL.U	Harvest Healthcare Leaders Income ETF USD
+HIG	Brompton Global Healthcare Inc & Gth ETF
+HII	Horizons CDN Insider Index ETF
+HIU	Betapro Sp500 Daily Inverse ETF
+HIX	Betapro S&P TSX 60 Daily Inverse ETF
+HLF	High Liner
+HLPR	Horizons Laddered CDN Pref Index ETF
+HLS	Hls Therapeutics Inc
+HMJI	Betapro Marijuana Cos Inverse ETF
+HMJU	Betapro Marijuana Cos 2X Daily Bull ETF
+HMM.A	Hammond Manufacturing Co. Ltd Cl A. Sv
+HMMJ	Horizons Marijuana Life Sciences ETF
+HMMJ.U	Horizons Marijuana Life Sciences Idx USD
+HMP	Horizons Active CDN Municipal Bond ETF
+HND	Betapro Nat Gas 2X Daily Bear ETF
+HNL	Horizon North Logistics Inc
+HNU	Betapro Nat Gas 2X Daily Bull ETF
+HNY	Horizons Natural Gas Yield ETF
+HOD	Betapro Crude Oil 2X Daily Bear ETF
+HOG	Horizons CDN Midstream Oil Gas ETF
+HOM.DB.U	Bsr REIT 5.0 Pct Debs USD
+HOM.U	Bsr Real Estate Investment Trust
+HOM.UN	Bsr Real Estate Investment Trust
+HOT.DB.U	American Hotel Inc Prop REIT 5 Pct Debs
+HOT.U	American Hotel Income Properties REIT US
+HOT.UN	American Hotel Income Properties REIT LP
+HOU	Betapro Crude Oil 2X Daily Bull ETF
+HPF	Harvest Energy Leaders Plus Income ETF
+HPF.U	Harvest Energy Leaders Plus Income ETF USD
+HPR	Horizons Active Pref Share ETF
+HPS.A	Hammond Power Solutions Inc Cl A. Sv
+HQD	Betapro Nasdaq 100 2X Daily Bear ETF
+HQD.U	Betapro Nasdaq 100 2X Daily Bear ETF USD
+HQU	Betapro Nasdaq 100 2X Daily Bull ETF
+HR.UN	H&R Real Estate Inv Trust
+HRAA	Horizons Resolve Adptv Asset Alloc ETF
+HRR.UN	Australian REIT Income Fund
+HRT	Harte Gold Corp
+HRX	Heroux-Devtek
+HSAV	Horizons Cash Maximizer ETF
+HSD	Betapro Sp500 2X Daily Bear ETF
+HSE	Husky Energy Inc
+HSE.PR.A	Husky Energy Inc Pref Ser 1
+HSE.PR.B	Husky Energy Inc Pref Ser 2
+HSE.PR.C	Husky Energy Inc Pref Ser 3
+HSE.PR.E	Husky Energy Inc Pref Ser 5
+HSE.PR.G	Husky Energy Inc Pref Ser 7
+HSH	Horizons Sp500 CAD Hedged Index ETF
+HSL	Horizons Active Float Rate Sen Loan ETF
+HSM	Helius Medical Technologies Inc
+HSU	Betapro Sp500 2X Daily Bull ETF
+HSUV.U	Horizons USD Cash Maximizer ETF USD
+HTA	Harvest Tech Achievers Growth & Income ETF
+HTA.B	Harvest Tech Achievers Grwth Inc ETF Unh
+HTA.U	Harvest Tech Achievers Growth & Income ETF USD
+HTB	Horizons US 7 To 10 Yr Treasury Bond ETF
+HTB.U	Horizons US 7 To 10 Yr Treas Bd ETF USD
+HTH	Horizons US 7 10 Yr Treas Bd CAD Heg ETF
+HUBL	Harvest US Bank Leaders Income ETF
+HUBL.U	Harvest US Bank Leaders Income ETF USD
+HUC	Horizons Crude Oil ETF
+HUF.U	Horizons Active US Floating Rate Bd ETF
+HUG	Horizons Gold ETF
+HUIB	Harvest US Investment Grade Bnd Plus ETF
+HUL	Harvest US Equity Plus Income ETF
+HUL.U	Harvest US Equity Plus Income ETF USD
+HULC	Horizons US Large Cap Index ETF
+HULC.U	Horizons US Large Cap Index ETF USD
+HUM	Hamilton U.S. Mid/Small-Cap Financials E
+HUM.U	Hamilton US Mid Small Cap Fincls ETF USD
+HUN	Horizons Natural Gas ETF
+HURA	Horizons Global Uranium Index ETF
+HUT	Hut 8 Mining Corp
+HUT.WT	Hut 8 Mining Corp Wts
+HUTL	Harvest Eql Wght Glb Util Income ETF
+HUV	Betapro Sp500 VIX ST Ftrs ETF
+HUZ	Horizons Silver ETF
+HWF	Middlefield Health Wellness ETF
+HWO	High Arctic Energy Services Inc
+HWX	Headwater Exploration Inc
+HXCN	Horizons SP TSX Capped Comp Index ETF
+HXD	Betapro S&P TSX 60 2X Daily Bear ETF
+HXDM	Horizons Intl Dev Mkts Equity Index ETF
+HXDM.U	Horizons Intl Dev Mkts Eqty Idx USD ETF
+HXE	Horizons S&P TSX Capped Energy Index ETF
+HXEM	Horizons Emerging Mkts Equity Index ETF
+HXF	Horizons S&P TSX Capped Fncl Index ETF
+HXH	Horizons CDN High Dividend Index ETF
+HXQ	Horizons Nasdaq 100 Index ETF
+HXQ.U	Horizons Nasdaq 100 Index ETF USD
+HXS	Horizons S&P 500 Index ETF
+HXS.U	Horizons S&P 500 Index ETF USD
+HXT	Horizons S&P Tsx60 Index ETF
+HXT.U	Horizons S&P TSX 60 Index ETF USD
+HXU	Betapro S&P TSX 60 2X Daily Bull ETF
+HXX	Horizons Euro Stoxx 50 Index ETF
+HYI	Horizons Active High Yield Bond ETF
+HZD	Betapro Silver 2X Daily Bear ETF
+HZM	Horizonte Minerals Plc
+HZU	Betapro Silver 2X Daily Bull ETF
+IAF.PR.B	Industrial Alliance Cl A Pref Ser B
+IAF.PR.G	Industrial Alliance Cl A Pref Ser G
+IAF.PR.I	Industrial Alliance Cl A Pref Ser I
+IAG	Industrial Alliance Ins & Fin Srv Inc
+IBG	Ibi Group Inc
+IBG.DB.D	Ibi Group Inc 5.50 Pct Debs
+IBG.DB.E	Ibi Group Inc. 6.50% Listed Senior
+ICE	Canlan ICE Sports Corp
+ICPB	IA Clarington Core Plus Bond Fund
+IDG	Indigo Books & Music Inc
+IDR	Middlefield REIT Indexplus ETF
+IEMB	IA Clarington Emerging Mkts Bond Fund
+IFA	Ifabric Corp
+IFC	Intact Financial Corp
+IFC.PR.A	Intact Financial Corp Pref Cl A
+IFC.PR.C	Intact Financial Corp Pref Cl A
+IFC.PR.D	Intact Financial Corp Pref Shares Ser 4
+IFC.PR.E	Intact Financial Corp Pref Cl A Ser 5
+IFC.PR.F	Intact Financial Corp Pref Shares Ser 6
+IFC.PR.G	Intact Financial Corp Pref Shares Ser 7
+IFC.PR.I	Intact Financial Corp Pref Shares Ser 9
+IFP	Interfor Corp
+IFRF	IA Clarington Floating Rate Income ETF
+IGAF	IA Clarington Global Allocation Fund ETF
+IGB	Purpose Mngd Duration Invest Bond ETF
+IGCF	Pimco Investment Grade Credit Fund
+IGLB	IA Clarington Global Bond Fund
+IGM	Igm Financial Inc
+III	Imperial Metals Corp
+IIP.UN	Interrent Real Estate Investment Trust
+ILV	Invesco SP Intl Dev Low Vol Idx ETF
+ILV.F	Invesco SP Intl Dev Low Vol ETF Hedged
+IMG	Iamgold Corp
+IMO	Imperial Oil
+IMP	Intermap Tech Corp
+IMV	Imv Inc.
+IN	Inmed Pharmaceuticals IN
+INC.UN	Income Fin Un
+INE	Innergex Renewable Energy Inc
+INE.DB.B	Innergex Renewable Energy 4.75 Pct Debs
+INE.DB.C	Innergex Renewable Energy 4.65 Pct Debs
+INE.PR.A	Innergex Renewable Energy Pref Ser A
+INE.PR.C	Innergex Renewable Energy Inc Pref Ser C
+INF.UN	Sustainable Infrastructure Div Fund
+INO.UN	Inovalis REIT
+INOC	Horizons Inovestor CDN Equity Index ETF
+INQ	Inscape Corp Sv
+INV	Inv Metals Inc
+IPCI	Intellipharmaceutics International Inc
+IPCO	International Petroleum Corp
+IPL	Inter Pipeline Ltd
+IPO	Inplay Oil Corp
+IQD	CI Wisdomtree Intl Qlty Divd Growth Index ETF
+IQD.B	CI Wisdomtree Intl Qlty Divd Growth Index ETF
+ISIF	IA Claringtion Strategic Income Fund ETF
+ISV	Information Services Corp
+ITE	I3 Energy Plc
+ITH	International Tower Hill Mines Ltd
+ITP	Intertape Polymer
+IVN	Ivanhoe Mines Ltd
+IVQ	Invesque Inc CAD
+IVQ.DB.U	Invesque Inc 5.00 Pct Debs
+IVQ.DB.V	Invesque Inc 6.00 Pct Debs USD
+IVQ.U	Invesque Inc
+JAG	Jaguar Mining Inc
+JAPN	CI Wisdomtree Japan Equity Index ETF
+JAPN.B	CI Wisdomtree Japan Equity Index ETF
+JE	Just Energy Group Inc
+JFS.UN	Jft Strategies Fund
+JOSE	Josemaria Resources Inc
+JOY	Journey Energy Inc
+JWEL	Jamieson Wellness Inc
+K	Kinross Gold Corp
+KBL	Kbro Linen Inc
+KEG.UN	Keg Royalties Income Fund
+KEI	Kolibri Global Energy Inc
+KEL	Kelt Exploration Ltd
+KER	Kerr Mines Inc
+KEY	Keyera Corp
+KILO	Purp Gold Bullion Tu
+KILO.B	Purpose Gold Bullion Fund Non Hedged
+KILO.U	Purpose Gold Bullion Fund Non Hedged USD
+KL	Kirkland Lake Gold Ltd
+KLS	Kelso Technologies Inc
+KMP.UN	Killam Apartment REIT
+KOR	Corvus Gold Inc
+KPT	Kp Tissue Inc
+KRN	Karnalyte Resources Inc
+KRR	Karora Resources Inc.
+KRR.WT	Karora Resources Inc Wts
+KXS	Kinaxis Inc
+L	Loblaw CO
+L.PR.B	Loblaw Companies Ltd 2nd Pref Ser B
+LABS	Medipharm Labs Corp
+LAC	Lithium Americas Corp
+LAM	Laramide Resources Ltd
+LAS.A	Lassonde Industries Inc Cl A Sv
+LB	Laurentian Bank
+LB.PR.H	Laurentian Bank of Cda Pr Ser 13
+LB.PR.J	Laurentian Bank of Cda Pr Ser 15
+LBS	Life & Banc Split Corp
+LBS.PR.A	Life & Banc Split Corp
+LCS	Brompton Lifeco Split Corp Class A
+LCS.PR.A	Brompton Lifeco Split Corp Pref Shares
+LEAD	Evolve Future Leadership ETF Hedged
+LEAD.B	Evolve Future Leadership ETF Unhedged
+LEAD.U	Evolve Future Leadership ETF Uh USD
+LFE	Canadian Life Companies Split Corp
+LFE.PR.B	Canadian Life Split 2012 Pref Sh
+LGD	Liberty Gold Corp
+LGO	Largo Resources Ltd
+LGT.A	Logistec Corporation Cl.A Mv
+LGT.B	Logistec Corporation Cl.B Sv
+LIF	Labrador Iron Ore Royalty Corp
+LIFE	Evolve Global Healthcare Enhance Yld ETF
+LIFE.B	Evolve Global Healthcare Enhance Yld Unheg
+LIFE.U	Evolve Global Healthcare Yld Fund ETF USD
+LN	Loncor Resources Inc
+LNF	Leons Furniture
+LNR	Linamar Corp
+LONG	CI Global Longevity Economy Fund ETF
+LS	Middlefield Healthcare Life Sciences ETF
+LSPD	Lightspeed Pos Inc
+LUC	Lucara Diamond Corp
+LUG	Lundin Gold Inc
+LUN	Lundin Mining Corp
+LXR	Lxrandco Inc
+LXR.WT	Lxrandco Inc WT
+MAG	MAG Silver Corp
+MAL	Magellan Aero
+MARI	Marimaca Copper Corp
+MAV	Mav Beauty Brands Inc
+MAW	Mawson Resources Ltd
+MAX	Midas Gold Inc
+MAXR	Maxar Technologies Inc
+MAYB.F	First Trust CBOE Vst US Eq Bf Hg ETF May
+MBA	Cibt Education Group Inc
+MBAL	Mackenzie Balanced Allocation ETF
+MBN	Mbn Corp
+MBX	Microbix J
+MCB	Mccoy Global Inc
+MCLC	Manulife Mltfactor CDN Large Cap Uh ETF
+MCON	Mackenzie Conservative Allocation CAD ETF
+MCSB	Mackenzie CDN Short Term Fixed Inc ETF
+MCSM	Manulife Mulfact CDN Smid Cap Idx ETF
+MDC.UN	Digital Consumer Dividend Fund
+MDF	Mdf Commerce Inc.
+MDI	Major Drilling Grp
+MDNA	Medicenna Therapeutics Corp
+MDS.UN	Healthcare Special Opp Fund
+MDVD	Mackenzie Global Sustainable Div Idx ETF
+ME	Moneta Porcupine J
+MEE	Mackenzie Max Diverse Emg Mkts ETF
+MEG	Meg Energy Corp
+MEME.B	Manulife Multifactor Emerg Mkts Idx ETF
+MEQ	Mainstreet Eq J
+MEU	Mackenzie Max Diversif Dev EUR ETF
+MFC	Manulife Fin
+MFC.PR.B	Manulife Financial Cl A Pref Ser 2
+MFC.PR.C	Manulife Financial Cl A Pref Ser 3
+MFC.PR.F	Manulife Financial Cl 1 Sh Ser 3
+MFC.PR.G	Manulife Financial Non Cum Cla 1 Ser 5
+MFC.PR.H	Manulife Financial Pref Ser 7
+MFC.PR.I	Manulife Financial Pref Ser 9
+MFC.PR.J	Manulife Financial Class 1 Ser 11
+MFC.PR.K	Manulife Financial Pref Ser 13
+MFC.PR.L	Manulife Financial Pref Ser 15
+MFC.PR.M	Manulife Financial Pref Ser 17
+MFC.PR.N	Manulife Financial Pref Ser 19
+MFC.PR.O	Manulife Financial Pref Ser 21
+MFC.PR.P	Manulife Financial Class 1 Sh Ser 4
+MFC.PR.Q	Manulife Financial Corp Pref Series 25
+MFC.PR.R	Manulife Financial Pref Ser 23
+MFI	Maple Leaf Foods
+MFT	Mackenzie Floating Rate Income ETF
+MG	Magna International Inc
+MGA	Mega Uranium Ltd
+MGAB	Mackenzie Global Fixed Income Alloc ETF
+MGB	Mackenzie Core Pls Glob Fixed Inc ETF
+MGRW	Mackenzie Growth Allocation ETF
+MHC.U	Flagship Communities Real Estate Investm
+MI.UN	Minto Apartment REIT
+MIC	Genworth MI Canada Inc
+MID.UN	Mint Income Fund
+MIN	Excelsior Mining Corp
+MIND	Horizons Active Ai Global Equity ETF
+MINT	Manulife Mltfactor Dev Intl Hgd ETF
+MINT.B	Manulife Mltfactor Dev Intl Uh ETF
+MIVG	Mackenzie Ivy Global Equity ETF
+MKB	Mackenzie Core Pls CDN Fixed Income ETF
+MKC	Mackenzie Max Dvrs Cda Index ETF
+MKP	Mcan Mortgage Corp
+MKZ.UN	Mackenzie Mstr Un
+MLD.UN	Moneda Latam Corp Bond Fund
+MMP.UN	Precious Metals and Mining Trust
+MMX	Maverix Metals Inc
+MND	Mandalay Resources Corp
+MNS	Royal CDN Mint CDN Silver Reserves Etr
+MNT	Royal Canadian Mint CDN Gold Reserves
+MNT.U	Royal Canadian Mint CDN Gld Reserves USD
+MOGO	Mogo Inc
+MOGO.DB	Mogo Inc 10.0 Pct Debs
+MOGO.WT	Mogo Inc Wts
+MOZ	Marathon Gold Corp
+MPC	Madison Pac Cl B
+MPC.C	Madison Pacific Properties Inc Cl.C NV
+MPCF	Mackenzie Portfolio Completion ETF
+MPCT.UN	Dream Impact Trust Units
+MPVD	Mountain Province Diamonds Inc
+MQR	Monarques Gold Corp
+MR.DB.A	Melcor REIT 5.25 Pct Debs
+MR.DB.B	Melcor REIT 5.1 Pct Debs
+MR.UN	Melcor REIT
+MRC	Morguard Corp
+MRD	Melcor Dev
+MRE	Martinrea International Inc
+MRG.DB.A	Morguard Na REIT 4.50 Pct Debs
+MRG.UN	Morguard Na Residential REIT Units
+MRT.DB	Morguard REIT 4.50 Pct Debs
+MRT.UN	Morguard Un
+MRU	Metro Inc
+MSI	Morneau Shepell Inc
+MSV	Minco Silver Corp
+MTL	Mullen Group Ltd
+MTL.DB	Mullen Group Ltd 5.75 Pct Debs
+MTY	Mty Food Group Inc
+MUB	Mackenzie Unconstrained Bond ETF
+MULC	Manulife Mltfactor US Large Cap Hgd ETF
+MULC.B	Manulife Mltfactor US Large Cap Uh ETF
+MUMC	Manulife Mltfactor US Mid Cap Hgd ETF
+MUMC.B	Manulife Mltfactor US Mid Cap Uh ETF
+MUS	Mackenzie Max Dvrs US Index ETF
+MUSC	Manulife Multifactor U.S. Small Cap Index ETF
+MUSC.B	Manulife Mulfact US Scap Idx ETF Unheg
+MUX	Mcewen Mining Inc
+MWD	Mackenzie Max Diversif World Dev ETF
+MX	Methanex Corp
+MXG	Maxim Power Corp
+MXU	Mackenzie Max Divers Wrld Dev Ex Na ETF
+NA	National Bank of Canada
+NA.PR.A	National Bank Pref Ser 36
+NA.PR.C	National Bank Pref Ser 38
+NA.PR.E	National Bank Pref Series 40
+NA.PR.G	National Bank Pref Series 42
+NA.PR.S	National Bank Pref Ser 30
+NA.PR.W	National Bank Pref Ser 32
+NA.PR.X	National Bank Pref Ser 34
+NAC.U	Nextpoint Acquisition Corp USD
+NAC.WT.U	Nextpoint Acquisition Corp USD Wts
+NALT	Nbi Liquid Alternatives ETF
+NB	Niocorp Developments Ltd
+NCF	Northcliff Resources Ltd
+NCG	Ncm Core Global ETF
+NCM	Newcrest Mining Limited
+NCP	Nickel Creek Platinum Corp
+NCU	Nevada Copper Corp
+NCU.WT	Nevada Copper Corp.
+NDM	Northern Dynasty Minerals Ltd
+NDM.WT.B	Northern Dynasty Minerals Ltd WT B
+NEO	NEO Performance Materials Inc
+NEPT	Neptune Wellness Solutions Inc
+NEXA	Nexa Resources S.A.
+NEXT	Nextsource Materials Inc
+NFAM	Nbi Canadian Family Business ETF
+NFI	New Flyer Industries Inc
+NG	Novagold Res Inc
+NGD	New Gold Inc
+NGPE	Nbi Global Private Equity ETF
+NGT	Newmont Corp.
+NHF.UN	Northview CDN High Yld Residential Fund
+NHK	Nighthawk Gold Corp
+NHYB	Nbi High Yield Bond ETF
+NIF.UN	Noranda Income Fund
+NML	New Millennium Iron Corp
+NOA	North American Construction Group Ltd.
+NOA.DB.A	Na Construction Grp Ltd 500% Conv. Unsec. Sub DE
+NOVB.F	FT CBOE Vest US Eqty Buffer November ETF
+NPI	Northland Power Inc
+NPI.PR.A	Northland Power Pref Equity Inc
+NPI.PR.B	Northland Power Inc Pref Ser 2
+NPI.PR.C	Northland Power Inc Pref Ser 3
+NPK	Verde Agritech Plc
+NPRF	Nbi Active Canadian Preferred Sh ETF
+NREA	Nbi Global Real Assets Income ETF
+NRI	Nuvo Pharmaceuticals Inc
+NSCB	Nbi Sustainable Canadian Bond ETF
+NSCE	Nbi Sustainable Canadian Equity ETF
+NSGE	Nbi Sustainable Global Equity ETF
+NSR	Nomad Royalty Company Ltd.
+NTR	Nutrien Ltd
+NUAG	New Pacific Metals Corp
+NVA	Nuvista Energy Ltd
+NVCN	Neovasc Inc
+NVEI	Nuvei Corporation
+NVEI.U	Nuvei Corporation USD
+NVU.UN	Northview Apartment REIT
+NWC	The North West Company Inc
+NWH.DB.E	Northwest Healthcare Prop 5.25 Pct Debs
+NWH.DB.F	Northwest Healthcare Prop 5.25 Pct Debs
+NWH.DB.G	Northwest Healthcare Prop REIT 5.50 Debs
+NWH.UN	Northwest Healthcare Prop REIT
+NXE	Nexgen Energy Ltd
+NXF	CI First Asset Energy Giants Cov Call ETF
+NXF.B	CI First Asset Energy Giants ETF Unhedged
+NXJ	Nexj Systems Inc
+NZC	Norzinc Ltd
+NZC.RT	Norzinc Ltd RTS
+OBE	Obsidian Energy Ltd
+OGC	Oceanagold Corp
+OGD	Orbit Garant Drilling Inc
+OGI	Organigram Holdings Inc
+OLA	Orla Mining Ltd
+OLY	Olympia Financial Group Inc
+OMI	Orosur Mining Inc
+ONC	Oncolytics Bio
+ONC.WT	Oncolytics Biotech Inc WT
+ONEB	CI One North American Core Plus Bond ETF
+ONEQ	CI One Global Equity ETF
+ONEX	Onex Corp
+OPS	Opsens Inc
+OPT	Optiva Inc
+OR	Osisko Gold Royalties Ltd
+OR.DB	Osisko Gold Royalties Ltd 4.00 Pct Debs
+OR.WT	Osisko Gold Royalties Ltd WT
+ORA	Aura Minerals Inc
+OREA	Orea Mining Corp
+ORL	Orocobre Limited
+ORV	Orvana Minerals J
+OSB	Norbord Inc
+OSK	Osisko Mining Inc
+OSP	Brompton Oil Split Corp
+OSP.PR.A	Brompton Oil Split Corp Pref
+OTEX	Open Text Corp
+OVV	Ovintiv Inc
+OXC	Oryx Petroleum Corporation Ltd
+PAAS	Pan American Silver Corp
+PAT	Patriot One Technologies Inc
+PAT.WT.B	Patriot One Technologies Inc WT B
+PAT.WT.C	Patriot One Technologies Inc WT C
+PATH	Counterpath Corp
+PAYF	Purpose Enhanced Premium Yield Fund ETF
+PBD	Purpose Total Return Bond Fund ETF
+PBH	Premium Brands Holdings Corp
+PBH.DB.F	Premium Brands Hld Corp 4.60 Pct Debs
+PBH.DB.G	Premium Brands Holdings 4.65 Pct Debs
+PBH.DB.H	Premium Brands Holdings 4.20 Pct Debs
+PBI	Purpose Best Ideas Fund ETF
+PBI.B	Purpose Best Ideas Fund Non Hdg
+PBL	Pollard Banknote Limited
+PBY.UN	Canso Credit Income Fund Units
+PCON	Pimco Managed Conservative Bond Pool ETF
+PCOR	Pimco Managed Core Bond Pool ETF
+PD	Precision Drilling Corp
+PDC	Invesco CDN Div Idx ETF
+PDF	Purpose Core Dividend Fund ETF
+PDIV	Purpose Enhanced Dividend Fund ETF
+PDV	Prime Dividend Corp Cl A
+PDV.PR.A	Prime Dividend Corp Pref
+PEA	Pieridae Energy Ltd
+PEY	Peyto Exploration and Dvlpmnt Corp
+PFAE	Picton Mahoney Fort Act Ext Alt Fund ETF
+PFB	Pfb Corp
+PFH.F	Invesco HY Corp Bond Index ETF
+PFIA	Picton Mahoney Fort Income Alt Fund ETF
+PFL	Powershares 1 To 3 Yr Lad Float Rate ETF
+PFLS	Picton Mahoney Frt Lng Shrt Alt Fund ETF
+PFMN	Picton Mahoney Fort Mkt Neutral Fund ETF
+PFMS	Picton Mahoney Multi Strat Alt Fund ETF
+PG	Premier Gold Mines Ltd
+PGI.UN	Pimco Global Inc Opportunities Fund
+PHE	Purpose Tactical Hedged Equity Fund ETF
+PHE.B	Purpose Tactical Hedged Equity Fund ETF
+PHO	Photon Control Inc
+PHR	Purpose Duration Hedged Real Estate ETF
+PHW	Purpose Intl Tactical Hedged Equity ETF
+PHX	Phx Energy Services Corp
+PHYS	Sprott Physical Gold Trust CAD
+PHYS.U	Sprott Physical Gold Trust USD
+PIC.A	Premium Income A
+PIC.PR.A	Premium Income Pr
+PID	Purpose Intl Dividend Fund ETF
+PIF	Polaris Infrastructure Inc
+PIF.DB	Polaris Infrastructure 7.0 Pct Debs
+PIN	Purpose Monthly Income Fund ETF
+PINC	Purpose Multi Asset Income Fund
+PINV	Purpose Global Innovators Fund
+PKI	Parkland Fuel Corp
+PL	Pinnacle Renewable Holdings Inc
+PLC	Park Lawn Corp
+PLC.DB	Park Lawn Corporation 5.75 Pct Debs
+PLDI	Pimco Low Duration Monthly Inc ETF
+PLV	Invesco Low Vol Portfolio ETF
+PLZ.DB.E	Plaza Retail REIT 5.10 Pct Debs
+PLZ.UN	Plaza Retail REIT
+PMB.UN	Picton Mahoney Tactical Income Fund
+PME	Sentry Select Primary Metals Corp
+PMIF	Pimco Monthly Income Fund
+PMIF.U	Pimco Monthly Income Fund
+PMM	Purpose Multi Strategy Mkt Neutral Fund
+PMN	Promis Neurosciences Inc
+PMNT	Pimco Global Short Maturity Fund ETF
+PMT	Perpetual Energy Inc
+PMTS	CPI Card Group Inc
+PNC.A	Postmedia Network Canada Corp Cl A
+PNC.B	Postmedia Network Canada Corp Cl B
+PNE	Pine Cliff Energy Ltd
+PNP	Pinetree Capital Ltd
+POM	Polymet Mining Corp
+POU	Paramount Resources Ltd
+POW	Power Corporation of Canada Sv
+POW.PR.A	Power Corp A Pr
+POW.PR.B	Power Corp Pref Shares Series B
+POW.PR.C	Power Corp of Canada 5.80%
+POW.PR.D	Power Corp Non-Cum 1st Pfd Shs Ser D
+POW.PR.F	Power Corp 1st Pr
+POW.PR.G	Power Corp of Canada 5.60 Pct Pref Ser G
+PPL	Pembina Pipeline Corp
+PPL.PF.A	Pembina Pipeline Corp Pref Ser 21
+PPL.PF.C	Pembina Pipeline Corp Pref Series 23
+PPL.PF.E	Pembina Pipeline Corp Pref Series 25
+PPL.PR.A	Pembina Pipeline Corp Pref Class A
+PPL.PR.C	Pembina Pipeline Corp Pref Ser 3
+PPL.PR.E	Pembina Pipeline Corp Pref Ser 5
+PPL.PR.G	Pembina Pipeline Corp Pref Ser 7
+PPL.PR.I	Pembina Pipeline Corp Pref Ser 9
+PPL.PR.K	Pembina Pipeline Corp Pref Ser 11
+PPL.PR.M	Pembina Pipeline Corp Pref Ser 13
+PPL.PR.O	Pembina Pipeline Corp Pref Series 15
+PPL.PR.Q	Pembina Pipeline Corp Pref Series 17
+PPL.PR.S	Pembina Pipeline Corp Pref Series 19
+PPR	Prairie Provident Resources Inc
+PPS	Invesco CDN Pref Share Idx ETF
+PR	Lysander Slater Pref Share Activ ETF
+PRA	Purpose Diversified Real Asset Fund ETF
+PREF	Evolve Dvdnd Stblt Prf Sh Indx E
+PRM	Big Pharma Split Corp
+PRM.PR.A	Big Pharma Split Corp Pref Shares
+PRMW	Primo Water Corporation
+PRN	Profound Medical Corp
+PRP	Purpose Conservative Income Fund ETF
+PRQ	Petrus Resources Ltd
+PRU	Perseus Mining Limited
+PRV.UN	Pro Real Estate Investment Trust
+PSA	Purpose High Interest Savings ETF
+PSB	Invesco 1 To 5 Yrladder Inv Grd Bd ETF
+PSD	Pulse Seismic Inc
+PSI	Pason Systems Inc
+PSK	Prairiesky Royalty Ltd
+PSLV	Sprott Physical Silver Trust CAD
+PSLV.U	Sprott Physical Silver Trust USD
+PSU.U	Purpose US Cash ETF
+PSY	Pwrshr Glb Sharehldr Yield ETF
+PTB	Invesco Tactical Bond ETF
+PTG	Pivot Technology Solutions Inc
+PTI.UN	Pimco Tactical Income Fund
+PTM	Platinum Group Metals Ltd
+PTS	Points International Ltd
+PUD	Purpose US Dividend Fund ETF
+PUD.B	Purpose US Dividend Fund ETF NC Hedged
+PVG	Pretium Resources Inc
+PVS.PR.D	Partners Value Split Corp Pref Ser 6
+PVS.PR.E	Partners Value Split Corp Pref Ser 7
+PVS.PR.F	Partners Value Split Corp Pref Ser 8
+PVS.PR.G	Partners Value Split Corp
+PVS.PR.H	Partners Value Split Corp Pref Ser 10
+PVS.PR.I	Partners Value Split Corp Pref Series 11
+PWF.PR.A	Power Fin Ser A Pr
+PWF.PR.E	Power Fin Ser D Pr
+PWF.PR.F	Power Financial Corp Pref Ser E
+PWF.PR.G	Power Financial Corp 5.90% Pr Series F
+PWF.PR.H	Power Financial Corp 5.75% Pr Series H
+PWF.PR.I	Power Financial Corp 6% Series I
+PWF.PR.K	Power Fin Corp 4.95% Ser K
+PWF.PR.L	Power Financial Corp Series L Pfd
+PWF.PR.O	Power Financial Corp 5.80 Pref Ser O
+PWF.PR.P	Pwr Fnl Corp 4.40 Non Cumul Pref Ser P
+PWF.PR.Q	Power Fin Corp 4.40 Pct Pref Ser Q
+PWF.PR.R	Power Financial Corp 5.5 Pct Pref Ser R
+PWF.PR.S	Power Financial Corp Pref Ser S
+PWF.PR.T	Power Financial Corp 4.20 Pct Pref Ser T
+PWF.PR.Z	Power Financial Corp 5.15 Pct Pref Ser V
+PXC	Invesco FTSE RAFI CAD Idx ETF
+PXG	Invesco FTSE RAFI Global Plus ETF
+PXG.U	Invesco FTSE RAFI Global Plus ETF USD
+PXS	Pwrshr FTSE RAFI US Fdamntl ETF II
+PXT	Parex Resources Inc
+PXU.F	Invesco FTSE RAFI US Idx ETF
+PYF	Purpose Premium Yield Fund ETF
+PYF.B	Purpose Premium Yield Fund Non Hdg ETF
+PYF.U	Purpose Premium Yield Fund NH USD ETF
+PZA	Pizza Pizza Royalty Corp
+PZC	Pwrshr FTSE RAFI CDN Sml Mid Fdamntl ETF
+PZW	Pwrshr FTSE RAFI Glb Sml Mid Fdamntl ETF
+PZW.F	Invesco FTSE RAFI Glb Small Mid Hedge
+PZW.U	Invesco FTSE RAFI Glb Small Mid USD
+QAH	Mackenzie US Large Cap Eqty Idx CAD Hgd
+QBB	Mackenzie CDN Aggregate Bond Index ETF
+QBR.A	Quebecor Inc Cl.A Mv
+QBR.B	Quebecor Inc Cl.B Sv
+QBTC	The Bitcoin Fund CAD
+QBTC.U	The Bitcoin Fund
+QBTL	Agfiq US Mkt Neut Antibeta CAD Hdg ETF
+QCD	Quantshrs Enh Core CDN Equity ETF
+QCE	Mackenzie CDN Large Cap Equity Index ETF
+QCN	Mackenzie Canadian Equity Index ETF
+QDX	Mackenzie International Equity Index ETF
+QDXH	Mackenzie Intl Equity Index ETF CAD Hgd
+QEBH	Mackenzie Emerging Mkts Bond Index ETF
+QEBL	Mackenzie Emerging Mkts Local Cur Bd ETF
+QEC	Questerre Energy Corp
+QEM	Quantshrs Enh Core Emg Mkt Eqt ETF
+QGL	Quantshrs Global Equity Rotation ETF
+QHY	Mackenzie US High Yld Bnd Idx CAD Hgd
+QIE	Quantshrs Enh Core Intl Equity ETF
+QINF	Mackenzie Global Infrastructure Indx ETF
+QMA	Quantshrs Multiasset Allocation ETF
+QMY	Quantshrs Multiasset Inc Allocation ETF
+QQC.F	Invesco QQQ Index ETF
+QSP.UN	Restaurant Brands Intl Ltd Partnership
+QSR	Restaurant Brands International Inc
+QTRH	Quarterhill Inc
+QUB	Mackenzie US Aggregate Bond Indx Hgd ETF
+QUDV	Agfiq US Long Short Div Inc CAD Hdg ETF
+QUIG	Mackenzie US Inv Grd Corp Bd Idx CAD Hgd
+QUS	Quantshrs Enh Core US Equity ETF
+QUU	Mackenzie US Large Cap Equity Index ETF
+QUU.U	Mackenzie US Large Cap Eqty Indx USD ETF
+QXM	CI First Asset Morningstar Nb Quebec ETF
+RA.UN	Middlefield Global Real Asset Fund
+RAV.UN	Ravensource Fund
+RAY.A	Stingray Digital Group Inc Sv
+RAY.B	Stingray Digital Group Inc Variable Sv
+RBA	Ritchie Bros Auctioneers Inc
+RBDI	RBC Bluebay Global Income ETF
+RBN.UN	Blue Ribbon Income Fund
+RBNK	RBC CDN Bank Yield Index ETF
+RBO	RBC 1 To 5 Yr Laddered Corp Bond ETF
+RBOT	Horizons Robotics Automation Idx ETF
+RBOT.U	Horizons Robotics and Automa Idx ETF USD
+RCD	RBC Quant CDN Dividend Leaders ETF
+RCE	RBC Quant Canadian Equity Leaders ETF
+RCH	Richelieu Hardware Ltd
+RCI.A	Rogers Communications Inc Cl.A Mv
+RCI.B	Rogers Communications Inc Cl.B NV
+RCO.UN	Middlefield Can Global REIT Income Fund
+RDL	Redline Communications Group Inc
+REAL	Real Matters Inc
+RECP	Recipe Unlimited Corp
+REI.UN	Riocan Real Est Un
+REIT	Powershares Sptsx REIT Income Idx ETF
+RFP	Resolute Forest Products Inc
+RGRE	RBC Qnt Global Real Estate Ldrs
+RGRE.U	RBC Qnt Glbl Real Estate Ldrs USD
+RIB.UN	Ridgewood CAD Invest Grade Bond Fund
+RID	RBC Quant EAFE Div Leaders ETF
+RID.U	RBC Quant EAFE Div Leaders USD ETF
+RIDH	RBC Quant EAFE Div Leaders ETF
+RIE	RBC Quant EAFE Equity Leaders ETF
+RIE.U	RBC Quant EAFE Equity Leaders ETF USD
+RIEH	RBC Quant EAFE Equity Leaders CAD Heg ETF
+RIFI	Russell Invt Fixed Income Pool ETF
+RIG	RBC Quant Global Infras Leaders ETF
+RIG.U	RBC Quant Global Infras Leaders ETF USD
+RIIN	Russell Invt Global Infr Pool ETF
+RIRA	Russell Invt Real Assets ETF
+RIT	CI First Asset Canadian REIT ETF
+RIV	Canopy Rivers Inc
+RLB	RBC 1 To 5 Year Laddered Can Bond ETF
+RLD	RBC Strategic Global Div Leaders ETF
+RLE	RBC Stategic Global Equity Leaders ETF
+RMBO	RBC 6 To 10 Yr CDN Corp Bond ETF
+RME	Rocky Mountain Dealerships Inc
+RNW	Transalta Renewables Inc
+ROOT	Roots Corporation
+ROXG	Roxgold Inc
+RPD	RBC Quant European Div Leaders ETF
+RPD.U	RBC Quant European Div Leaders ETF USD
+RPDH	RBC Quant European Div Leaders ETF
+RPF	RBC Canadian Pref Share ETF
+RPI.UN	Richards Packaging Income Fund
+RPSB	RBC Phn Short Term CDN Bond ETF
+RQH	RBC Target 2020 Corp Bond Index ETF
+RQI	RBC Target 2021 Corp Bond Index ETF
+RQJ	RBC Target 2022 Corp Bond ETF
+RQK	RBC Target 2023 Corp Bond ETF
+RQL	RBC Target 2024 Corp Bond Index ETF
+RQN	RBC Target 2025 Corp Bond Index ETF
+RQO	RBC Target 2026 Corporate Bond Index ETF
+RQP	RBC Target 2027 Corporate Bond Index ETF
+RSI	Rogers Sugar Inc
+RSI.DB.E	Rogers Sugar Inc 5Pct Debs
+RSI.DB.F	Rogers Sugar Inc 4.75 Pct Debs
+RTG	Rtg Mining Inc
+RUBH	RBC US Banks Yield CAD Hgd Index ETF
+RUBY	RBC US Banks Yield Index ETF CAD
+RUBY.U	RBC US Banks Yield Index ETF USD
+RUD	RBC Quant US Div Leaders ETF
+RUD.U	RBC Quant US Div Leaders USD ETF
+RUDH	RBC Quant US Div Leaders ETF
+RUE	RBC Quant US Equity Leaders ETF
+RUE.U	RBC Quant US Equity Leaders ETF USD
+RUEH	RBC Quant US Equity Leaders CAD Heg ETF
+RUS	Russel Metals
+RUSB	RBC Short Term US Corp Bond ETF
+RUSB.U	RBC Short Term US Corp Bond USD
+RVX	Resverlogix Corp
+RVX.WT	Resverlogix Corp WT
+RVX.WT.A	Resverlogix Corp WT
+RWC	CI First Asset MSCI Canada Low Risk Wtd ETF
+RWE	CI First Asset MSCI Europe Lr Wgtd ETF
+RWE.B	CI First Asset MSCI Europe Lr Wgtd Unhg ETF
+RWU	CI First Asset MSCI USA Lr Wgtd ETF
+RWU.B	CI First Asset MSCI USA Lr Wgtd Unhedg ETF
+RWW	CI First Asset MSCI World Low Risk Wtd ETF
+RWW.B	CI First Asset MSCI Wld Lr Wtd Uh ETF
+RWX	CI First Asset MSCI Intl Low Risk Weighted ETF
+RWX.B	CI First Asset MSCI Intl Low Risk Wghtd Unhgd Et
+RXD	RBC Quant Emrg Mkts Div Leaders ETF
+RXD.U	RBC Quant Emrg Mkts Div Leaders ETF USD
+RXE	RBC Quant Emrg Mkts Equity Leaders ETF
+RXE.U	RBC Quant Emrg Mkts Eqt Leaders ETF USD
+RY	Royal Bank of Canada
+RY.PR.H	Royal Bank Pref Ser Bb
+RY.PR.J	Royal Bank Pref Ser Bd
+RY.PR.M	Royal Bank Pref Ser Bf
+RY.PR.N	Royal Bank Pref Ser Bh
+RY.PR.O	Royal Bank Pref Ser Bi
+RY.PR.P	Royal Bank Pref Ser Bj
+RY.PR.Q	Royal Bank Pref Ser Bk
+RY.PR.R	Royal Bank Pref Ser Bm
+RY.PR.S	RBC Pref Shares Series Bo
+RY.PR.Z	RBC First Pref Sh Series AZ
+S	Sherritt Intl Rv
+S.WT	Sherritt International Corporation WT
+SAM	Starcore International Mines Ltd
+SAP	Saputo Inc
+SAU	ST Augustine Gold and Copper Ltd
+SBB	Sabina Gold and Silver Corp
+SBC	Brompton Split Banc Corp Cl A
+SBC.PR.A	Brompton Split Banc Corp Pref
+SBI	Serabi Gold Plc
+SBN	S Split Corp Cl.A
+SBN.PR.A	S Split Corp Pref A
+SBR	Silver Bear Resources Plc
+SBT.B	Silver Bullion Trust CAD ETF Non Cur
+SBT.U	Silver Bullion Trust USD ETF Non Cur
+SCAD	Scotia Strategic CDN Eqty ETF Portfolio
+SCL	Shawcor Ltd
+SCR	Score Media and Gaming Inc
+SCY	Scandium International Mining Corp
+SEA	Seabridge Gold Inc
+SEC	Senvest Capital
+SES	Secure Energy Services Inc
+SFC	Sagicor Financial Company Ltd
+SFC.WT	Sagicor Financial Company Ltd Wts
+SFD	Nxt Energy Solutions Inc
+SFIX	Scotia Strategic Fixed Inc ETF Portfolio
+SGR.U	Slate Grocery REIT USD
+SGR.UN	Slate Grocery REIT
+SGY	Surge Energy Inc
+SGY.DB	Surge Energy Inc 5.75 Pct Debs
+SGY.DB.A	Surge Energy Inc  6.75 Pct Debs
+SHLE	Source Energy Services Ltd
+SHOP	Shopify Inc
+SIA	Sienna Senior Living Inc
+SID	CI First Asset US Trendleaders ETF
+SIH.UN	Sustainable Innovation & Health Dividend
+SII	Sprott Inc
+SIL	Silvercrest Metals Inc
+SINT	Scotia Strategic Intl Eqty ETF Portfolio
+SIS	Savaria Corp
+SJ	Stella Jones Inc
+SJR.B	Shaw Communications Inc Cl.B NV
+SJR.PR.A	Shaw Communications Inc Pref Ser A
+SJR.PR.B	Shaw Communications Inc Pref Ser B
+SKE	Skeena Resources Limited
+SLF	Sun Life Financial Inc
+SLF.PR.A	Sun Life Pref Ser 1
+SLF.PR.B	Sun Life Pref Ser 2
+SLF.PR.C	Sun Life Pref Ser 3
+SLF.PR.D	Sun Life Pref Ser 4
+SLF.PR.E	Sun Life Pref Ser 5
+SLF.PR.G	Sun Life Pref Ser 8R
+SLF.PR.H	Sun Life Pref Ser H
+SLF.PR.I	Sun Life Pref Ser 12R
+SLF.PR.J	Sun Life Pref Ser 9Qr
+SLF.PR.K	Sun Life Pref Ser 11Qr
+SLR	Solitario Zinc Corp
+SMC	Sulliden Mining Capital Inc
+SMT	Sierra Metals Inc
+SMU.UN	Summit Industrial Income REIT
+SNC	Snc-Lavalin Sv
+SOLG	Solgold Plc
+SOP	Soperior Fertilizer Corp
+SOT.DB	Slate Office REIT 5.25 Pct Debs
+SOT.UN	Slate Office REIT
+SOY	Sunopta Inc
+SPB	Superior Plus Corp
+SPG	Spark Power Group Inc
+SPG.WT	Spark Power Group Inc WT
+SPPP	Sprott Physical Platinum Palladium CAD
+SPPP.U	Sprott Physical Platinum Palladium USD
+SRHI	Sprott Resource Holdings Inc
+SRHI.WT	Sprott Resource Holdings Inc WT
+SRU.UN	Smartcentres Real Estate Investment Trust
+SRV.UN	Sir Royalty Income Fund
+SRX	Storm Resources Ltd
+SSF.UN	Symphony Floating Rate Sr Loan Fd
+SSL	Sandstorm Gold Ltd
+SSL.WT	Sandstorm Gold Ltd WT
+SSRM	Ssr Mining Inc
+STEP	Step Energy Services Ltd
+STGO	Steppe Gold Ltd
+STLC	Stelco Holdings Inc
+STN	Stantec Inc
+STPL	BMO Glb Consumer Staples Hgd To CAD ETF
+SU	Suncor Energy Inc
+SUSA	Scotia Strategic US Eqty ETF Portfolio
+SVB	Silver Bull Resources Inc
+SVM	Silvercorp Metals Inc
+SVR	Ishares Silver Bullion ETF Hdg
+SVR.C	Ishares Silver Bullion ETF Non Hdg
+SW	Sierra Wireless
+SWP	Swiss Water Decaffeinated Coffee Inc
+SXI	Synex Intl J
+SXP	Supremex Inc
+SYLD	Purpose Strategic Yield Fund
+SZLS	Stagezero Life Sciences Ltd.
+SZLS.WT	Stagezero Life Sciences Ltd Wts
+T	Telus Corp
+TA	Transalta Corp
+TA.PR.D	Transalta Corp Prfd Series A
+TA.PR.E	Transalta Corp Pref Ser B
+TA.PR.F	Transalta Corp Pref Ser C
+TA.PR.H	Transalta Corp Pref Sh Series E
+TA.PR.J	Transalta Corp Pref Ser G
+TBL	Taiga Building Products Ltd
+TBP	Tetra Bio Pharma Inc
+TBP.WT	Tetra Bio Pharma Inc WT
+TBP.WT.A	Tetra Bio Pharma Inc WT A
+TBP.WT.B	Tetra Bio Pharma Inc Wts B
+TC	Tucows Inc
+TCL.A	Transcontinental Inc Cl A Sv
+TCL.B	Transcontinental Inc Cl B Mv
+TCLB	TD Canadian Long Term Fed Bond ETF
+TCLV	TD Q Canadian Low Volatility ETF
+TCN	Tricon Capital Group Inc
+TCN.DB.U	Tricon Capital Group 5.75 Pct Debs USD
+TCS	Tecsys Inc J
+TCSB	TD Select Short Term Corporate Bond Ladd
+TCT.UN	Top 10 Canadian Financial Trust
+TCW	Trican Well
+TD	Toronto-Dominion Bank
+TD.PF.A	TD Bank Pref Ser 1
+TD.PF.B	TD Bank Pref Ser 3
+TD.PF.C	TD Bank Pref Ser 5
+TD.PF.D	TD Bank Pref Ser 7
+TD.PF.E	TD Bank Pref Ser 9
+TD.PF.F	TD Bank Pref Ser 11
+TD.PF.G	TD Bank Pref Ser 12
+TD.PF.H	TD Bank Pref Ser 14
+TD.PF.I	TD Bank Pref Ser 16
+TD.PF.J	TD Bank Pref Series 18
+TD.PF.K	TD Bank Pref Series 20
+TD.PF.L	TD Bank Pref Series 22
+TD.PF.M	TD Bank Pref Series 24
+TDB	TD CDN Aggregate Bond Index ETF
+TEC	TD Global Technology Leaders Index ETF
+TECK.A	Teck Resources Limited Cl A
+TECK.B	Teck Resources Limited Cl B
+TEI	Toscana Energy Income Corp
+TEV	Tervita Corporation
+TF	Timbercreek Financial Corp
+TF.DB.A	Timbercreek Financial Corp 5.40 Pct Debs
+TF.DB.B	Timbercreek Financial Corp 5.45 Pct Debs
+TF.DB.C	Timbercreek Financial Corp 5.30 Pct Debs
+TFII	Tfi International Inc
+TGED	TD Active Global Enhanced Dividend ETF
+TGFI	TD Active Global Income ETF
+TGGR	TD Active Global Equity Growth ETF
+TGL	Transglobe Energy Corp
+TGO	Terago Inc
+TGOD	The Green Organic Dutchman Holdings Ltd
+TGOD.WA	The Green Organic Dutchman Hlds Ltd WA
+TGOD.WR	Green Organic Dutchman Holdings Ltd WT
+TGOD.WS	The Green Organic Dutchman Hlds Ltd Ws
+TGOD.WT	The Green Organic Dutchman Holdings WT
+TGRE	TD Active Global Real Estate Equity ETF
+TGZ	Teranga Gold Corp
+TH	Theratechnologies
+TH.DB.U	Theratechnologies 5.75 Pct Debs
+The	TD Intl Equity CAD Hedge Index ETF
+THU	TD S&P 500 CAD Hedge Index ETF
+TI	Titan Mining Corporation
+TIH	Toromont Ind
+TILV	TD Systematic Intl Equity Low Vol ETF
+TINF	TD Active Global Infrastructure Eqty ETF
+TKO	Taseko Mines Ltd
+TLF	Brompton Tech Leaders Income ETF
+TLG	Troilus Gold Corp
+TLO	Talon Metals Corp
+TLV	Invesco SP TSX Low Vol Idx ETF
+TMD	Titan Medical Inc
+TMD.WT.F	Titan Medical Inc WT Cl F
+TMD.WT.G	Titan Medical Inc WT Cl G
+TMD.WT.H	Titan Medical Inc WT Cl H
+TMD.WT.I	Titan Medical Inc WT Cl I
+TML	Treasury Metals Inc
+TMQ	Trilogy Metals Inc
+TMR	Tmac Resources Inc
+TNP	Transatlantic Petroleum Ltd
+TNT.UN	True North Commercial REIT
+TNX	Tanzanian Royalty Exploration Corp
+TOCA	TD One Click Aggressive Portfolio ETF
+TOCC	TD One Click Conservative ETF Portfolio
+TOCM	TD One Click Moderate ETF Portfolio
+TOG	Torc Oil and Gas Ltd
+TOT	Total Energy Services Inc
+TOU	Tourmaline Oil Corp
+TOY	Spin Master Corp
+TPAY	TD Income Builder ETF
+TPE	TD International Equity Index ETF
+TPRF	TD Active Preferred Share ETF
+TPU	TD S&P 500 Index ETF
+TPX.A	Molson Coors Canada Inc Cl.A Lv
+TPX.B	Molson Coors Canada Inc Cl.B NV
+TPZ	Topaz Energy Corp
+TQCD	TD Q Canadian Dividend ETF
+TQGD	TD Q Global Dividend ETF
+TQGM	TD Q Global Multifactor ETF
+TQSM	TD Q US Small Mid Cap Eqty ETF
+TRI	Thomson Reuters Corp
+TRI.PR.B	Thomson Reuters Corporation Prf Srs 2
+TRIL	Trillium Therapeutics Inc
+TRL	Trilogy International Partners Inc
+TRL.WT	Trilogy International Partners Inc WT
+TRP	Tc Energy Corp
+TRP.PR.A	Transcanada Corp Pref Ser 1
+TRP.PR.B	Transcanada Corp Pref Ser 3
+TRP.PR.C	Transcanada Corp Pref Ser 5
+TRP.PR.D	Transcanada Corp Pref Ser 7
+TRP.PR.E	Transcanada Corp Pref Ser 9
+TRP.PR.F	Transcanada Corp Pref Ser 2
+TRP.PR.G	Transcanada Corp Pref Ser 11
+TRP.PR.H	Transcanada Corp Pref Ser 4
+TRP.PR.I	Transcanada Corp Pref Ser 6
+TRP.PR.J	Transcanada Corp Pref Ser 13
+TRP.PR.K	Transcanada Corp Pref Ser 15
+TRQ	Turquoise Hill Resources Ltd
+TRZ	Transat At Inc
+TSK	Talisker Resources Ltd
+TSL	Tree Island Steel Ltd
+TSU	Trisura Group Ltd
+TTP	TD S&P TSX Capped Comp Index ETF
+TUED	TD Active US Enhanced Dividend ETF
+TUHY	TD Active US High Yield Bond ETF
+TULB	TD US Long Term Treasury Bond ETF
+TULV	TD Q US Low Volatility ETF
+TUSB	TD Select U.S. Short Term Corporate Bond
+TUSB.U	TD Select US Short Term Corp Bnd ETF USD
+TUT.UN	Top 20 US Dividend Trust Cls A Units
+TV	Trevali Mining Corp
+TVA.B	Tva Group Inc Cl.B NV
+TVE	Tamarack Valley Energy Ltd
+TVK	Terravest Capital Inc
+TWC	Twc Enterprises Limited
+TWM	Tidewater Midstream and Infras Ltd
+TWM.DB	Tidewater Midstream Infras 5.5 Pct Debs
+TXF	CI First Asset Tech Giants Covered Call ETF
+TXF.B	CI First Asset Tech Giants Cov Call Unheg
+TXG	Torex Gold Resources Inc
+TXP	Touchstone Exploration Inc
+TXT.PR.A	Top 10 Split Trust Pref A
+TXT.UN	Top 10 Split Trust
+TZS	Trez Capital Senior Mortgage Inv Corp
+U	Uranium Participation CO
+UEX	Uex Corp
+UFS	Domtar Corp
+ULV.C	Powershares Sp500 Low Volatility ETF
+ULV.F	Invesco S&P 500 Low Volatility ETF
+ULV.U	Invesco S&P 500 Low Volatility ETF USD
+UMI	CI Wisdomtree US Midcap Div Idx ETF
+UMI.B	Wisdomtree US Midcap Div Idx Unheg ETF
+UNC	United Corp Ltd
+UNC.PR.A	United Corp Pr A
+UNC.PR.B	United Corp 59 Pr
+UNC.PR.C	United Corp 63 Pr
+UNI	Unisync Corp Class B
+UNS	Uni Select Inc
+URB	Urbana Corporation
+URB.A	Urbana Corporation A NV
+URE	Ur-Energy Inc
+USA	Americas Silver Corp
+USB	Powershares Lad US 0 To 5 Yr Corp Bd ETF
+USB.U	Powershares Lad US 0 To 5 Yr Corp Bd ETF USD
+USF.UN	US Financials Income Fund
+UTE.UN	Canadian Utilities Telecom Inc Fd
+UXM	CI First Asset Morningstar US Div Tgt 50 ETF
+UXM.B	CI First Asset Morningstar US Div Tgt 50 ETF Unh
+VA	Vanguard FTSE Dev Asia Pac All Cap ETF
+VAB	Vanguard CDN Aggregate Bond Index ETF
+VB	Versabank
+VB.PR.A	Versabank Pref Ser 1
+VB.PR.B	Versabank Pref Ser 3
+VBAL	Vanguard Balanced ETF Portfolio
+VBG	Vanguard Global Ex US Agg Bnd ETF
+VBU	Vanguard US Agg Bond Index ETF CAD
+VCB	Vanguard CDN Corporate Bond Index ETF
+VCE	Vanguard FTSE Canada Index ETF
+VCIP	Vanguard Conservative Income ETF
+VCM	Vecima Networks Inc
+VCN	Vanguard FTSE Canada All Cap ETF
+VCNS	Vanguard Conservative ETF Portfolio
+VDU	Vanguard FTSE Developed AC Ex US ETF
+VDY	Vanguard FTSE CDN High Div Yld Index ETF
+VE	Vanguard FTSE Dev Europe All Cap ETF
+VEE	Vanguard FTSE Emerging Mkts All Cap ETF
+VEF	Vanguard FTSE Dev AC Ex US ETF CAD Hdg
+VEQT	Vanguard All Equity ETF Portfolio
+VET	Vermilion Energy Inc
+VFF	Village Farms International Inc
+VFV	Vanguard S&P 500 Index ETF
+VGAB	Vanguard Global Aggregate Bond Index ETF
+VGCX	Victoria Gold Corp
+VGG	Vanguard US Div Appr ETF
+VGH	Vanguard US Div Appr ETF CAD Hdg
+VGRO	Vanguard Growth ETF Portfolio
+VGV	Vanguard CDN Government Bond Index ETF
+VGZ	Vista Gold Corp
+VI	Vanguard FTSE Dev All Cap Na ETF
+VIDY	Vanguard FTSE Dev Ex Na High Div Yld ETF
+VII	Seven Generations Energy Ltd
+VIU	Vanguard FTSE Dev All Cap Na ETF
+VIVO	Vivo Cannabis Inc
+VLB	Vanguard CDN Long Term Bond Index ETF
+VLE	Valeura Energy Inc
+VLN	Velan Inc Sv
+VLNS	Valens Groworks Corp
+VLNS.WT	Valens Groworks Corp Wts
+VMD	Viemed Healthcare Inc
+VMO	Vanguard Glob Momentum Factor ETF
+VNP	5N Plus Inc
+VRE	Vanguard FTSE CDN Capped REIT Index ETF
+VRIF	Vanguard Retirement Income ETF
+VSB	Vanguard CDN Short-Term Bond Index ETF
+VSC	Vanguard CDN Short Term Corp Bd ETF
+VSP	Vanguard S&P 500 Index ETF CAD Hdg
+VUN	Vanguard US Total Market ETF
+VUS	Vanguard US Total Mkt ETF CAD Hdg
+VVL	Vanguard Glob Val Factor ETF
+VVO	Vanguard Global Min Vol ETF
+VXC	Vanguard FTSE Global All Cap Ex Can ETF
+VXM	CI First Asset Morningstar Intl Value ETF
+VXM.B	CI First Asset Morningstar Intl Value ETF Unheg
+W.PR.K	Westcoast Energy Inc Pref Ser 10
+W.PR.M	Westcoast Energy Inc Pref Ser 12
+WBR	Waterloo Brewing Ltd.
+WCM.A	Wilmington Capital Mgmt Inc Cl A NV
+WCM.B	Wilmington Capital Management Cl B
+WCN	Waste Connections Inc
+WCP	Whitecap Resources Inc
+WDO	Wesdome Gold Mines Ltd
+WEED	Canopy Growth Corp
+WEF	Western Forest Products Inc
+WELL	Well Health Technologies Corp
+WFC	Wall Financial
+WFS	World Financial Split Corp
+WFS.PR.A	World Financial Split Corp
+WFT	West Fraser Timber CO Ltd
+WILD	Wildbrain Ltd.
+WILD.DB	Wildbrain Ltd 5.875 Pct Debs
+WIR.U	Wpt Industrial REIT USD
+WIR.UN	Wpt Industrial REIT Units
+WJX	Wajax Corp
+WJX.DB	Wajax Corporation 6.00 Pct Debs
+WLLW	Willow Biosciencesinc
+WLLW.WT	Willow Biosciences Inc Warrants
+WM	Wallbridge Mining Company Ltd
+WN	Weston George
+WN.PR.A	George Weston Pref Ser 1
+WN.PR.C	George Weston 5.20% Pref Ser III
+WN.PR.D	George Weston 5.2% Pref Ser IV
+WN.PR.E	George Weston 4.75% Pref Ser V
+WOMN	BMO Women IN Leadership Fund
+WPK	Winpak Ltd
+WPM	Wheaton Precious Metals Corp
+WPRT	Westport Fuel Systems Inc
+WRG	Western Energy Services Corp
+WRN	Western Copper and Gold Corp
+WRX	Western Resources Corp
+WSP	WSP Global Inc
+WSRD	Wealthsimple Dev Mkt Ex Na Soc Resp ETF
+WSRI	Wealthsimple Na Socially Resp Index ETF
+WTE	Westshore Terminals Investment Corp
+WXM	CI First Asset Morningstar Cda Momentum ETF
+X	Tmx Group Limited
+XAM	Xanadu Mines Ltd
+XAU	Goldmoney Inc
+XAW	Ishares Core MSCI All Cntry Ex Can ETF
+XAW.U	Ishares Core MSCI All Ex Can ETF USD
+XBAL	Ishares Core Balanced ETF Portfolio
+XBB	Ishares Core CDN Universe Bond ETF
+XBM	Ishares S&P TSX Global Base Mtls ETF
+XCB	Ishares Canadian Corporate Bond ETF
+XCD	Ishares S&P Global Cons Disc ETF
+XCG	Ishares Canadian Growth Index ETF
+XCH	Ishares China Index ETF
+XCNS	Ishares Core Conservative Balanced ETF
+XCS	Ishares S&P TSX Smallcap Index ETF
+XCSR	Ishares ESG Advanced MSCI Canada Idx ETF
+XCT	Exactearth Ltd
+XCV	Ishares Canadian Value Index ETF
+XDG	Ishares Core MSCI Glo Qlty Div ETF
+XDG.U	Ishares Core MSCI Glo Qlty Div ETF USD
+XDGH	Ishares Core MSCI Glo Qlty Div ETF
+XDIV	Ishares Core MSCI CAD Qlty Div ETF
+XDSR	Ishares ESG Advanced MSCI EAFE Index ETF
+XDU	Ishares Core MSCI US Qlty Div ETF
+XDU.U	Ishares Core MSCI US Qlty Div ETF USD
+XDUH	Ishares Core MSCI US Qlty Div ETF
+XDV	Ishares Canadian Select Div Index ETF
+XEB	Ishares JP Morgan USD Emerg Mkts Bd ETF
+XEC	Ishares Core MSCI Emerging Mkts IMI ETF
+XEF	Ishares Core MSCI EAFE IMI Index ETF
+XEF.U	Ishares Core MSCI EAFE IMI Index ETF
+XEG	Ishares S&P TSX Capped Energy Index ETF
+XEH	Ishares MSCI Europe IMI Index ETF
+XEI	Ishares S&P TSX Comp High Div Index ETF
+XEM	Ishares MSCI Emerging Markets ETF
+XEN	Ishares Jantzi Social Index ETF
+XEQT	Ishares Core Equity ETF
+XESG	Ishares ESG MSCI Cda Index ETF
+XEU	Ishares MSCI Europe IMI Index ETF
+XFA	Ishares Edge MSCI Multifact USA Idx CAD
+XFC	Ishares Edge MSCI Multifact Can ETF
+XFF	Ishares Edge MSCI Multifact EAFE Idx CAD
+XFH	Ishares Core MSCI EAFE IMI Index ETF
+XFI	Ishares Edge MSCI Multifact EAFE ETF
+XFN	Ishares S&P TSX Capped Financials ETF
+XFR	Ishares Floating Rate Index ETF
+XFS	Ishares Edge MSCI Multifact USA ETF
+XFS.U	Ishares MSCI Multifactor USA Idx ETF USD
+XGB	Ishares Canadian Govt Bond Index ETF
+XGD	Ishares S&P TSX Global Gold Index ETF
+XGI	Ishares S&P Global Industrials ETF
+XGRO	Ishares Core Growth ETF Portfolio
+XHB	Ishares CDN Hybrid Corp Bond ETF
+XHC	Ishares Global Healthcare Index ETF
+XHD	Ishares US High Div Equity Index ETF
+XHU	Ishares US High Div Equity Index ETF
+XHY	Ishares US High Yield Bond Index ETF
+XIC	Ishares Core S&P TSX Capped Comp ETF
+XID	Ishares India Index ETF
+XIG	Ishares US IG Corporate Bond Index ETF
+XIN	Ishares MSCI EAFE Index ETF
+XINC	Ishares Core Income Balanced ETF
+XIT	Ishares S&P TSX Capped Info Tech ETF
+XIU	Ishares S&P TSX 60 Index ETF
+XLB	Ishares Core CDN Long Term Bond ETF
+XMA	Ishares S&P TSX Capped Materials ETF
+XMC	Ishares S&P US Midcap Index ETF
+XMC.U	Ishares SP US Midcap ETF USD
+XMD	Ishares S&P TSX Completion Index ETF
+XMF.A	M Split Corp Capital Shares 2014
+XMF.PR.B	M Split Corp Class I Pref Shares
+XMF.PR.C	M Split Corp Class II Pref Shares 2014
+XMH	Ishares S&P US Midcap Index ETF CAD Hgd
+XMI	Ishares Edge MSCI Min Vol EAFE ETF
+XML	Ishares Edge MSCI Mv EAFE ETF CAD Hgd
+XMM	Ishares Edge MSCI Min Vol Emerg ETF
+XMS	Ishares Edge MSCI Mv USA ETF CAD Hgd
+XMTM	Ishares Edge MSCI USA Momnt Fctr ETF
+XMU	Ishares Edge MSCI Min Vol USA ETF
+XMU.U	Ishares Edge MSCI Min Vol USA Index ETF
+XMV	Ishares Edge MSCI Min Vol Can ETF
+XMW	Ishares Edge MSCI Min Vol Gbl ETF
+XMY	Ishares Edge MSCI Mv Global ETF CAD Hgd
+XPF	Ishares S&P TSX Na Pref Stock ETF
+XQB	Ishares High Qlty Canadian Bond ETF
+XQLT	Ishares Edge MSCI USA Qlty Fctr Indx ETF
+XQQ	Ishares Nasdaq 100 Index ETF
+XRB	Ishares CDN Real Return Bond Index ETF
+XRE	Ishares S&P TSX Capped REIT Index ETF
+XSAB	Ishares ESG CDN Agg Bond Index ETF
+XSB	Ishares Core CDN Short Trm Bond ETF
+XSC	Ishares Cons ST Strat Fix Inc ETF
+XSE	Ishares Cons Strat Fix Inc ETF
+XSEA	Ishares ESG MSCI EAFE Index ETF
+XSEM	Ishares ESG MSCI Emerg Mkts Index ETF
+XSH	Ishares Core CDN ST Corp Maple Bnd ETF
+XSI	Ishares Short Term Strategic FI ETF
+XSMC	Ishares SP US Small Cap Index ETF
+XSMH	Ishares SP US Small Cap ETF CAD Hdg
+XSP	Ishares Core S&P 500 ETF CAD Hdg ETF
+XSQ	Ishares ST HI Qlty CDN Bond ETF
+XST	Ishares S&P TSX Capped Cons Stpl ETF
+XSTB	Ishares ESG CDN ST Bond Index ETF
+XSU	Ishares US Small Cap Index ETF
+XSUS	Ishares ESG MSCI USA Index ETF
+XTC	Exco Tech
+XTD	Tdb Split Corp Class A Shares
+XTD.PR.A	Tdb Split Corp Priority Equity Shares
+XTG	Xtra Gold Resources Corp
+XTR	Ishares Diversified Monthly Income ETF
+XUH	Ishares Core S&P US Total Mkt ETF CAD Heg
+XUS	Ishares Core S&P 500 Index ETF
+XUS.U	Ishares Core SP 500 Index ETF
+XUSR	Ishares ESG Advanced MSCI USA Index ETF
+XUT	Ishares S&P TSX Capped Utilities ETF
+XUU	Ishares Core S&P US Total Market ETF
+XUU.U	Ishares Core SP US Total Market ETF USD
+XVLU	Ishares Edge MSCI USA Value Fctr ETF
+XWD	Ishares MSCI World Index ETF
+XXM	CI First Asset Morningstar US Value Index ETF
+XXM.B	CI First Asset Morningstr US Value Idx Unhdgd Et
+Y	Yellow Pages Limited
+Y.WT	Yellow Pages Limited WT
+YCM	Commerce Split Corp Capital Shares
+YCM.PR.A	Commerce Split Corp Class I Pref Shares
+YCM.PR.B	Commerce Split Corp Class II Pref Shares
+YGR	Yangarra Resources Ltd
+YPG.DB	Yp Digital and Media Sol 8 Pct Debs
+YRB	Yorbeau Resources Inc
+YRI	Yamana Gold Inc
+YXM	CI First Asset Morningstar US Momentum Index ETF
+YXM.B	CI First Asset Morningstar US Momentum Unhdgd Et
+ZAG	BMO Aggregate Bond Index ETF
+ZBAL	BMO Balanced ETF
+ZBBB	BMO BBB Corporate Bond Index ETF
+ZBK	BMO Equal Weight US Bank ETF
+ZCB	BMO Corporate Bond Index ETF
+ZCH	BMO China Equity Index ETF
+ZCM	BMO Mid Corporate Bond ETF
+ZCN	BMO S&P TSX Capped Comp ETF
+ZCON	BMO Conservative ETF
+ZCPB	BMO Core Plus Bond Fund
+ZCS	BMO Short Corp Bond ETF
+ZCS.L	BMO Short Corporate Bond ETF
+ZDB	BMO Discount Bond ETF
+ZDH	BMO Intl Div CAD Hedge ETF
+ZDI	BMO International Dividend ETF
+ZDJ	BMO DJIA Hedged To CAD Index ETF
+ZDM	BMO MSCI EAFE Hedged To CAD Index ETF
+ZDV	BMO Canadian Dividend ETF
+ZDY	BMO US Dividend ETF CAD
+ZDY.U	BMO US Dividend ETF USD
+ZEA	BMO MSCI EAFE ETF
+ZEB	BMO S&P TSX Equal Weight Banks Index ETF
+ZEF	BMO Emg Mkt Bond Hdgd To CAD ETF
+ZEM	BMO MSCI Emerging Markets Index ETF
+ZENA	Zenabis Global Inc
+ZENA.WT	Zenabis Global Inc WT
+ZEO	BMO S&P TSX Eql Weight Oil Gas Index ETF
+ZEQ	BMO MSCI EU Hq Hcad ETF
+ZESG	BMO Balanced ESG ETF
+ZFC	BMO Sia Focused Canadian Equity Fund
+ZFH	BMO Floating Rate High Yield ETF
+ZFL	BMO Long Fed Bond Index ETF
+ZFM	BMO Mid Federal Bond Index ETF
+ZFN	BMO Sia Focused North American Equity Fu
+ZFS	BMO Short Federal Bond Index ETF
+ZFS.L	BMO Short Federal Bond Index ETF
+ZGB	BMO Government Bond Index ETF
+ZGD	BMO S&P TSX Eql Weight Global Gold ETF
+ZGI	BMO Global Infrastructure Index ETF
+ZGQ	BMO MSCI All Cntry Wrld High Qlty ETF
+ZGRO	BMO Growth ETF
+ZGSB	BMO Global Strategic Bond Fund
+ZHP	BMO US Pref Share Hgd To CAD ETF
+ZHU	BMO Equal Weight US Health Care Idx ETF
+ZHY	BMO High Yld US Corp Bnd Hdg CAD ETF
+ZIC	BMO Mid Term US IG Corp Bond ETF
+ZIC.U	BMO Mid Term US IG Corp Bond ETF USD
+ZID	BMO India Equity Index ETF
+ZIN	BMO S&P TSX Equal Weight Indstrl ETF
+ZJG	BMO Junior Gold Index ETF
+ZJK	BMO High Yield US Corp Bond ETF
+ZJN	BMO Junior Gas Index ETF
+ZJO	BMO Junior Oil Index ETF
+ZLB	BMO Low Volatility CAD Equity ETF
+ZLC	BMO Long Corporate Bond Index ETF
+ZLD	BMO Low Vol Intl Eqty Hed To CAD ETF
+ZLE	BMO Low Vol Emerg Mkt Equity ETF
+ZLH	BMO Low Vol US Eqty Hed To CAD ETF
+ZLI	BMO Low Vol Intl Equity ETF
+ZLU	BMO Low Volatility US Equity ETF CAD
+ZLU.U	BMO Low Volatility US Equity ETF USD
+ZMBS	BMO Canadian MBS Index ETF
+ZMI	BMO Monthly Income ETF
+ZMID	BMO SP US Mid Cap Index ETF
+ZMID.U	BMO SP US Mid Cap Index ETF USD
+ZMP	BMO Mid Provincial Bond Index ETF
+ZMSB	BMO Global Multi Sector Bond Fund
+ZMT	BMO Sptsx Eql Wgt Glb Metal Hed CAD ETF
+ZMU	BMO Mid Term US IG Corp Bd Hgd CAD Idx
+ZNQ	BMO Nasdaq 100 Equity Index ETF
+ZPAY	BMO Premium Yield ETF
+ZPAY.F	BMO Premium Yield ETF Hedged
+ZPAY.U	BMO Premium Yield ETF USD
+ZPH	BMO US Put Write Hedged To CAD ETF
+ZPL	BMO Long Provincial Bond Index ETF
+ZPR	BMO Laddered Pref Share ETF
+ZPS	BMO Short Provincial Bond Index ETF
+ZPW	BMO US Put Write ETF
+ZPW.U	BMO US Put Write ETF USD
+ZQB	BMO High Quality Corporate Bond Idx ETF
+ZQQ	BMO Nasdaq 100 Hedged To CAD Index ETF
+ZRE	BMO Equal Weight Reits Index ETF
+ZRR	BMO Real Return Bond Index ETF
+ZSB	BMO Short Term Bond Idx ETF
+ZSML	BMO SP US Small Cap Index ETF
+ZSML.F	BMO SP US Small Cap Index ETF Hedged
+ZSML.U	BMO SP US Small Cap Index ETF USD
+ZSP	BMO S&P 500 Index ETF
+ZSP.U	BMO S&P 500 Index ETF USD
+ZST	BMO Ultra Short Term Bond ETF
+ZST.L	BMO Ultra Short Term Bond ETF
+ZSU	BMO ST US IG Corp Bond Hcad ETF
+ZUB	BMO Eql Wgt US Bank Hdgd To CAD ETF
+ZUD	BMO US Dividend Hedged To CAD ETF
+ZUE	BMO S&P 500 Hedged CAD ETF
+ZUH	BMO Eql Wgt US Hcare Hdgd To CAD ETF
+ZUP	BMO US Pref Share Index ETF
+ZUP.U	BMO US Pref Share Index ETF
+ZUQ	BMO MSCI USA High Quality Index ETF
+ZUQ.F	BMO MSCI USA High Quality Index ETF [Hed
+ZUQ.U	BMO MSCI USA High Quality Index ETF USD
+ZUS.U	BMO Ultra Short Term US Bond ETF USD
+ZUS.V	BMO Ultra Short Term US Bond ETF USD Acc
+ZUT	BMO Equal Weight Utilities Index ETF
+ZVC	BMO MSCI Cda Value Index ETF
+ZVI	BMO MSCI EAFE Value Index ETF
+ZVU	BMO MSCI USA Value Index ETF
+ZWA	BMO Covered Call DJIA CAD ETF
+ZWB	BMO Covered Call Canadian Banks ETF
+ZWC	BMO CDN High Div Covered Call ETF
+ZWE	BMO Europe High Div CC CAD Hedge ETF
+ZWG	BMO Gbl High Dividend Covered Call ETF
+ZWH	BMO US High Dividend Covered Call ETF
+ZWH.U	BMO US High Dividend Cov Call ETF USD
+ZWK	BMO Covered Call US Banks ETF
+ZWP	BMO Europe High Div Cov Call ETF
+ZWS	BMO US High Div Cov Call Hgd ETF
+ZWU	BMO Covered Call Utilities ETF
+ZXM	CI First Asset Morningstar Intl Momentum ETF
+ZXM.B	CI First Asset Morningstar Intl Momentum ETF
+ZZZ	Sleep Country Canada Holdings Inc
+ZZZD	BMO Tactical Dividend ETF Fund
