@@ -19,6 +19,7 @@ class Backtest:
     Args:
         df: The pandas dataframe with data about the equity. Uses a Timestamp index, consistent with the yfinance library dataframes.
     """
+
     def _trigger_long(self, df: DataFrame, date: Timestamp) -> Union[bool, float]:
         """
         This method should be overridden to identify that a long position should taken on the given date (e.g. purchase an equity)
@@ -212,9 +213,11 @@ def run_backtests(start, end, ticker_list, *backtests):
         for bt in backtests
     }
     n_selected = len(ticker_list) // 5 + 1  # used to select the 20th and 80th percentiles of stocks
+    last_test = 0
+    max_name = max([len(bt.__name__) for bt in backtests])
 
     try:
-        for df_pair in pool.imap_unordered(f, ticker_list):
+        for c, df_pair in enumerate(pool.imap_unordered(f, ticker_list)):
             if df_pair is None or len(df_pair[1]) == 0:
                 continue
             t, df = df_pair
@@ -224,7 +227,7 @@ def run_backtests(start, end, ticker_list, *backtests):
                 res = bt(df).run()
 
                 bt_res['avg_return'] += res['totalReturn']
-    
+
                 bt_res['n_gains'] += res['n_gains']
                 bt_res['n_losses'] += res['n_losses']
 
@@ -246,13 +249,24 @@ def run_backtests(start, end, ticker_list, *backtests):
                     bt_res['bot_n'].pop(-1)
                     insort(bt_res['bot_n'], pair)
 
+            cur_best = None
+            cur_best_res = 0
+            last_test = c + 1
+            for k, v in results.items():
+                if v['avg_return'] > cur_best_res:
+                    cur_best = k
+                    cur_best_res = v['avg_return']
+            cur_best_res /= last_test
+            print(f'{last_test} / {len(ticker_list)} complete. Current best: {cur_best} at {cur_best_res:.3f}' + ' ' * max_name, end='\r')
+        print(f'Complete. Best strategy: {cur_best} at {cur_best_res:.3f}')
+
     finally:
         for bt, bt_res in results.items():
             n_gains = bt_res['n_gains']
             n_losses = bt_res['n_losses']
             total_trades = n_gains + n_losses
 
-            bt_res['avg_return'] /= total_trades if total_trades != 0 else 1
+            bt_res['avg_return'] /= last_test if last_test != 0 else 1
             bt_res['batting_avg'] = n_gains / total_trades if total_trades != 0 else None
             bt_res['avg_gain'] /= n_gains if n_gains != 0 else 1
             bt_res['avg_loss'] /= n_losses if n_losses != 0 else 1
