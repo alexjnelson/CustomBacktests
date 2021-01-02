@@ -167,48 +167,6 @@ def RSI(df, period=14, colName='RSI'):
     del temp
     return df
 
-
-# returns the relative strength of a stock, which is how well it's performing relative to 63, 126, 189, and 252 days ago
-def IBD_RS(df, colName='RS'):
-    if len(df) < 252:
-        raise ValueError('Not enough data')
-    if type(df) != pd.DataFrame:
-        raise TypeError
-
-    df[colName] = np.zeros
-    for n, i in enumerate(df.index):
-        if n < 252:
-            continue
-        c = df['Adj Close'][n]
-        c63 = df['Adj Close'][n - 63]
-        c126 = df['Adj Close'][n - 126]
-        c189 = df['Adj Close'][n - 189]
-        c252 = df['Adj Close'][n - 252]
-        df[colName][i] = 2 * c / c63 + c / c126 + c / c189 + c / c252
-    return df
-
-
-# returns the relative strength index of a stock according to IBD (ranks stocks 1-100 based on the above function's results)
-def IBD_RelativeStrength(df, ticker, path, smoothing=True, smoothingFactor=5, colName='IBD RS'):
-    if type(df) != pd.DataFrame or any(type(x) != str for x in [ticker, colName, path]):
-        raise TypeError
-
-    ticker = ticker.upper()
-    df[colName] = np.nan
-
-    for i in df.index:
-        prev = df[colName][df.index.get_loc(i) - 1]
-        try:
-            loaded = pd.read_csv(
-                '{}/IBD RS {}.csv'.format(path, dt.date(i.year, i.month, i.day)))
-            loaded = loaded.loc[loaded['Ticker'] == ticker, 'RS']
-            df[colName][i] = loaded if not smoothing or math.isnan(prev) else int(
-                (prev * (smoothingFactor - 1) + loaded) / smoothingFactor)
-        except Exception:
-            df[colName][i] = prev
-    return df
-
-
 # returns whether the stock is the highest it's been in the specified number of days
 def recentHigh(df, days=260, colName=None):
     if len(df) < days:
