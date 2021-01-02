@@ -1,3 +1,4 @@
+import datetime as dt
 import os
 import signal
 from time import sleep
@@ -103,9 +104,11 @@ def addIndicators(df):
 
 
 def make_df(start, end, t, try_local=False, **kwargs):
+    download_start = start - dt.timedelta(days=180)
+
     if try_local:
         try:
-            df = local_df(start, end, t)
+            df = local_df(download_start, end, t)
             return df
         except FileNotFoundError:
             try_local = False
@@ -113,7 +116,7 @@ def make_df(start, end, t, try_local=False, **kwargs):
     if not try_local:
         try:
             df = download(lambda: yf.download(
-                str(t), start, end, progress=False, **kwargs))
+                str(t), download_start, end, progress=False, **kwargs))
         except (ValueError, IndexError, KeyError):
             df = None
 
@@ -123,8 +126,9 @@ def make_df(start, end, t, try_local=False, **kwargs):
 
     try:
         df = addIndicators(df)
+        df = df.loc[pd.Timestamp(start):pd.Timestamp(end), :]
         if df is not None and len(df) != 0:
             return t, df
-    except ValueError:
+    except (ValueError, IndexError, KeyError):
         print(f'\nInsuficient data to make indicators for {t}\n')
         return

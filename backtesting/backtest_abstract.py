@@ -1,6 +1,11 @@
+from functools import partial
+from multiprocessing import Pool
 from typing import Union
+from bisect import insort
+import numpy as np
 
-from pandas import DataFrame, Timestamp
+from pandas import DataFrame, Timestamp, concat
+from utils.screenerUtils import make_df
 
 
 class Backtest:
@@ -8,7 +13,8 @@ class Backtest:
     An abstract class to create backtests on a single security. Initialized with a pandas DataFrame in yfinance format.
     Backtests can be defined by overriding the long and short triggers; built-in test functions can be used
     to test the defined strategy, or a custom test can be created. Calculates descriptive stats about a backtest,
-    including returns, batting average, and descriptions of gains/losses.
+    including returns, batting average, and descriptions of gains/losses. The default testing method can be specified by
+    setting the "run" attribute to the desired method. By default, this is 'backtest_long_only.'
 
     Args:
         df: The pandas dataframe with data about the equity. Uses a Timestamp index, consistent with the yfinance library dataframes.
@@ -104,16 +110,20 @@ class Backtest:
         n_gains = len(self._gains)
         n_losses = len(self._losses)
         total_trades = n_gains + n_losses
+        cagr = self._total_return ** (1 / ((self.df.index[-1] - self.df.index[0]).days / 365.25))
         return {
             'totalReturn': self._total_return,
+            'cagr': cagr,
             'battingAvg': None if total_trades == 0 else n_gains / total_trades,
-            'largestGain':None if n_gains == 0 else max(self._gains),
-            'largestLoss': None if n_losses == 0 else min(self._losses),
-            'avgGain': None if n_gains == 0 else sum(self._gains) / n_gains,
-            'avgLoss': None if n_losses == 0 else sum(self._losses) / n_losses
+            'largestGain': 0 if n_gains == 0 else max(self._gains),
+            'largestLoss': 0 if n_losses == 0 else min(self._losses),
+            'avgGain': 0 if n_gains == 0 else sum(self._gains) / n_gains,
+            'avgLoss': 0 if n_losses == 0 else sum(self._losses) / n_losses,
+            'n_gains': n_gains,
+            'n_losses': n_losses
         }
 
-    def backtest_long_only(self):
+    def _backtest_long_only(self):
         """
         This method is used to backtest long-only equity trading strategies. A security is purchased on dates when the 
         '_trigger_long' method returns True (or a non-zero numeric value), and subsequently sold when the '_trigger_short' method
@@ -140,6 +150,113 @@ class Backtest:
                 self._calculate_gain()
         return self.get_stats()
 
+    def run(self):
+        """
+        This method should be used to reference the default backtest method.
+
+        Args:
+            N/A
+
+        Returns:
+            A dict containing summary statistics of the backtest as returned by the designated backtest method
+        """
+        return self._backtest_long_only()
+
     def __init__(self, df):
         self.df = df
         self._reset()
+
+
+def run_backtests(start, end, ticker_list, *backtests):
+    """
+    Runs backtests on multiple tickers over the specified time period. Tickers should be passed as a list and 
+    backtest classes should be passed (not instances). Outputs results to a csv file.
+
+    Args:
+        start: A starting date for the period to test over
+        ticker_list: A list of ticker strings; often these lists can be made with the 'utils.screenerUtils.load_tickers' function
+        *backtests: The backtest classes to be 
+
+    Returns:
+        None
+
+    Raises:
+        ValueError if no backtests are passed
+        TypeError if backtests aren't a subclass of Backtest or if tickers aren't strings
+    """
+    if len(backtests) == 0:
+        raise ValueError('You must pass at least one backtest class')
+    if not all([issubclass(bt, Backtest) for bt in backtests]):
+        raise TypeError('All backtests must inherit the Backtest class')
+    if any([type(t) != str for t in ticker_list]):
+        raise TypeError('All tickers must be strings')
+
+    pool = Pool(4)
+    f = partial(make_df, start, end)
+
+    results = {
+        bt.__name__: {
+            'avg_return': 0,
+            'batting_avg': None,
+            'n_gains': 0,
+            'n_losses': 0,
+            'avg_gain': 0,
+            'avg_loss': 0,
+            'largest_gain': 1,
+            'largest_loss': 1,
+            'top_n': [],
+            'bot_n': [],
+            'top_n_avg_return': 1,
+            'bot_n_avg_return': 1
+        }
+        for bt in backtests
+    }
+    n_selected = len(ticker_list) // 5 + 1  # used to select the 20th and 80th percentiles of stocks
+
+    try:
+        for t, df in pool.imap_unordered(f, ticker_list):
+            for bt in backtests:
+                bt_res = results[bt.__name__]
+                res = bt(df).run()
+
+                bt_res['avg_return'] += res['totalReturn']
+    
+                bt_res['n_gains'] += res['n_gains']
+                bt_res['n_losses'] += res['n_losses']
+
+                bt_res['avg_gain'] += res['avgGain'] * res['n_gains']
+                bt_res['avg_loss'] += res['avgLoss'] * res['n_losses']
+
+                bt_res['largest_gain'] = res['totalReturn'] if res['totalReturn'] > bt_res['largest_gain'] else bt_res['largest_gain']
+                bt_res['largest_loss'] = res['totalReturn'] if res['totalReturn'] < bt_res['largest_loss'] else bt_res['largest_loss']
+
+                pair = (res['totalReturn'], t)
+                if len(bt_res['top_n']) < n_selected:  # both lists will fill simultaneously since they both start empty
+                    insort(bt_res['top_n'], pair)
+                    insort(bt_res['bot_n'], pair)
+                # once they are both minimally fully, a new incoming result can only possibly fall into one list
+                elif res['totalReturn'] > min(bt_res['top_n'])[0]:
+                    bt_res['top_n'].pop(0)
+                    insort(bt_res['top_n'], pair)
+                elif res['totalReturn'] < max(bt_res['bot_n'])[0]:
+                    bt_res['bot_n'].pop(-1)
+                    insort(bt_res['bot_n'], pair)
+
+    finally:
+        for bt, bt_res in results.items():
+            n_gains = bt_res['n_gains']
+            n_losses = bt_res['n_losses']
+            total_trades = n_gains + n_losses
+
+            bt_res['avg_return'] /= total_trades if total_trades != 0 else 1
+            bt_res['batting_avg'] = n_gains / total_trades if total_trades != 0 else None
+            bt_res['avg_gain'] /= n_gains if n_gains != 0 else 1
+            bt_res['avg_loss'] /= n_losses if n_losses != 0 else 1
+            bt_res['top_n_avg_return'] = sum([ret[0] for ret in bt_res['top_n']]) / n_selected
+            bt_res['bot_n_avg_return'] = sum([ret[0] for ret in bt_res['bot_n']]) / n_selected
+
+            top_n = DataFrame([t[1] for t in reversed(bt_res['top_n'])], columns=['top_n'])
+            bot_n = DataFrame([t[1] for t in bt_res['bot_n']], columns=['bot_n'])
+            out_df = DataFrame(bt_res).drop(columns=['top_n', 'bot_n']).loc[0]
+            out_df = concat([out_df, top_n, bot_n]).replace(np.nan, '')
+            out_df.to_csv(f'results/{bt}.csv')

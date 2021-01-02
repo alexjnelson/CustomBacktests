@@ -13,13 +13,14 @@ from backtesting import Backtest
 
 class HammerReversals(Backtest):
     """
-    This class is a sample of how to override the Backtest class. Buy when a hammer candlestick appears after a 3-day 
-    downtrend, and sell when a hanging man candlestick appears after a 3-day uptrend
+    This class is a sample of how to override the Backtest class for long-only strategies. Buys when a hammer 
+    candlestick appears after a 3-day downtrend, and sells when a hanging man candlestick appears after a 3-day uptrend.
     """
     def __init__(self, df):
         from utils.addIndicators import hammer
         self.df = hammer(df)
         self.df = hammer(df, bullish=False)
+        self.run = self._backtest_long_only
         self._reset()
 
     def _reset(self):
