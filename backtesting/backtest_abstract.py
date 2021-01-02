@@ -214,7 +214,11 @@ def run_backtests(start, end, ticker_list, *backtests):
     n_selected = len(ticker_list) // 5 + 1  # used to select the 20th and 80th percentiles of stocks
 
     try:
-        for t, df in pool.imap_unordered(f, ticker_list):
+        for df_pair in pool.imap_unordered(f, ticker_list):
+            if df_pair is None or len(df_pair[1]) == 0:
+                continue
+            t, df = df_pair
+
             for bt in backtests:
                 bt_res = results[bt.__name__]
                 res = bt(df).run()
