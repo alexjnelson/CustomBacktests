@@ -153,7 +153,7 @@ class Backtest:
 
     def run(self):
         """
-        This method should be used to reference the default backtest method.
+        This method should be overwritten to be the preferred testing method.
 
         Args:
             N/A
@@ -161,10 +161,11 @@ class Backtest:
         Returns:
             A dict containing summary statistics of the backtest as returned by the designated backtest method
         """
-        return self._backtest_long_only()
+        raise NotImplementedError
 
     def __init__(self, df):
         self.df = df
+        self.run = self._backtest_long_only
         self._reset()
 
 
@@ -262,8 +263,9 @@ def run_backtests(start, end, ticker_list, *backtests):
     except:  # if execution ends early, doesn't overwrite old save files, but saves to _backup.csv files instead
         backup_res = {}
         for bt, bt_res in results.items():
-            backup_res[bt + '_backup'] = bt_res
+            backup_res[bt + '_incomplete'] = bt_res
         results = backup_res
+        raise
     finally:
         for bt, bt_res in results.items():
             n_gains = bt_res['n_gains']
@@ -272,17 +274,18 @@ def run_backtests(start, end, ticker_list, *backtests):
 
             bt_res['avg_return'] /= total_trades if total_trades != 0 else 1
             bt_res['batting_avg'] = n_gains / total_trades if total_trades != 0 else None
+            bt_res['n_gains'] = n_gains
+            bt_res['n_losses'] = n_losses
             bt_res['avg_gain'] /= n_gains if n_gains != 0 else 1
             bt_res['avg_loss'] /= n_losses if n_losses != 0 else 1
             bt_res['top_n_avg_return'] = sum([ret[0] for ret in bt_res['top_n']]) / n_selected
             bt_res['bot_n_avg_return'] = sum([ret[0] for ret in bt_res['bot_n']]) / n_selected
 
-            top_n = DataFrame([t[1] for t in reversed(bt_res['top_n'])], columns=['top_n'])
-            bot_n = DataFrame([t[1] for t in bt_res['bot_n']], columns=['bot_n'])
-            out_df = DataFrame(bt_res).drop(columns=['top_n', 'bot_n']).loc[0]
-            out_df = concat([out_df, top_n, bot_n]).replace(np.nan, '')
-            out_df.to_csv(f'results/{bt}.csv')
-
-# 0.9684397063971051
-# 0.9891643564353317
-# 1.2048059723946911
+            try:
+                top_n = DataFrame([t[1] for t in reversed(bt_res['top_n'])], columns=['top_n'])
+                bot_n = DataFrame([t[1] for t in bt_res['bot_n']], columns=['bot_n'])
+                out_df = DataFrame(bt_res).drop(columns=['top_n', 'bot_n']).loc[0]
+                out_df = concat([out_df, top_n, bot_n]).replace(np.nan, '')
+                out_df.to_csv(f'results/{bt}.csv')
+            except KeyError:
+                continue

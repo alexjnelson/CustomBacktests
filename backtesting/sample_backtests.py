@@ -17,11 +17,11 @@ class HammerReversals(Backtest):
     candlestick appears after a 3-day downtrend, and sells when a hanging man candlestick appears after a 3-day uptrend.
     """
     def __init__(self, df):
+        super().__init__(df)
         from utils.addIndicators import hammer
-        self.df = hammer(df)
-        self.df = hammer(df, bullish=False)
+        self.df = hammer(self.df)
+        self.df = hammer(self.df, bullish=False).dropna()
         self.run = self._backtest_long_only
-        self._reset()
 
     def _reset(self):
         super()._reset()

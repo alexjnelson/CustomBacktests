@@ -84,7 +84,6 @@ def handle_dict(d: dict, k):
 
 def addIndicators(df):
     df = add.shiftedSqueeze(df)
-    df = add.upwardsChannel(df)
     df = add.Bollinger(df, period=20)
     df = add.Keltner(df, emaPeriod=20, atrPeriod=20)
     df = add.RSI(df)

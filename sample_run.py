@@ -10,4 +10,4 @@ start = date(2016, 1, 1)
 end = date.today()
 
 backtests = [HammerReversals, HammerReversalsWithKeltner, Hold]
-run_backtests(start, end, tickers, *backtests)
+run_backtests(start, end, tickers[:10], *backtests)
