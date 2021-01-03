@@ -198,7 +198,6 @@ def run_backtests(start, end, ticker_list, *backtests):
     results = {
         bt.__name__: {
             'avg_return': 0,
-            'nonzero_trades': 0,
             'batting_avg': None,
             'n_gains': 0,
             'n_losses': 0,
@@ -215,6 +214,8 @@ def run_backtests(start, end, ticker_list, *backtests):
     }
     n_selected = len(ticker_list) // 5 + 1  # used to select the 20th and 80th percentiles of stocks
     max_name = max([len(bt.__name__) for bt in backtests])
+    cur_best = None
+    cur_best_res = 0
 
     try:
         for c, df_pair in enumerate(pool.imap_unordered(f, ticker_list)):
@@ -226,8 +227,7 @@ def run_backtests(start, end, ticker_list, *backtests):
                 bt_res = results[bt.__name__]
                 res = bt(df).run()
 
-                bt_res['avg_return'] += res['totalReturn'] if res['totalReturn'] != 1 else 0
-                bt_res['nonzero_trades'] += int(res['totalReturn'] != 1)
+                bt_res['avg_return'] += res['totalReturn'] * (res['n_gains'] + res['n_losses'])
 
                 bt_res['n_gains'] += res['n_gains']
                 bt_res['n_losses'] += res['n_losses']
@@ -253,20 +253,24 @@ def run_backtests(start, end, ticker_list, *backtests):
             cur_best = None
             cur_best_res = 0
             for k, v in results.items():
-                if v['avg_return'] > cur_best_res:
+                total_trades = v['n_gains'] + v['n_losses']
+                if total_trades and v['avg_return'] / total_trades > cur_best_res:
                     cur_best = k
-                    cur_best_res = v['avg_return']
-            cur_best_res /= results[cur_best]['nonzero_trades']
+                    cur_best_res = v['avg_return'] / total_trades
             print(f'{c + 1} / {len(ticker_list)} complete. Current best: {cur_best} at {cur_best_res:.3f}' + ' ' * max_name, end='\r')
-        print(f'Complete. Best strategy: {cur_best} at {cur_best_res:.3f}')
-
+        print(f'\nComplete. Best strategy: {cur_best} at {cur_best_res:.3f}')
+    except:  # if execution ends early, doesn't overwrite old save files, but saves to _backup.csv files instead
+        backup_res = {}
+        for bt, bt_res in results.items():
+            backup_res[bt + '_backup'] = bt_res
+        results = backup_res
     finally:
         for bt, bt_res in results.items():
             n_gains = bt_res['n_gains']
             n_losses = bt_res['n_losses']
             total_trades = n_gains + n_losses
 
-            bt_res['avg_return'] /= bt_res['nonzero_trades'] if bt_res['nonzero_trades'] != 0 else 1
+            bt_res['avg_return'] /= total_trades if total_trades != 0 else 1
             bt_res['batting_avg'] = n_gains / total_trades if total_trades != 0 else None
             bt_res['avg_gain'] /= n_gains if n_gains != 0 else 1
             bt_res['avg_loss'] /= n_losses if n_losses != 0 else 1
@@ -278,3 +282,7 @@ def run_backtests(start, end, ticker_list, *backtests):
             out_df = DataFrame(bt_res).drop(columns=['top_n', 'bot_n']).loc[0]
             out_df = concat([out_df, top_n, bot_n]).replace(np.nan, '')
             out_df.to_csv(f'results/{bt}.csv')
+
+# 0.9684397063971051
+# 0.9891643564353317
+# 1.2048059723946911
