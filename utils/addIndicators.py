@@ -18,7 +18,7 @@ class Cols(enum.Enum):
 
 
 # returns an exponential moving average
-def EMA(df, period=20, sourceCol=Cols.ADJCLOSE, colName=None):
+def EMA(df, period=20, sourceCol=Cols.ADJCLOSE.value, colName=None):
     if len(df) < period:
         raise ValueError('Not enough data')
     if not (type(df) == pd.DataFrame and type(period) == int):
@@ -52,7 +52,7 @@ def TP(df, colName='TP'):
     if not type(df) == pd.DataFrame:
         raise TypeError
 
-    df[colName] = (df[Cols.HIGH] + df[Cols.LOW] + df[Cols.CLOSE]) / 3
+    df[colName] = (df[Cols.HIGH.value] + df[Cols.LOW.value] + df[Cols.CLOSE.value]) / 3
     return df
 
 
@@ -72,8 +72,8 @@ def ATR(df, period=14, colName='ATR'):
         if n == 0:
             continue
 
-        tr['TR'].append(max(df[Cols.HIGH][n] - df[Cols.LOW][n], abs(df[Cols.HIGH]
-                                                              [n] - df[Cols.CLOSE][n - 1]), abs(df[Cols.LOW][n] - df[Cols.CLOSE][n - 1])))
+        tr['TR'].append(max(df[Cols.HIGH.value][n] - df[Cols.LOW.value][n], abs(df[Cols.HIGH.value]
+                                                              [n] - df[Cols.CLOSE.value][n - 1]), abs(df[Cols.LOW.value][n] - df[Cols.CLOSE.value][n - 1])))
 
     df = df[1:]
     tr = pd.DataFrame(data=tr, index=df.index)
@@ -83,7 +83,7 @@ def ATR(df, period=14, colName='ATR'):
 
 
 # the keltner channels don't line up 100% perfectly with MarketWatch's keltner's of same params
-def Keltner(df, emaPeriod=20, atrPeriod=20, atrMult=2, sourceCol=Cols.ADJCLOSE, colNameUpper='Kelt Upper', colNameLower='Kelt Lower'):
+def Keltner(df, emaPeriod=20, atrPeriod=20, atrMult=2, sourceCol=Cols.ADJCLOSE.value, colNameUpper='Kelt Upper', colNameLower='Kelt Lower'):
     if len(df) < max([emaPeriod, atrPeriod]):
         raise ValueError('Not enough data')
     if not (type(df) == pd.DataFrame and type(emaPeriod) == int and type(atrPeriod) == int and type(atrMult) == int):
@@ -112,6 +112,7 @@ def Bollinger(df, period=20, nDeviations=2, sourceCol=None, colNameUpper='Bol Up
     if sourceCol is None:
         req['STD bol'] = TP(df, colName='TP bol')[
             'TP bol'].rolling(window=period).std()
+        del df['TP bol']
     else:
         req['STD bol'] = df[sourceCol].rolling(window=period).std()
 
@@ -121,7 +122,6 @@ def Bollinger(df, period=20, nDeviations=2, sourceCol=None, colNameUpper='Bol Up
         period)] - nDeviations * req['STD bol']
     del req['STD bol']
     del df['SMA_{} bol'.format(period)]
-    del df['TP bol']
     return df
 
 
@@ -133,7 +133,7 @@ def TTMSqueeze(df, emaPeriod=20, atrPeriod=20, atrMult=2, bollingerPeriod=20, nD
     if not type(df) == pd.DataFrame or any(type(x) != int for x in [emaPeriod, atrPeriod, atrMult, bollingerPeriod, nDeviations]):
         raise TypeError
 
-    req = Keltner(df, emaPeriod, atrPeriod, atrMult, sourceCol=Cols.ADJCLOSE if sourceCol is None else sourceCol,
+    req = Keltner(df, emaPeriod, atrPeriod, atrMult, sourceCol=Cols.ADJCLOSE.value if sourceCol is None else sourceCol,
                   colNameUpper='Kelt Upper ttm', colNameLower='Kelt Lower ttm')
     req[['Bol Upper ttm', 'Bol Lower ttm']] = Bollinger(df, bollingerPeriod, nDeviations, sourceCol=sourceCol, colNameUpper='Bol Upper ttm', colNameLower='Bol Lower ttm')[
         ['Bol Upper ttm', 'Bol Lower ttm']]
@@ -145,7 +145,7 @@ def TTMSqueeze(df, emaPeriod=20, atrPeriod=20, atrMult=2, bollingerPeriod=20, nD
 
 
 # returns the relative strength index (technical indicator)
-def RSI(df, period=14, sourceCol=Cols.ADJCLOSE, colName='RSI'):
+def RSI(df, period=14, sourceCol=Cols.ADJCLOSE.value, colName='RSI'):
     if len(df) < period:
         raise ValueError('Not enough data')
 
@@ -186,7 +186,7 @@ def RSI(df, period=14, sourceCol=Cols.ADJCLOSE, colName='RSI'):
 # returns whether the stock is the highest it's been in the specified number of days
 
 
-def recentHigh(df, days=260, sourceCol=Cols.ADJCLOSE, colName=None):
+def recentHigh(df, days=260, sourceCol=Cols.ADJCLOSE.value, colName=None):
     if len(df) < days:
         raise ValueError('Not enough data')
 
@@ -200,7 +200,7 @@ def recentHigh(df, days=260, sourceCol=Cols.ADJCLOSE, colName=None):
 
 
 # returns whether the stock is the lowest it's been in the specified number of days
-def recentLow(df, days=260, sourceCol=Cols.ADJCLOSE, colName=None):
+def recentLow(df, days=260, sourceCol=Cols.ADJCLOSE.value, colName=None):
     if len(df) < days:
         raise ValueError('Not enough data')
 
@@ -214,7 +214,7 @@ def recentLow(df, days=260, sourceCol=Cols.ADJCLOSE, colName=None):
 
 
 # returns True while the short-emas are above the long-emas
-def shortOverLong(df, shortEmas=[8], longEmas=[21], withTriggers=False, sourceCol=Cols.ADJCLOSE, colName=None):
+def shortOverLong(df, shortEmas=[8], longEmas=[21], withTriggers=False, sourceCol=Cols.ADJCLOSE.value, colName=None):
     if type(shortEmas) != list:
         shortEmas = [shortEmas]
     if type(longEmas) != list:
@@ -277,17 +277,17 @@ def _crossover(df, crossType, shortEmas, longEmas, sourceCol, colName):
     return df
 
 
-def goldenCross(df, shortEmas=[12], longEmas=[26], sourceCol=Cols.ADJCLOSE, colName=None):
+def goldenCross(df, shortEmas=[12], longEmas=[26], sourceCol=Cols.ADJCLOSE.value, colName=None):
     return _crossover(df, 'Golden', shortEmas, longEmas, sourceCol, 'Golden' if colName is None else colName)
 
 
-def deathCross(df, shortEmas=[12], longEmas=[26], sourceCol=Cols.ADJCLOSE, colName=None):
+def deathCross(df, shortEmas=[12], longEmas=[26], sourceCol=Cols.ADJCLOSE.value, colName=None):
     return _crossover(df, 'Death', shortEmas, longEmas, sourceCol, 'Death' if colName is None else colName)
 
 
 # selltrigger based on RSI trends indicating the end of an uptrend. works best if the data given begins well before
 # the time period to predict so the downtrend or uptrend can be identified
-def failureSwings(df, rsiPeriod=14, initialUptrend=None, sourceCol=Cols.ADJCLOSE, colName=None):
+def failureSwings(df, rsiPeriod=14, initialUptrend=None, sourceCol=Cols.ADJCLOSE.value, colName=None):
     colName = 'FS Uptrend?' if colName is None else colName
     df = RSI(df, rsiPeriod, sourceCol, 'RSI_FS')
     df[colName] = ''
@@ -298,7 +298,7 @@ def failureSwings(df, rsiPeriod=14, initialUptrend=None, sourceCol=Cols.ADJCLOSE
     return df
 
 
-def MACD(df, withHistogram=True, withTriggers=False, withTrends=False, sourceCol=Cols.ADJCLOSE, colName=None):
+def MACD(df, withHistogram=True, withTriggers=False, withTrends=False, sourceCol=Cols.ADJCLOSE.value, colName=None):
     colName = 'MACD' if colName is None else colName
 
     df = EMA(df, 12, sourceCol=sourceCol, colName='EMA_12 MACD')
@@ -400,18 +400,18 @@ def volumeForce(df, with_temp=True, colName='VF'):
     j = df.index[0]
     i = df.index[1]
     h = df.index[2]
-    df.loc[i, 'T'] = 1 if (df.loc[i, Cols.HIGH] + df.loc[i, Cols.LOW] + df.loc[i, Cols.CLOSE]) > (
-        df.loc[j, Cols.HIGH] + df.loc[j, Cols.LOW] + df.loc[j, Cols.CLOSE]) else -1
-    df.loc[i, 'dm'] = df.loc[i, Cols.HIGH] - df.loc[i, Cols.LOW]
+    df.loc[i, 'T'] = 1 if (df.loc[i, Cols.HIGH.value] + df.loc[i, Cols.LOW.value] + df.loc[i, Cols.CLOSE.value]) > (
+        df.loc[j, Cols.HIGH.value] + df.loc[j, Cols.LOW.value] + df.loc[j, Cols.CLOSE.value]) else -1
+    df.loc[i, 'dm'] = df.loc[i, Cols.HIGH.value] - df.loc[i, Cols.LOW.value]
     # in first calculation (at index[2]), uses that day's dm instead of previous day's cm, so set previous day cm to that day's dm here
-    df.loc[i, 'cm'] = df.loc[h, Cols.HIGH] - df.loc[h, Cols.LOW]
+    df.loc[i, 'cm'] = df.loc[h, Cols.HIGH.value] - df.loc[h, Cols.LOW.value]
     j = i
 
     for i in df.index[2:]:
-        df.loc[i, 'T'] = 1 if (df.loc[i, Cols.HIGH] + df.loc[i, Cols.LOW] + df.loc[i, Cols.CLOSE]) > (
-            df.loc[j, Cols.HIGH] + df.loc[j, Cols.LOW] + df.loc[j, Cols.CLOSE]) else -1
+        df.loc[i, 'T'] = 1 if (df.loc[i, Cols.HIGH.value] + df.loc[i, Cols.LOW.value] + df.loc[i, Cols.CLOSE.value]) > (
+            df.loc[j, Cols.HIGH.value] + df.loc[j, Cols.LOW.value] + df.loc[j, Cols.CLOSE.value]) else -1
         if with_temp:
-            df.loc[i, 'dm'] = df.loc[i, Cols.HIGH] - df.loc[i, Cols.LOW]
+            df.loc[i, 'dm'] = df.loc[i, Cols.HIGH.value] - df.loc[i, Cols.LOW.value]
             df.loc[i, 'cm'] = (df.loc[j, 'cm'] + df.loc[i, 'dm']) if df.loc[i,
                                                                             'T'] == df.loc[j, 'T'] else (df.loc[i, 'dm'] + df.loc[j, 'dm'])
             df.loc[i, colName] = df.loc[i, 'Volume'] * \
@@ -511,22 +511,38 @@ def hammer(df, trend_days=3, max_real_body_ratio=0.5, max_body_distance=0.2, bul
         if c > trend_days:
             for n in range(trend_days):
                 break_flag = True
-                if bullish and df.loc[df.index[c - n - 1], Cols.CLOSE] >= df.loc[df.index[c - n - 2], Cols.CLOSE]:
+                if bullish and df.loc[df.index[c - n - 1], Cols.CLOSE.value] >= df.loc[df.index[c - n - 2], Cols.CLOSE.value]:
                     break
-                if not bullish and df.loc[df.index[c - n - 1], Cols.CLOSE] <= df.loc[df.index[c - n - 2], Cols.CLOSE]:
+                if not bullish and df.loc[df.index[c - n - 1], Cols.CLOSE.value] <= df.loc[df.index[c - n - 2], Cols.CLOSE.value]:
                     break
                 break_flag = False
         if break_flag:
             continue
 
-        opening = df.loc[i, Cols.OPEN]
-        close = df.loc[i, Cols.CLOSE]
-        high = df.loc[i, Cols.HIGH]
-        low = df.loc[i, Cols.LOW]
+        opening = df.loc[i, Cols.OPEN.value]
+        close = df.loc[i, Cols.CLOSE.value]
+        high = df.loc[i, Cols.HIGH.value]
+        low = df.loc[i, Cols.LOW.value]
         # checks if the real body size (dif. b/w open and close) is 50% (body ratio) smaller than the high-low range
         # and whether the distance between the high and the top of the real body (bigger of open or close) is less than
         # 20% (max distance) of the high-low range. if inverted, checks distance between lower of open/close and the shadow low
         df.loc[i, colName] = abs(opening - close) <= ((high - low) * max_real_body_ratio) and ((
             high - max(opening, close)) < ((high - low) * max_body_distance)) if not inverted else ((
                 min(opening, close)) - low < ((high - low) * max_body_distance))
+    return df
+
+
+def BollingerWidth(df, period=20, nDeviations=2, sourceCol=None, colName='BBW'):
+    df = SMA(df, period, sourceCol=sourceCol, colName='BBW bol_mid')
+    df = Bollinger(df, period, nDeviations, sourceCol, 'BBW bol_upper', 'BBW bol_lower')
+    df[colName] = (df['BBW bol_upper'] - df['BBW bol_lower']) /  df['BBW bol_mid']
+    del df['BBW bol_upper'], df['BBW bol_lower'], df['BBW bol_mid']
+    return df
+
+
+def BBWP(df, period=21, lookback=255, smaPeriod=8, sourceCol=Cols.ADJCLOSE.value):
+    df = BollingerWidth(df, period, sourceCol=sourceCol, colName='BBWP BBW')
+    # calc number of values less than the current value, then divide by total number of values in the lookback
+    # to get the percentile for the given BBW
+    df['BBWP'] = df['BBWP BBW'].rolling(lookback + 1).apply(lambda s: s[s < s[-1]].shape[0]) / lookback
     return df
