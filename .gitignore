@@ -1,3 +1,5 @@
 /results/**
 /backtesting/backtests.py
 /run_backtests.py
+
+**/__pycache__
