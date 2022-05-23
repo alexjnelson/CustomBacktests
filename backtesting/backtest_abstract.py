@@ -68,25 +68,38 @@ class Backtest:
 
     def _reset(self):
         self._total_return = 1.0
-        self._buy_price = None
-        self._sell_price = None
+        self._entry_price = None
+        self._exit_price = None
         self._gains = []
         self._losses = []
 
-    def _buy(self, price):
+    def _enter_long(self, price):
         try:
-            self._buy_price = float(price)
+            self._entry_price = float(price)
         except (TypeError, ValueError):
             raise ValueError('Buy price must be a number')
 
-    def _sell(self, price):
+    def _exit_long(self, price):
         try:
-            self._sell_price = float(price)
+            self._exit_price = float(price)
         except (TypeError, ValueError):
             raise ValueError('Sell price must be a number')
 
+    def _enter_short(self, price):
+        try:
+            self._entry_price = -float(price)
+        except (TypeError, ValueError):
+            raise ValueError('Sell price must be a number')
+
+    def _exit_short(self, price):
+        try:
+            self._exit_price = -float(price)
+        except (TypeError, ValueError):
+            raise ValueError('Sell price must be a number')
+        
+
     def _calculate_gain(self, reset_prices=True):
-        result = (self._sell_price - self._buy_price) / self._buy_price + 1
+        result = (self._exit_price - self._entry_price) / abs(self._entry_price) + 1
         self._total_return *= result
 
         if result > 1:
@@ -95,8 +108,8 @@ class Backtest:
             self._losses.append(result)
 
         if reset_prices:
-            self._buy_price = None
-            self._sell_price = None
+            self._entry_price = None
+            self._exit_price = None
 
     def get_stats(self):
         """
@@ -144,11 +157,40 @@ class Backtest:
         for date in self.df.index:
             if not pos and (long_trigger := self._trigger_long(self.df, date)):
                 pos = True
-                self._buy(self.df.loc[date, 'Adj Close'] if type(long_trigger) is bool else long_trigger)
+                self._enter_long(self.df.loc[date, 'Adj Close'] if type(long_trigger) is bool else long_trigger)
             elif pos and (short_trigger := self._trigger_short(self.df, date)):
                 pos = False
-                self._sell(self.df.loc[date, 'Adj Close'] if type(short_trigger) is bool else short_trigger)
+                self._exit_long(self.df.loc[date, 'Adj Close'] if type(short_trigger) is bool else short_trigger)
                 self._calculate_gain()
+        return self.get_stats()
+
+    def _backtest_long_short(self):
+        """
+        This method is used to backtest equity trading strategies that go long on a buy signal and short on a sell signal. A security is purchased on dates when the 
+
+        Args:
+            N/A
+
+        Returns:
+            A dict containing summary statistics of the backtest, as defined in the 'get_stats' method
+
+        Raises:
+            TO DO
+        """
+        pos = False
+        for date in self.df.index:
+            if (long_trigger := self._trigger_long(self.df, date)):
+                if pos:
+                    self._exit_short(self.df.loc[date, 'Adj Close'] if type(long_trigger) is bool else long_trigger)
+                    self._calculate_gain()
+                pos = True
+                self._enter_long(self.df.loc[date, 'Adj Close'] if type(long_trigger) is bool else long_trigger)
+            elif (short_trigger := self._trigger_short(self.df, date)):
+                if pos:
+                    self._exit_long(self.df.loc[date, 'Adj Close'] if type(short_trigger) is bool else short_trigger)
+                    self._calculate_gain()
+                pos = True
+                self._enter_short(self.df.loc[date, 'Adj Close'] if type(short_trigger) is bool else short_trigger)
         return self.get_stats()
 
     def run(self):
@@ -165,7 +207,6 @@ class Backtest:
 
     def __init__(self, df):
         self.df = df
-        self.run = self._backtest_long_only
         self._reset()
 
 
