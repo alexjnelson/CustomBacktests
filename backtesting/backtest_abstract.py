@@ -28,7 +28,7 @@ class Backtest:
         Return "False" or "None" to decline to take a long position.
         --
         ADVANCED USAGE:
-        By default, returning "True" will trigger a long position at the 'Adj Close' price. The user may enter the position at
+        By default, returning "True" will trigger a long position at the self.defaultSourcePrice price. The user may enter the position at
         a different price by returning a numerical value from this method. Caution is advised because this module will not verify
         that it was possible to enter at the given price. 
 
@@ -51,7 +51,7 @@ class Backtest:
         Return "False" or "None" to decline to take a short position.
         --
         ADVANCED USAGE:
-        By default, returning "True" will trigger a short position at the 'Adj Close' price. The user may enter the position at
+        By default, returning "True" will trigger a short position at the self.defaultSourcePrice price. The user may enter the position at
         a different price by returning a numerical value from this method. Caution is advised because this module will not verify
         that it was possible to enter at the given price. 
 
@@ -97,7 +97,6 @@ class Backtest:
             self._exit_price = -float(price)
         except (TypeError, ValueError):
             raise ValueError('Sell price must be a number')
-        
 
     def _calculate_gain(self, reset_prices=True):
         result = (self._exit_price - self._entry_price) / abs(self._entry_price) + 1
@@ -135,7 +134,7 @@ class Backtest:
                 cagr = self._total_return ** (1 / ((end - start).days / 365.25))
             except Exception:
                 cagr = None
-            
+
         return {
             'totalReturn': self._total_return,
             'cagr': cagr,
@@ -168,10 +167,10 @@ class Backtest:
         for date in self.df.index:
             if not pos and (long_trigger := self._trigger_long(self.df, date)):
                 pos = True
-                self._enter_long(self.df.loc[date, 'Adj Close'] if type(long_trigger) is bool else long_trigger)
+                self._enter_long(self.df.loc[date, self.default_src_price] if type(long_trigger) is bool else long_trigger)
             elif pos and (short_trigger := self._trigger_short(self.df, date)):
                 pos = False
-                self._exit_long(self.df.loc[date, 'Adj Close'] if type(short_trigger) is bool else short_trigger)
+                self._exit_long(self.df.loc[date, self.default_src_price] if type(short_trigger) is bool else short_trigger)
                 self._calculate_gain()
         return self.get_stats()
 
@@ -192,16 +191,16 @@ class Backtest:
         for date in self.df.index:
             if (long_trigger := self._trigger_long(self.df, date)):
                 if pos:
-                    self._exit_short(self.df.loc[date, 'Adj Close'] if type(long_trigger) is bool else long_trigger)
+                    self._exit_short(self.df.loc[date, self.default_src_price] if type(long_trigger) is bool else long_trigger)
                     self._calculate_gain()
                 pos = True
-                self._enter_long(self.df.loc[date, 'Adj Close'] if type(long_trigger) is bool else long_trigger)
+                self._enter_long(self.df.loc[date, self.default_src_price] if type(long_trigger) is bool else long_trigger)
             elif (short_trigger := self._trigger_short(self.df, date)):
                 if pos:
-                    self._exit_long(self.df.loc[date, 'Adj Close'] if type(short_trigger) is bool else short_trigger)
+                    self._exit_long(self.df.loc[date, self.default_src_price] if type(short_trigger) is bool else short_trigger)
                     self._calculate_gain()
                 pos = True
-                self._enter_short(self.df.loc[date, 'Adj Close'] if type(short_trigger) is bool else short_trigger)
+                self._enter_short(self.df.loc[date, self.default_src_price] if type(short_trigger) is bool else short_trigger)
         return self.get_stats()
 
     def run(self):
@@ -216,8 +215,9 @@ class Backtest:
         """
         raise NotImplementedError
 
-    def __init__(self, df):
+    def __init__(self, df, default_src_price='Adj Close'):
         self.df = df
+        self.default_src_price = default_src_price
         self._reset()
 
 
