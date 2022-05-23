@@ -267,7 +267,7 @@ def _crossover(df, crossType, shortEmas, longEmas, sourceCol, colName):
     else:
         raise ValueError
 
-    df = shortOverLong(df, shortEmas, longEmas, sourceCol=sourceCol colName='SoL_cr')
+    df = shortOverLong(df, shortEmas, longEmas, sourceCol=sourceCol, colName='SoL_cr')
     for i in range(1, len(df)):
         date = df.index[i]
         prev = df.index[i - 1]
