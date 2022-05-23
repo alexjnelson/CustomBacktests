@@ -125,18 +125,18 @@ class Backtest:
         n_losses = len(self._losses)
         total_trades = n_gains + n_losses
         try:
-            cagr = self._total_return ** (1 / ((self.df.index[-1] - self.df.index[0]).days / 365.25))
+            cagr = self._total_return ** (1 / ((self.df.index[-1] - self.df.index[0]).days / 365.25)) - 1
         except AttributeError:
             try:
                 # if the index is in integer timestamps instead of pandas timestamps
                 start = dt.datetime.fromtimestamp(self.df.index[0])
                 end = dt.datetime.fromtimestamp(self.df.index[-1])
-                cagr = self._total_return ** (1 / ((end - start).days / 365.25))
+                cagr = self._total_return ** (1 / ((end - start).days / 365.25)) - 1
             except Exception:
                 cagr = None
 
         return {
-            'totalReturn': self._total_return,
+            'totalReturn': self._total_return - 1,
             'cagr': cagr,
             'battingAvg': None if total_trades == 0 else n_gains / total_trades,
             'largestGain': 0 if n_gains == 0 else max(self._gains),
