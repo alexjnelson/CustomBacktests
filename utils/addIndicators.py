@@ -544,7 +544,7 @@ def BBWP(df, period=21, lookback=255, smaPeriod=8, sourceCol=Cols.ADJCLOSE.value
     df = BollingerWidth(df, period, sourceCol=sourceCol, colName='BBWP BBW')
     # calc number of values less than the current value, then divide by total number of values in the lookback
     # to get the percentile for the given BBW
-    df['BBWP'] = df['BBWP BBW'].rolling(lookback + 1).apply(lambda s: s[s < s[-1]].shape[0]) / lookback
+    df['BBWP'] = df['BBWP BBW'].rolling(lookback + 1).apply(lambda s: s[s < s.iloc[-1]].shape[0]) / lookback
     df = SMA(df, smaPeriod, 'BBWP', 'BBWP_SMA')
     del df['BBWP BBW']
     return df
