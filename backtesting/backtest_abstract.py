@@ -5,7 +5,7 @@ from bisect import insort
 import numpy as np
 
 from pandas import DataFrame, Timestamp, concat
-from utils.screenerUtils import make_df
+from CustomBacktests.utils.screenerUtils import make_df
 
 
 class Backtest:

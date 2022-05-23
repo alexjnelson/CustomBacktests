@@ -9,7 +9,7 @@ import yfinance as yf
 from requests.exceptions import ConnectionError
 from urllib3.exceptions import ProtocolError
 
-from utils import addIndicators as add
+from CustomBacktests.utils import addIndicators as add
 
 
 def load_tickers(filename):

@@ -8,7 +8,7 @@ from typing import Union
 
 from pandas import DataFrame, Timestamp, concat
 
-from backtesting import Backtest
+from CustomBacktests.backtesting import Backtest
 
 
 class HammerReversals(Backtest):

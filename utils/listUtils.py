@@ -3,7 +3,7 @@ import re
 from functools import partial
 from multiprocessing import Pool
 
-from utils.screenerUtils import load_tickers, make_df
+from CustomBacktests.utils.screenerUtils import load_tickers, make_df
 
 
 def makeTickerFile(inf, outf, ext=''):
