@@ -147,6 +147,9 @@ class Backtest:
             'n_losses': n_losses
         }
 
+    def _is_bool(self, value):
+        return type(value) is bool or type(value) is np.bool_
+
     def _backtest_long_only(self):
         """
         This method is used to backtest long-only equity trading strategies. A security is purchased on dates when the 
@@ -167,10 +170,10 @@ class Backtest:
         for date in self.df.index:
             if not pos and (long_trigger := self._trigger_long(self.df, date)):
                 pos = True
-                self._enter_long(self.df.loc[date, self.default_src_price] if type(long_trigger) is bool else long_trigger)
+                self._enter_long(self.df.loc[date, self.default_src_price] if self._is_bool(long_trigger) else long_trigger)
             elif pos and (short_trigger := self._trigger_short(self.df, date)):
                 pos = False
-                self._exit_long(self.df.loc[date, self.default_src_price] if type(short_trigger) is bool else short_trigger)
+                self._exit_long(self.df.loc[date, self.default_src_price] if self._is_bool(short_trigger) else short_trigger)
                 self._calculate_gain()
         return self.get_stats()
 
@@ -187,20 +190,25 @@ class Backtest:
         Raises:
             TO DO
         """
-        pos = False
+        long_pos = False
+        short_pos = False
         for date in self.df.index:
             if (long_trigger := self._trigger_long(self.df, date)):
-                if pos:
-                    self._exit_short(self.df.loc[date, self.default_src_price] if type(long_trigger) is bool else long_trigger)
+                if short_pos:
+                    short_pos = False
+                    self._exit_short(self.df.loc[date, self.default_src_price] if self._is_bool(long_trigger) else long_trigger)
                     self._calculate_gain()
-                pos = True
-                self._enter_long(self.df.loc[date, self.default_src_price] if type(long_trigger) is bool else long_trigger)
-            elif (short_trigger := self._trigger_short(self.df, date)):
-                if pos:
-                    self._exit_long(self.df.loc[date, self.default_src_price] if type(short_trigger) is bool else short_trigger)
+                if not long_pos:
+                    long_pos = True
+                    self._enter_long(self.df.loc[date, self.default_src_price] if self._is_bool(long_trigger) else long_trigger)
+            if (short_trigger := self._trigger_short(self.df, date)):
+                if long_pos:
+                    long_pos = False
+                    self._exit_long(self.df.loc[date, self.default_src_price] if self._is_bool(short_trigger) else short_trigger)
                     self._calculate_gain()
-                pos = True
-                self._enter_short(self.df.loc[date, self.default_src_price] if type(short_trigger) is bool else short_trigger)
+                if not short_pos:
+                    short_pos = True
+                    self._enter_short(self.df.loc[date, self.default_src_price] if self._is_bool(short_trigger) else short_trigger)
         return self.get_stats()
 
     def run(self):
