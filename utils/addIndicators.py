@@ -731,12 +731,3 @@ def tripleThreat(df, rsi_crossover=5, rsi_retest=3, rsi_instant=12, rsi_oversold
     del df[maSellConfirm]
     del df[maFullSellZone]
     return df
-
-
-import yfinance as yf
-
-df = yf.download('BTC-USD')
-df = tripleThreat(df)
-
-print(df[df['ma buy signal']])
-print(df[df['ma sell signal']])
