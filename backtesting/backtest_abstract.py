@@ -128,10 +128,13 @@ class Backtest:
         try:
             cagr = self._total_return ** (1 / ((self.df.index[-1] - self.df.index[0]).days / 365.25))
         except AttributeError:
-            # if the index is in integer timestamps instead of pandas timestamps
-            start = dt.datetime.fromtimestamp(self.df.index[0])
-            end = dt.datetime.fromtimestamp(self.df.index[-1])
-            cagr = self._total_return ** (1 / ((end - start).days / 365.25))
+            try:
+                # if the index is in integer timestamps instead of pandas timestamps
+                start = dt.datetime.fromtimestamp(self.df.index[0])
+                end = dt.datetime.fromtimestamp(self.df.index[-1])
+                cagr = self._total_return ** (1 / ((end - start).days / 365.25)
+            except Exception:
+                cagr = None
             
         return {
             'totalReturn': self._total_return,
