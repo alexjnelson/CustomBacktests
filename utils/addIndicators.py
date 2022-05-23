@@ -73,7 +73,7 @@ def ATR(df, period=14, colName='ATR'):
             continue
 
         tr['TR'].append(max(df[Cols.HIGH.value][n] - df[Cols.LOW.value][n], abs(df[Cols.HIGH.value]
-                                                              [n] - df[Cols.CLOSE.value][n - 1]), abs(df[Cols.LOW.value][n] - df[Cols.CLOSE.value][n - 1])))
+                                                                                [n] - df[Cols.CLOSE.value][n - 1]), abs(df[Cols.LOW.value][n] - df[Cols.CLOSE.value][n - 1])))
 
     df = df[1:]
     tr = pd.DataFrame(data=tr, index=df.index)
@@ -535,7 +535,7 @@ def hammer(df, trend_days=3, max_real_body_ratio=0.5, max_body_distance=0.2, bul
 def BollingerWidth(df, period=20, nDeviations=2, sourceCol=None, colName='BBW'):
     df = SMA(df, period, sourceCol=sourceCol, colName='BBW bol_mid')
     df = Bollinger(df, period, nDeviations, sourceCol, 'BBW bol_upper', 'BBW bol_lower')
-    df[colName] = (df['BBW bol_upper'] - df['BBW bol_lower']) /  df['BBW bol_mid']
+    df[colName] = (df['BBW bol_upper'] - df['BBW bol_lower']) / df['BBW bol_mid']
     del df['BBW bol_upper'], df['BBW bol_lower'], df['BBW bol_mid']
     return df
 
@@ -548,3 +548,195 @@ def BBWP(df, period=21, lookback=255, smaPeriod=8, sourceCol=Cols.ADJCLOSE.value
     df = SMA(df, smaPeriod, 'BBWP', 'BBWP_SMA')
     del df['BBWP BBW']
     return df
+
+
+def tripleThreat(df, rsi_crossover=5, rsi_retest=3, rsi_instant=12, rsi_oversold=35, rsi_overbought=65, bbwp_confirm=4, ema_period=50, rsi_period=14, rsi_ma_period=7, bbwp_period=21, bbwp_lookback=255, bbwp_sma_period=8, sourceCol=Cols.ADJCLOSE.value):
+    df = EMA(df, ema_period, sourceCol=sourceCol, colName='Confirmation_MA')
+    df = RSI(df, rsi_period, sourceCol=sourceCol)
+    df = SMA(df, rsi_ma_period, sourceCol='RSI', colName='RSI_MA')
+    df = BBWP(df, bbwp_period, bbwp_lookback, bbwp_sma_period, sourceCol=sourceCol)
+
+    cUp = 'crossed up'
+    rUp = 'retested up'
+    rBuy = 'retest buy'
+    rsiBuyZone = 'rsi buy zone'
+    rsiBuySignal = 'rsi buy signal'
+
+    cDown = 'crossed down'
+    rDown = 'retested down'
+    rSell = 'retest sell'
+    rsiSellZone = 'rsi sell zone'
+    rsiSellSignal = 'rsi sell signal'
+
+    confirmBBWP = 'bbwp confirm'
+
+    fwdBuyConfirm = 'fwd buy confirm'
+    allowBuy = 'allow buy'
+    fullBuySignal = 'full buy signal'
+    confirmedBuyZone = 'confirmed buy zone'
+    confirmedBuySignal = 'confirmed buy signal'
+
+    fwdSellConfirm = 'fwd sell confirm'
+    allowSell = 'allow sell'
+    fullSellSignal = 'full sell signal'
+    confirmedSellZone = 'confirmed sell zone'
+    confirmedSellSignal = 'confirmed sell signal'
+
+    maBuyZone = 'ma buy zone'
+    maBuyConfirm = 'ma buy confirm'
+    maFullBuyZone = 'ma full buy zone'
+    maBuySignal = 'ma buy signal'
+
+    maSellZone = 'ma sell zone'
+    maSellConfirm = 'ma sell confirm'
+    maFullSellZone = 'ma full sell zone'
+    maSellSignal = 'ma sell signal'
+
+
+    df[cUp] = False
+    df[rUp] = False
+    df[rBuy] = False
+    df[rsiBuyZone] = False
+    df[rsiBuySignal] = False
+
+    df[cDown] = False
+    df[rDown] = False
+    df[rSell] = False
+    df[rsiSellZone] = False
+    df[rsiSellSignal] = False
+
+    df[confirmBBWP] = False
+
+    df[fwdBuyConfirm] = False
+    df[allowBuy] = False
+    df[fullBuySignal] = False
+    df[confirmedBuyZone] = False
+    df[confirmedBuySignal] = False
+
+    df[fwdSellConfirm] = False
+    df[allowSell] = False
+    df[fullSellSignal] = False
+    df[confirmedSellZone] = False
+    df[confirmedSellSignal] = False
+
+    df[maBuyZone] = False
+    df[maBuyConfirm] = False
+    df[maFullBuyZone] = False
+    df[maBuySignal] = False
+
+    df[maSellZone] = False
+    df[maSellConfirm] = False
+    df[maFullSellZone] = False
+    df[maSellSignal] = False
+    
+
+    for c, i in enumerate(df.index[1:]):
+        prev = df.loc[df.index[c]]
+        rsi = df.loc[i, 'RSI']
+        rsi_ma = df.loc[i, 'RSI_MA']
+        bbwp = df.loc[i, 'BBWP']
+        bbwp_ma = df.loc[i, 'BBWP_SMA']
+        price = df.loc[i, sourceCol]
+        ma = df.loc[i, 'Confirmation_MA']
+
+        # start checking for upwards retests when the RSI has crossed above the MA by the rsi_crossover and has not fallen to retest_threshold below the MA
+        df.loc[i, cUp] = (prev[cUp] and not (rsi_ma - rsi > rsi_retest)) or (rsi - rsi_ma > rsi_crossover)
+        # keep of track of when a retest occured (rsi exceeds MA by less than the retest threshold), until the RSI falls below the MA by the threshold. rsi crossed up must be true, because this already checks if the rsi has fallen below the MA by the threshold to cancel the signal
+        df.loc[i, rUp] = df.loc[i, cUp] and (prev[rUp] or (rsi - rsi_ma < rsi_retest))
+        # if there has been a retest and the rsi exceeds the MA by the crossover threshold again, trigger a buy signal. also trigger a buy signal if the RSI exceeds the MA by the "rsi instant" threshold
+        df.loc[i, rBuy] = (df.loc[i, rUp] and (rsi - rsi_ma > rsi_crossover)) or (rsi - rsi_ma > rsi_instant)
+
+        # now do the same for the sell side
+        df.loc[i, cDown] = (prev[cDown] and not (rsi - rsi_ma > rsi_retest)) or (rsi_ma - rsi > rsi_crossover)
+        df.loc[i, rDown] = df.loc[i, cDown] and (prev[rDown] or (rsi_ma - rsi < rsi_retest))
+        df.loc[i, rSell] = (df.loc[i, rDown] and (rsi_ma - rsi > rsi_crossover)) or (rsi_ma - rsi > rsi_instant)
+
+        # a zone is when a directional signal was given, but it carries over from previous zones unless a contra signal is given
+        df.loc[i, rsiBuyZone] = (df.loc[i, rBuy] or prev[rsiBuyZone]) and not df.loc[i, rSell]
+        df.loc[i, rsiSellZone] = (df.loc[i, rSell] or prev[rsiSellZone]) and not df.loc[i, rBuy]
+        # create a signal when the zone switches
+        df.loc[i, rsiBuySignal] = df.loc[i, rsiBuyZone] and prev[rsiSellZone]
+        df.loc[i, rsiSellSignal] = df.loc[i, rsiSellZone] and prev[rsiBuyZone]
+
+        # if RSI is oversold in a Buy zone, confirm the most recent Buy signal. if RSI is oversold in a Sell zone, confirm the next Buy signal.
+        df.loc[i, fwdBuyConfirm] = False
+        # carry over the previous confirmation unless entering a sell zone for the first time
+        df.loc[i, fwdBuyConfirm] = (prev[fwdBuyConfirm] and not df.loc[i, rsiSellSignal]) or rsi <= rsi_oversold
+
+        # if RSI is overbought in a Sell zone, confirm the most recent Sell signal. if RSI is overbought in a Buy zone, confirm the next Sell signal.
+        df.loc[i, fwdSellConfirm] = False
+        # carry over the previous confirmation unless entering a buy zone for the first time
+        df.loc[i, fwdSellConfirm] = (prev[fwdSellConfirm] and not df.loc[i, rsiBuySignal]) or rsi >= rsi_overbought
+
+        # a long position may only be entered if the RSI MA is no longer below the oversold level, and RSI is now above the MA
+        df.loc[i, allowBuy] = rsi > rsi_ma and rsi_ma > rsi_oversold
+        # a short position may only be entered if the RSI MA is no longer above the overbought level, and RSI is now below the MA
+        df.loc[i, allowSell] = rsi < rsi_ma and rsi_ma < rsi_overbought
+
+        # confirm any signal if BBWP > the BBWP confirmation threshold
+        df.loc[i, confirmBBWP] = bbwp - bbwp_ma > bbwp_confirm
+
+        # trade on confirmed signals
+        df.loc[i, fullBuySignal] = df.loc[i, rsiBuyZone] and (df.loc[i, fwdBuyConfirm] or df.loc[i, confirmBBWP]) and df.loc[i, allowBuy]
+        df.loc[i, fullSellSignal] = df.loc[i, rsiSellZone] and (df.loc[i, fwdSellConfirm] or df.loc[i, confirmBBWP]) and df.loc[i, allowSell]
+
+        # only enter a buy or sell zone if there was confirmation with either the RSI or BBWP, and a position is allowed based on the relative placement of the RSI and its MA (allow_buy or allow_sell)
+        df.loc[i, confirmedBuyZone] = (prev[confirmedBuyZone] or df.loc[i, fullBuySignal]) and not df.loc[i, fullSellSignal]
+        df.loc[i, confirmedSellZone] = (prev[confirmedSellZone] or df.loc[i, fullSellSignal]) and not df.loc[i, fullBuySignal]
+
+        df.loc[i, confirmedBuySignal] = df.loc[i, confirmedBuyZone] and prev[confirmedSellZone]
+        df.loc[i, confirmedSellSignal] = df.loc[i, confirmedSellZone] and prev[confirmedBuyZone]
+
+        # EMAs and EMA signals
+        df.loc[i, maBuyZone] = df.loc[i, confirmedBuyZone] and (price > ma)
+        df.loc[i, maSellZone] = df.loc[i, confirmedSellZone] and (price < ma)
+
+        df.loc[i, maBuyConfirm] = df.loc[i, maBuyZone] and not prev[maBuyZone]
+        df.loc[i, maSellConfirm] = df.loc[i, maSellZone] and not prev[maSellZone]
+
+        df.loc[i, maFullBuyZone] = (prev[maFullBuyZone] or df.loc[i, maBuyConfirm]) and not df.loc[i, maSellConfirm]
+        df.loc[i, maFullSellZone] = (prev[maFullSellZone] or df.loc[i, maSellConfirm]) and not df.loc[i, maBuyConfirm]
+
+        df.loc[i, maBuySignal] = df.loc[i, maFullBuyZone] and not prev[maFullBuyZone]
+        df.loc[i, maSellSignal] = df.loc[i, maFullSellZone] and not prev[maFullSellZone]
+
+    # delete all supplemental cols except for the signals and indicators
+    del df[cUp]
+    del df[rUp]
+    del df[rBuy]
+    del df[rsiBuyZone]
+
+    del df[cDown]
+    del df[rDown]
+    del df[rSell]
+    del df[rsiSellZone]
+
+    del df[confirmBBWP]
+
+    del df[fwdBuyConfirm]
+    del df[allowBuy]
+    del df[fullBuySignal]
+    del df[confirmedBuyZone]
+
+    del df[fwdSellConfirm]
+    del df[allowSell]
+    del df[fullSellSignal]
+    del df[confirmedSellZone]
+
+    del df[maBuyZone]
+    del df[maBuyConfirm]
+    del df[maFullBuyZone]
+
+    del df[maSellZone]
+    del df[maSellConfirm]
+    del df[maFullSellZone]
+    return df
+
+
+import yfinance as yf
+
+df = yf.download('BTC-USD')
+df = tripleThreat(df)
+
+print(df[df['ma buy signal']])
+print(df[df['ma sell signal']])
