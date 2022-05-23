@@ -10,10 +10,10 @@ pd.options.mode.chained_assignment = None
 
 
 class Cols(enum.Enum):
-    OPEN = Cols.OPEN
-    HIGH = Cols.HIGH
-    LOW = Cols.LOW
-    CLOSE = Cols.CLOSE
+    OPEN = 'Open'
+    HIGH = 'High'
+    LOW = 'Low'
+    CLOSE = 'Close'
     ADJCLOSE = 'Adj Close'
 
 
