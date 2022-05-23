@@ -139,10 +139,10 @@ class Backtest:
             'totalReturn': self._total_return - 1,
             'cagr': cagr,
             'battingAvg': None if total_trades == 0 else n_gains / total_trades,
-            'largestGain': 0 if n_gains == 0 else max(self._gains),
-            'largestLoss': 0 if n_losses == 0 else min(self._losses),
-            'avgGain': 0 if n_gains == 0 else sum(self._gains) / n_gains,
-            'avgLoss': 0 if n_losses == 0 else sum(self._losses) / n_losses,
+            'largestGain': 0 if n_gains == 0 else max(self._gains) - 1,
+            'largestLoss': 0 if n_losses == 0 else min(self._losses) - 1,
+            'avgGain': 0 if n_gains == 0 else sum(self._gains) / n_gains - 1,
+            'avgLoss': 0 if n_losses == 0 else sum(self._losses) / n_losses - 1,
             'n_gains': n_gains,
             'n_losses': n_losses
         }
