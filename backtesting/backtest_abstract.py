@@ -3,6 +3,7 @@ from multiprocessing import Pool
 from typing import Union
 from bisect import insort
 import numpy as np
+import datetime as dt
 
 from pandas import DataFrame, Timestamp, concat
 from CustomBacktests.utils.screenerUtils import make_df
@@ -124,7 +125,14 @@ class Backtest:
         n_gains = len(self._gains)
         n_losses = len(self._losses)
         total_trades = n_gains + n_losses
-        cagr = self._total_return ** (1 / ((self.df.index[-1] - self.df.index[0]).days / 365.25))
+        try:
+            cagr = self._total_return ** (1 / ((self.df.index[-1] - self.df.index[0]).days / 365.25))
+        except AttributeError:
+            # if the index is in integer timestamps instead of pandas timestamps
+            start = dt.datetime.fromtimestamp(self.df.index[0])
+            end = dt.datetime.fromtimestamp(self.df.index[-1])
+            cagr = self._total_return ** (1 / ((end - start).days / 365.25))
+            
         return {
             'totalReturn': self._total_return,
             'cagr': cagr,
