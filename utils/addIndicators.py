@@ -1,4 +1,5 @@
 import datetime as dt
+import enum
 import math
 
 import numpy as np
@@ -8,20 +9,28 @@ from sklearn.linear_model import LinearRegression
 pd.options.mode.chained_assignment = None
 
 
+class Cols(enum.Enum):
+    OPEN = Cols.OPEN
+    HIGH = Cols.HIGH
+    LOW = Cols.LOW
+    CLOSE = Cols.CLOSE
+    ADJCLOSE = 'Adj Close'
+
+
 # returns an exponential moving average
-def EMA(df, period=20, observeCol='Adj Close', colName=None):
+def EMA(df, period=20, sourceCol=Cols.ADJCLOSE, colName=None):
     if len(df) < period:
         raise ValueError('Not enough data')
     if not (type(df) == pd.DataFrame and type(period) == int):
         raise TypeError
     colName = "EMA_{}".format(period) if colName is None else colName
 
-    df[colName] = df[observeCol].ewm(span=period, adjust=False).mean()
+    df[colName] = df[sourceCol].ewm(span=period, adjust=False).mean()
     return df
 
 
 # returns a simple moving average
-def SMA(df, period=20, colName=None):
+def SMA(df, period=20, sourceCol=None, colName=None):
     if len(df) < period:
         raise ValueError('Not enough data')
 
@@ -29,8 +38,12 @@ def SMA(df, period=20, colName=None):
         raise TypeError
     colName = 'SMA_{}'.format(period) if colName is None else colName
 
-    df[colName] = TP(df)['TP'].rolling(window=period).mean()
-    del df['TP']
+    if sourceCol is None:
+        df[colName] = TP(df)['TP'].rolling(window=period).mean()
+        del df['TP']
+    else:
+        df[colName] = df[sourceCol].rolling(window=period).mean()
+
     return df
 
 
@@ -39,7 +52,7 @@ def TP(df, colName='TP'):
     if not type(df) == pd.DataFrame:
         raise TypeError
 
-    df[colName] = (df['High'] + df['Low'] + df['Close']) / 3
+    df[colName] = (df[Cols.HIGH] + df[Cols.LOW] + df[Cols.CLOSE]) / 3
     return df
 
 
@@ -59,8 +72,8 @@ def ATR(df, period=14, colName='ATR'):
         if n == 0:
             continue
 
-        tr['TR'].append(max(df['High'][n] - df['Low'][n], abs(df['High']
-                                                              [n] - df['Close'][n - 1]), abs(df['Low'][n] - df['Close'][n - 1])))
+        tr['TR'].append(max(df[Cols.HIGH][n] - df[Cols.LOW][n], abs(df[Cols.HIGH]
+                                                              [n] - df[Cols.CLOSE][n - 1]), abs(df[Cols.LOW][n] - df[Cols.CLOSE][n - 1])))
 
     df = df[1:]
     tr = pd.DataFrame(data=tr, index=df.index)
@@ -70,13 +83,13 @@ def ATR(df, period=14, colName='ATR'):
 
 
 # the keltner channels don't line up 100% perfectly with MarketWatch's keltner's of same params
-def Keltner(df, emaPeriod=20, atrPeriod=20, atrMult=2, colNameUpper='Kelt Upper', colNameLower='Kelt Lower'):
+def Keltner(df, emaPeriod=20, atrPeriod=20, atrMult=2, sourceCol=Cols.ADJCLOSE, colNameUpper='Kelt Upper', colNameLower='Kelt Lower'):
     if len(df) < max([emaPeriod, atrPeriod]):
         raise ValueError('Not enough data')
     if not (type(df) == pd.DataFrame and type(emaPeriod) == int and type(atrPeriod) == int and type(atrMult) == int):
         raise TypeError
 
-    req = EMA(df, emaPeriod, colName='EMA_{} kelt'.format(emaPeriod))
+    req = EMA(df, emaPeriod, sourceCol=sourceCol, colName='EMA_{} kelt'.format(emaPeriod))
     req['ATR kelt'] = ATR(df, atrPeriod, colName='ATR kelt')['ATR kelt']
     df[colNameUpper] = req['EMA_{} kelt'.format(
         emaPeriod)] + req['ATR kelt'] * atrMult
@@ -88,16 +101,19 @@ def Keltner(df, emaPeriod=20, atrPeriod=20, atrMult=2, colNameUpper='Kelt Upper'
 
 
 # the bollinger bands don't line up 100% perfectly with MarketWatch's bands of same params
-def Bollinger(df, period=20, nDeviations=2, colNameUpper='Bol Upper', colNameLower='Bol Lower'):
+def Bollinger(df, period=20, nDeviations=2, sourceCol=None, colNameUpper='Bol Upper', colNameLower='Bol Lower'):
     if len(df) < period:
         raise ValueError('Not enough data')
 
     if not (type(df) == pd.DataFrame and type(period) == int and type(nDeviations) == int):
         raise TypeError
 
-    req = SMA(df, period, colName='SMA_{} bol'.format(period))
-    req['STD bol'] = TP(df, colName='TP bol')[
-        'TP bol'].rolling(window=period).std()
+    req = SMA(df, period, sourceCol=sourceCol, colName='SMA_{} bol'.format(period))
+    if sourceCol is None:
+        req['STD bol'] = TP(df, colName='TP bol')[
+            'TP bol'].rolling(window=period).std()
+    else:
+        req['STD bol'] = df[sourceCol].rolling(window=period).std()
 
     df[colNameUpper] = req['SMA_{} bol'.format(
         period)] + nDeviations * req['STD bol']
@@ -110,16 +126,16 @@ def Bollinger(df, period=20, nDeviations=2, colNameUpper='Bol Upper', colNameLow
 
 
 # returns whether the stock is currently in a TTM squeeze (bollinger bands are between keltner channels)
-def TTMSqueeze(df, emaPeriod=20, atrPeriod=20, atrMult=2, bollingerPeriod=20, nDeviations=2, colName='TTMSqueeze'):
+def TTMSqueeze(df, emaPeriod=20, atrPeriod=20, atrMult=2, bollingerPeriod=20, nDeviations=2, sourceCol=None, colName='TTMSqueeze'):
     if len(df) < max([emaPeriod, atrPeriod, bollingerPeriod]):
         raise ValueError('Not enough data')
 
     if not type(df) == pd.DataFrame or any(type(x) != int for x in [emaPeriod, atrPeriod, atrMult, bollingerPeriod, nDeviations]):
         raise TypeError
 
-    req = Keltner(df, emaPeriod, atrPeriod, atrMult,
+    req = Keltner(df, emaPeriod, atrPeriod, atrMult, sourceCol=Cols.ADJCLOSE if sourceCol is None else sourceCol,
                   colNameUpper='Kelt Upper ttm', colNameLower='Kelt Lower ttm')
-    req[['Bol Upper ttm', 'Bol Lower ttm']] = Bollinger(df, bollingerPeriod, nDeviations, colNameUpper='Bol Upper ttm', colNameLower='Bol Lower ttm')[
+    req[['Bol Upper ttm', 'Bol Lower ttm']] = Bollinger(df, bollingerPeriod, nDeviations, sourceCol=sourceCol, colNameUpper='Bol Upper ttm', colNameLower='Bol Lower ttm')[
         ['Bol Upper ttm', 'Bol Lower ttm']]
 
     df[colName] = (req['Bol Lower ttm'] >= req['Kelt Lower ttm']) & (
@@ -129,15 +145,15 @@ def TTMSqueeze(df, emaPeriod=20, atrPeriod=20, atrMult=2, bollingerPeriod=20, nD
 
 
 # returns the relative strength index (technical indicator)
-def RSI(df, period=14, colName='RSI'):
+def RSI(df, period=14, sourceCol=Cols.ADJCLOSE, colName='RSI'):
     if len(df) < period:
         raise ValueError('Not enough data')
 
     if not (type(df) == pd.DataFrame and type(period) == int):
         raise TypeError
 
-    df['Gain'] = -(df['Adj Close'].rolling(window=2).sum() -
-                   2 * df['Adj Close'])
+    df['Gain'] = -(df[sourceCol].rolling(window=2).sum() -
+                   2 * df[sourceCol])
     df['AvgGain'] = np.nan
     df['AvgLoss'] = np.nan
     df[colName] = np.nan
@@ -168,7 +184,9 @@ def RSI(df, period=14, colName='RSI'):
     return df
 
 # returns whether the stock is the highest it's been in the specified number of days
-def recentHigh(df, days=260, colName=None):
+
+
+def recentHigh(df, days=260, sourceCol=Cols.ADJCLOSE, colName=None):
     if len(df) < days:
         raise ValueError('Not enough data')
 
@@ -176,13 +194,13 @@ def recentHigh(df, days=260, colName=None):
     df[colName] = ''
     for i in df.index[1:]:
         index = df.index.get_loc(i)
-        df[colName][i] = df['Adj Close'][index] == max(
-            df['Adj Close'][0:index]) if index < days else df['Adj Close'][index] == max(df['Adj Close'][index - days + 1:index + 1])
+        df[colName][i] = df[sourceCol][index] == max(
+            df[sourceCol][0:index]) if index < days else df[sourceCol][index] == max(df[sourceCol][index - days + 1:index + 1])
     return df
 
 
 # returns whether the stock is the lowest it's been in the specified number of days
-def recentLow(df, days=260, colName=None):
+def recentLow(df, days=260, sourceCol=Cols.ADJCLOSE, colName=None):
     if len(df) < days:
         raise ValueError('Not enough data')
 
@@ -190,13 +208,13 @@ def recentLow(df, days=260, colName=None):
     df[colName] = ''
     for i in df.index[1:]:
         index = df.index.get_loc(i)
-        df[colName][i] = df['Adj Close'][index] == min(
-            df['Adj Close'][0:index]) if index < days else df['Adj Close'][index] == min(df['Adj Close'][index - days + 1:index + 1])
+        df[colName][i] = df[sourceCol][index] == min(
+            df[sourceCol][0:index]) if index < days else df[sourceCol][index] == min(df[sourceCol][index - days + 1:index + 1])
     return df
 
 
 # returns True while the short-emas are above the long-emas
-def shortOverLong(df, shortEmas=[8], longEmas=[21], withTriggers=False, colName=None):
+def shortOverLong(df, shortEmas=[8], longEmas=[21], withTriggers=False, sourceCol=Cols.ADJCLOSE, colName=None):
     if type(shortEmas) != list:
         shortEmas = [shortEmas]
     if type(longEmas) != list:
@@ -211,11 +229,11 @@ def shortOverLong(df, shortEmas=[8], longEmas=[21], withTriggers=False, colName=
     longLabels = []
     for p in shortEmas:
         label = 'EMA_{}_SoL'.format(p)
-        df = EMA(df, p, colName=label)
+        df = EMA(df, p, sourceCol=sourceCol, colName=label)
         shortLabels.append(label)
     for p in longEmas:
         label = 'EMA_{}_SoL'.format(p)
-        df = EMA(df, p, colName=label)
+        df = EMA(df, p, sourceCol=sourceCol, colName=label)
         longLabels.append(label)
 
     df['longmax'] = df[longLabels].max(axis=1)
@@ -223,8 +241,8 @@ def shortOverLong(df, shortEmas=[8], longEmas=[21], withTriggers=False, colName=
     df[colName] = df['shortmin'] > df['longmax']
 
     if withTriggers:
-        df = goldenCross(df, shortEmas, longEmas, colName=colName + '_Gold')
-        df = deathCross(df, shortEmas, longEmas, colName=colName + '_Death')
+        df = goldenCross(df, shortEmas, longEmas, sourceCol=sourceCol, colName=colName + '_Gold')
+        df = deathCross(df, shortEmas, longEmas, sourceCol=sourceCol, colName=colName + '_Death')
 
     try:
         for label in shortLabels + longLabels:
@@ -236,7 +254,7 @@ def shortOverLong(df, shortEmas=[8], longEmas=[21], withTriggers=False, colName=
 
 
 # identifies when emas crossover; cross can either be golden (short passes long) or death (long passes short)
-def _crossover(df, crossType, shortEmas, longEmas, colName):
+def _crossover(df, crossType, shortEmas, longEmas, sourceCol, colName):
     if len(df) < max(shortEmas + longEmas):
         raise ValueError('Not enough data')
 
@@ -249,7 +267,7 @@ def _crossover(df, crossType, shortEmas, longEmas, colName):
     else:
         raise ValueError
 
-    df = shortOverLong(df, shortEmas, longEmas, colName='SoL_cr')
+    df = shortOverLong(df, shortEmas, longEmas, sourceCol=sourceCol colName='SoL_cr')
     for i in range(1, len(df)):
         date = df.index[i]
         prev = df.index[i - 1]
@@ -259,32 +277,32 @@ def _crossover(df, crossType, shortEmas, longEmas, colName):
     return df
 
 
-def goldenCross(df, shortEmas=[12], longEmas=[26], colName=None):
-    return _crossover(df, 'Golden', shortEmas, longEmas, 'Golden' if colName is None else colName)
+def goldenCross(df, shortEmas=[12], longEmas=[26], sourceCol=Cols.ADJCLOSE, colName=None):
+    return _crossover(df, 'Golden', shortEmas, longEmas, sourceCol, 'Golden' if colName is None else colName)
 
 
-def deathCross(df, shortEmas=[12], longEmas=[26], colName=None):
-    return _crossover(df, 'Death', shortEmas, longEmas, 'Death' if colName is None else colName)
+def deathCross(df, shortEmas=[12], longEmas=[26], sourceCol=Cols.ADJCLOSE, colName=None):
+    return _crossover(df, 'Death', shortEmas, longEmas, sourceCol, 'Death' if colName is None else colName)
 
 
 # selltrigger based on RSI trends indicating the end of an uptrend. works best if the data given begins well before
 # the time period to predict so the downtrend or uptrend can be identified
-def failureSwings(df, rsiPeriod=14, initialUptrend=None, colName=None):
+def failureSwings(df, rsiPeriod=14, initialUptrend=None, sourceCol=Cols.ADJCLOSE, colName=None):
     colName = 'FS Uptrend?' if colName is None else colName
-    df = RSI(df, rsiPeriod, 'RSI_FS')
+    df = RSI(df, rsiPeriod, sourceCol, 'RSI_FS')
     df[colName] = ''
 
-    df = observeTrend(df, observeCol='RSI_FS',
+    df = observeTrend(df, sourceCol='RSI_FS',
                       initialUptrend=initialUptrend, colName=colName)
     del df['RSI_FS']
     return df
 
 
-def MACD(df, withHistogram=True, withTriggers=False, withTrends=False, colName=None):
+def MACD(df, withHistogram=True, withTriggers=False, withTrends=False, sourceCol=Cols.ADJCLOSE, colName=None):
     colName = 'MACD' if colName is None else colName
 
-    df = EMA(df, 12, colName='EMA_12 MACD')
-    df = EMA(df, 26, colName='EMA_26 MACD')
+    df = EMA(df, 12, sourceCol=sourceCol, colName='EMA_12 MACD')
+    df = EMA(df, 26, sourceCol=sourceCol, colName='EMA_26 MACD')
 
     df[colName] = df['EMA_12 MACD'] - df['EMA_26 MACD']
     df[colName + '_Sig'] = df[colName].ewm(span=9, adjust=False).mean()
@@ -308,8 +326,8 @@ def MACD(df, withHistogram=True, withTriggers=False, withTrends=False, colName=N
     return df
 
 
-def observeTrend(df, observeCol, initialUptrend=None, trendlines=False, colName=None, lineColName=None):
-    colName = (observeCol + ' Uptrend?') if colName is None else colName
+def observeTrend(df, sourceCol, initialUptrend=None, trendlines=False, colName=None, lineColName=None):
+    colName = (sourceCol + ' Uptrend?') if colName is None else colName
     lineColName = (
         colName + ' Trendline') if lineColName is None else lineColName
 
@@ -322,7 +340,7 @@ def observeTrend(df, observeCol, initialUptrend=None, trendlines=False, colName=
     # false if not given an initial trend
     trendIdentified = initialUptrend is not None
     # in a downtrend, "peak" really means "trough"
-    first_peak = df[observeCol][0]
+    first_peak = df[sourceCol][0]
     second_peak = first_peak
     fail_point = first_peak
     uptrend = initialUptrend if initialUptrend is not None else df['SoL_OBS'][0]
@@ -330,7 +348,7 @@ def observeTrend(df, observeCol, initialUptrend=None, trendlines=False, colName=
     plotted_peaks = []
 
     for i in range(1, len(df)):
-        obs = df[observeCol][i]
+        obs = df[sourceCol][i]
 
         if uptrend and obs > first_peak or downtrend and obs < first_peak:
             first_peak = obs
@@ -382,18 +400,18 @@ def volumeForce(df, with_temp=True, colName='VF'):
     j = df.index[0]
     i = df.index[1]
     h = df.index[2]
-    df.loc[i, 'T'] = 1 if (df.loc[i, 'High'] + df.loc[i, 'Low'] + df.loc[i, 'Close']) > (
-        df.loc[j, 'High'] + df.loc[j, 'Low'] + df.loc[j, 'Close']) else -1
-    df.loc[i, 'dm'] = df.loc[i, 'High'] - df.loc[i, 'Low']
+    df.loc[i, 'T'] = 1 if (df.loc[i, Cols.HIGH] + df.loc[i, Cols.LOW] + df.loc[i, Cols.CLOSE]) > (
+        df.loc[j, Cols.HIGH] + df.loc[j, Cols.LOW] + df.loc[j, Cols.CLOSE]) else -1
+    df.loc[i, 'dm'] = df.loc[i, Cols.HIGH] - df.loc[i, Cols.LOW]
     # in first calculation (at index[2]), uses that day's dm instead of previous day's cm, so set previous day cm to that day's dm here
-    df.loc[i, 'cm'] = df.loc[h, 'High'] - df.loc[h, 'Low']
+    df.loc[i, 'cm'] = df.loc[h, Cols.HIGH] - df.loc[h, Cols.LOW]
     j = i
 
     for i in df.index[2:]:
-        df.loc[i, 'T'] = 1 if (df.loc[i, 'High'] + df.loc[i, 'Low'] + df.loc[i, 'Close']) > (
-            df.loc[j, 'High'] + df.loc[j, 'Low'] + df.loc[j, 'Close']) else -1
+        df.loc[i, 'T'] = 1 if (df.loc[i, Cols.HIGH] + df.loc[i, Cols.LOW] + df.loc[i, Cols.CLOSE]) > (
+            df.loc[j, Cols.HIGH] + df.loc[j, Cols.LOW] + df.loc[j, Cols.CLOSE]) else -1
         if with_temp:
-            df.loc[i, 'dm'] = df.loc[i, 'High'] - df.loc[i, 'Low']
+            df.loc[i, 'dm'] = df.loc[i, Cols.HIGH] - df.loc[i, Cols.LOW]
             df.loc[i, 'cm'] = (df.loc[j, 'cm'] + df.loc[i, 'dm']) if df.loc[i,
                                                                             'T'] == df.loc[j, 'T'] else (df.loc[i, 'dm'] + df.loc[j, 'dm'])
             df.loc[i, colName] = df.loc[i, 'Volume'] * \
@@ -409,11 +427,11 @@ def volumeForce(df, with_temp=True, colName='VF'):
 
 def klinger(df, with_temp=True):
     df = volumeForce(df, with_temp=with_temp, colName='VF_Klinger')
-    df = EMA(df, period=34, observeCol='VF_Klinger', colName='klinger34')
-    df = EMA(df, period=55, observeCol='VF_Klinger', colName='klinger55')
+    df = EMA(df, period=34, sourceCol='VF_Klinger', colName='klinger34')
+    df = EMA(df, period=55, sourceCol='VF_Klinger', colName='klinger55')
 
     df['KO'] = df['klinger34'] - df['klinger55']
-    df = EMA(df, period=13, observeCol='KO', colName='KO Sig')
+    df = EMA(df, period=13, sourceCol='KO', colName='KO Sig')
     df['KO Divg'] = df['KO'] - df['KO Sig']
 
     del df['VF_Klinger'], df['klinger34'], df['klinger55']
@@ -493,22 +511,22 @@ def hammer(df, trend_days=3, max_real_body_ratio=0.5, max_body_distance=0.2, bul
         if c > trend_days:
             for n in range(trend_days):
                 break_flag = True
-                if bullish and df.loc[df.index[c - n - 1], 'Close'] >= df.loc[df.index[c - n - 2], 'Close']:
+                if bullish and df.loc[df.index[c - n - 1], Cols.CLOSE] >= df.loc[df.index[c - n - 2], Cols.CLOSE]:
                     break
-                if not bullish and df.loc[df.index[c - n - 1], 'Close'] <= df.loc[df.index[c - n - 2], 'Close']:
+                if not bullish and df.loc[df.index[c - n - 1], Cols.CLOSE] <= df.loc[df.index[c - n - 2], Cols.CLOSE]:
                     break
                 break_flag = False
         if break_flag:
-            continue               
+            continue
 
-        opening = df.loc[i, 'Open']
-        close = df.loc[i, 'Close']
-        high = df.loc[i, 'High']
-        low = df.loc[i, 'Low']
+        opening = df.loc[i, Cols.OPEN]
+        close = df.loc[i, Cols.CLOSE]
+        high = df.loc[i, Cols.HIGH]
+        low = df.loc[i, Cols.LOW]
         # checks if the real body size (dif. b/w open and close) is 50% (body ratio) smaller than the high-low range
-        # and whether the distance between the high and the top of the real body (bigger of open or close) is less than 
+        # and whether the distance between the high and the top of the real body (bigger of open or close) is less than
         # 20% (max distance) of the high-low range. if inverted, checks distance between lower of open/close and the shadow low
         df.loc[i, colName] = abs(opening - close) <= ((high - low) * max_real_body_ratio) and ((
             high - max(opening, close)) < ((high - low) * max_body_distance)) if not inverted else ((
-            min(opening, close)) - low < ((high - low) * max_body_distance))
+                min(opening, close)) - low < ((high - low) * max_body_distance))
     return df
